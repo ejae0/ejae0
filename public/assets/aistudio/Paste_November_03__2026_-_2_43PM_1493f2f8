@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MONO:DAY - 감성 큐레이션 패션 플랫폼</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts (Noto Sans KR & Cormorant Garamond) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            black: '#111111',
+                            gray: '#757575',
+                            lightgray: '#f5f5f7',
+                            border: '#e5e5e5',
+                            accent: '#ff334b'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Noto Sans KR', 'sans-serif'],
+                        serif: ['Cormorant Garamond', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 4px;
+            height: 4px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #999;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        .backdrop-blur-nav {
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        .hero-slide {
+            transition: opacity 0.8s ease-in-out;
+        }
+        .bento-card {
+            transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease;
+        }
+        .bento-card:hover {
+            transform: translateY(-4px);
+        }
+        .zoom-img {
+            transition: transform 0.7s cubic-bezier(0.25, 1, 0.5, 1);
+        }
+        .group:hover .zoom-img {
+            transform: scale(1.05);
+        }
+        .drawer-overlay {
+            transition: opacity 0.3s ease-in-out;
+        }
+        .drawer-content {
+            transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+    </style>
+</head>
+<body class="bg-white text-brand-black font-sans antialiased selection:bg-black selection:text-white relative">
+
+    <!-- TOP ANNOUNCEMENT BAR -->
+    <div class="bg-brand-black text-white text-xs py-2 px-4 text-center tracking-wider font-light">
+        <span>MONO:DAY 24SS SEASON OPEN — 신규 가입 15% 웰컴 쿠폰 & 전 상품 무료 배송</span>
+        <button class="ml-4 underline hover:text-gray-300" onclick="this.parentElement.style.display='none'">닫기</button>
+    </div>
+
+    <!-- GNB (HEADER) -->
+    <header id="gnb" class="sticky top-0 z-40 transition-all duration-300 border-b border-gray-100 bg-white/90 backdrop-blur-nav">
+        <div class="max-w-[1440px] mx-auto px-6 h-20 flex items-center justify-between">
+            <!-- Left: Logo & Main Navigation -->
+            <div class="flex items-center space-x-12">
+                <a href="#" class="font-serif text-2xl tracking-widest font-bold uppercase hover:opacity-80 transition-opacity">
+                    MONO<span class="text-brand-accent">:</span>DAY
+                </a>
+                <nav class="hidden md:flex space-x-8 text-sm tracking-widest font-medium">
+                    <a href="#shop" class="hover:text-brand-gray transition-colors py-2 border-b-2 border-transparent hover:border-black">SHOP</a>
+                    <a href="#magazine" class="hover:text-brand-gray transition-colors py-2 border-b-2 border-transparent hover:border-black">MAGAZINE</a>
+                    <a href="#pt" class="hover:text-brand-gray transition-colors py-2 relative group">
+                        PT <span class="absolute -top-1 -right-3 w-2 h-2 bg-brand-accent rounded-full"></span>
+                    </a>
+                    <a href="#brand" class="hover:text-brand-gray transition-colors py-2">BRAND</a>
+                </nav>
+            </div>
+
+            <!-- Right: Utility Icons -->
+            <div class="flex items-center space-x-6 text-lg">
+                <button id="search-btn" class="hover:opacity-60 transition-opacity p-2" aria-label="Search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+                <button id="wishlist-btn" class="hover:opacity-60 transition-opacity p-2 relative" aria-label="Wishlist" onclick="toggleDrawer('wishlist')">
+                    <i class="fa-regular fa-heart"></i>
+                    <span id="wish-count" class="absolute top-1 right-0 bg-brand-accent text-white text-[10px] w-4 h-4 rounded-full flex items-center justify-center font-mono">0</span>
+                </button>
+                <a href="#my" class="hover:opacity-60 transition-opacity p-2 hidden sm:block" aria-label="My Account">
+                    <i class="fa-regular fa-user"></i>
+                </a>
+                <button id="cart-btn" class="hover:opacity-60 transition-opacity p-2 relative" aria-label="Cart" onclick="toggleDrawer('cart')">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span id="cart-count" class="absolute top-1 right-0 bg-black text-white text-[10px] w-4 h-4 rounded-full flex items-center justify-center font-mono">0</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT CONTAINER -->
+    <main>
+        
+        <!-- SECTION 1: HERO VISUAL BANNER -->
+        <section class="relative w-full h-[80vh] min-h-[600px] overflow-hidden bg-gray-900 text-white">
+            <div id="hero-slider" class="relative w-full h-full">
+                <!-- Slide 1 -->
+                <div class="hero-slide absolute inset-0 opacity-100 transition-opacity duration-1000">
+                    <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?q=80&w=2000&auto=format&fit=crop" class="w-full h-full object-cover opacity-80" alt="Hero 1">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-black/20"></div>
+                    <div class="absolute bottom-20 left-6 md:left-20 max-w-2xl">
+                        <span class="text-xs uppercase tracking-[0.3em] font-light bg-white/20 px-3 py-1 backdrop-blur-md rounded-full inline-block mb-4">MONO:DAY EDITORIAL ISSUE</span>
+                        <h1 class="text-4xl md:text-6xl font-serif font-normal leading-tight mb-4">Quiet Luxury:<br>절제된 취향의 발견</h1>
+                        <p class="text-sm md:text-base font-light opacity-90 mb-8 max-w-lg">29CM 감성의 브랜드 큐레이션. 단순한 옷이 아닌 당신의 일상을 채우는 서사적 스타일 제안.</p>
+                        <a href="#shop" class="inline-flex items-center space-x-3 bg-white text-black px-8 py-4 text-xs font-bold tracking-widest uppercase hover:bg-black hover:text-white transition-all duration-300">
+                            <span>EXPLORE SHOP</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="hero-slide absolute inset-0 opacity-0 transition-opacity duration-1000">
+                    <img src="https://images.unsplash.com/photo-1445205170230-053b83016050?q=80&w=2000&auto=format&fit=crop" class="w-full h-full object-cover opacity-80" alt="Hero 2">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-black/20"></div>
+                    <div class="absolute bottom-20 left-6 md:left-20 max-w-2xl">
+                        <span class="text-xs uppercase tracking-[0.3em] font-light bg-white/20 px-3 py-1 backdrop-blur-md rounded-full inline-block mb-4">SPECIAL PRESENTATION</span>
+                        <h1 class="text-4xl md:text-6xl font-serif font-normal leading-tight mb-4">DUNST & MARDI<br>24SS Exclusive Launching</h1>
+                        <p class="text-sm md:text-base font-light opacity-90 mb-8 max-w-lg">MONO:DAY 단독 혜택으로 만나는 이번 시즌 프리미엄 아카이브 라인업.</p>
+                        <a href="#pt" class="inline-flex items-center space-x-3 bg-white text-black px-8 py-4 text-xs font-bold tracking-widest uppercase hover:bg-black hover:text-white transition-all duration-300">
+                            <span>VIEW PT ISSUE</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide Controls -->
+            <div class="absolute bottom-10 right-6 md:right-20 flex items-center space-x-4 z-20">
+                <div class="flex space-x-2">
+                    <button class="slide-dot w-8 h-1 bg-white rounded-full transition-all duration-300" onclick="setSlide(0)"></button>
+                    <button class="slide-dot w-3 h-1 bg-white/40 rounded-full transition-all duration-300" onclick="setSlide(1)"></button>
+                </div>
+                <div class="text-xs font-mono tracking-widest ml-4">
+                    <span id="current-slide-num">01</span> / 02
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 2: TODAY'S CURATION (BENTO GRID) -->
+        <section class="max-w-[1440px] mx-auto px-6 py-20">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 border-b border-gray-200 pb-6">
+                <div>
+                    <span class="text-xs font-bold tracking-[0.2em] text-brand-gray uppercase">MONO:DAY CURATION</span>
+                    <h2 class="text-2xl md:text-4xl font-serif font-bold mt-1">Today's Bento Editorial</h2>
+                </div>
+                <p class="text-sm text-brand-gray max-w-md mt-4 md:mt-0 font-light">
+                    에디터가 제안하는 다채로운 레이아웃 속 단 하나의 감성 큐레이션.
+                </p>
+            </div>
+
+            <!-- Bento Grid Layout -->
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6 auto-rows-[280px]">
+                <!-- Bento Card 1: Large Main Editorial Image -->
+                <div class="bento-card group relative md:col-span-2 md:row-span-2 rounded-xl overflow-hidden bg-gray-100">
+                    <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=1000&auto=format&fit=crop" class="zoom-img w-full h-full object-cover" alt="Main Editorial">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent p-8 flex flex-col justify-end text-white">
+                        <span class="text-xs tracking-widest uppercase font-semibold text-gray-300 mb-2">WEEKLY BRAND FOCUS</span>
+                        <h3 class="text-2xl md:text-3xl font-serif font-medium mb-2">DUNST : 클래식과 현대의 경계</h3>
+                        <p class="text-xs md:text-sm text-gray-300 font-light mb-4 line-clamp-2">비대칭 컷팅과 고급스러운 울 블렌드 소재의 모던 트렌치 라이너 컬렉션.</p>
+                        <div class="flex items-center justify-between pt-4 border-t border-white/20">
+                            <span class="text-xs tracking-widest font-semibold uppercase">DISCOVER BRAND</span>
+                            <i class="fa-solid fa-arrow-right text-xs group-hover:translate-x-1 transition-transform"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bento Card 2: Medium Collection Card -->
+                <div class="bento-card group relative md:col-span-2 md:row-span-1 rounded-xl overflow-hidden bg-stone-900 text-white flex flex-col md:flex-row">
+                    <div class="w-full md:w-1/2 h-full overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?q=80&w=800&auto=format&fit=crop" class="zoom-img w-full h-full object-cover" alt="Collection">
+                    </div>
+                    <div class="w-full md:w-1/2 p-6 flex flex-col justify-between bg-stone-900">
+                        <div>
+                            <span class="text-[10px] tracking-widest uppercase font-bold text-gray-400">TREND ESSENTIAL</span>
+                            <h4 class="text-lg font-serif mt-1 font-semibold">MARDI MERCREDI FLOWER</h4>
+                            <p class="text-xs text-gray-400 font-light mt-2">위트 있는 시그니처 프렌치 그래픽 라인업.</p>
+                        </div>
+                        <div class="mt-4 flex justify-between items-center text-xs text-stone-300 font-mono">
+                            <span>UP TO 20% OFF</span>
+                            <span class="underline group-hover:text-white cursor-pointer" onclick="scrollToShop('women', 'top')">Shop Now</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bento Card 3: Quick Add Highlight -->
+                <div class="bento-card group relative md:col-span-1 md:row-span-1 rounded-xl overflow-hidden bg-neutral-100 p-6 flex flex-col justify-between border border-gray-100">
+                    <div class="flex justify-between items-start">
+                        <span class="text-[10px] font-bold tracking-widest text-gray-400 uppercase">ICONIC BAG</span>
+                        <button onclick="toggleWishlistById('w-bag-1')" class="text-gray-400 hover:text-brand-accent transition-colors">
+                            <i class="fa-regular fa-heart text-base wish-icon-w-bag-1"></i>
+                        </button>
+                    </div>
+                    <div class="my-auto text-center py-2 cursor-pointer" onclick="addToCartById('w-bag-1')">
+                        <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?q=80&w=400&auto=format&fit=crop" class="h-28 mx-auto object-contain group-hover:scale-105 transition-transform" alt="Bag">
+                    </div>
+                    <div>
+                        <p class="text-xs font-bold text-black truncate">Chubby Bag Black</p>
+                        <p class="text-xs text-gray-500 font-mono mt-0.5">STAND OIL — ₩119,000</p>
+                    </div>
+                </div>
+
+                <!-- Bento Card 4: Editorial Quote -->
+                <div class="bento-card group relative md:col-span-1 md:row-span-1 rounded-xl overflow-hidden bg-gray-50 border border-gray-200 p-6 flex flex-col justify-between">
+                    <span class="text-3xl font-serif text-gray-300 font-bold">“</span>
+                    <p class="text-xs font-serif italic text-gray-700 leading-relaxed -mt-4">
+                        "취향은 매일 거치는 작은 선택들이 모여 비로소 나만의 색깔을 완성한다."
+                    </p>
+                    <div class="text-right">
+                        <span class="text-[10px] tracking-widest text-gray-400 font-bold block uppercase">— MONO:DAY ESSAY</span>
+                        <span class="text-[9px] text-gray-400 font-mono">VOL. 29</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 3: SPECIAL PT HIGHLIGHT -->
+        <section id="pt" class="w-full bg-brand-black text-white py-20 my-12 relative overflow-hidden">
+            <div class="max-w-[1440px] mx-auto px-6 relative z-10">
+                <div class="flex items-center space-x-3 mb-4">
+                    <span class="w-2 h-2 bg-brand-accent rounded-full animate-pulse"></span>
+                    <span class="text-xs tracking-[0.3em] font-semibold text-gray-400 uppercase">29CM STYLE BRAND PT ISSUE</span>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                    <div class="lg:col-span-5 space-y-6">
+                        <div>
+                            <span class="text-sm font-serif italic text-gray-400">Presentation Issue Vol.12</span>
+                            <h2 class="text-3xl md:text-5xl font-serif font-bold tracking-tight mt-2 leading-tight">
+                                MATIN KIM:<br>
+                                <span class="text-gray-400 font-normal">Rough & Chic Culture</span>
+                            </h2>
+                        </div>
+                        <p class="text-sm text-gray-300 leading-relaxed font-light">
+                            자유롭고 러프한 감각을 시그니처 메탈 로고와 스트릿 실루엣으로 정제해내는 마틴킴의 24SS 라이브 프레젠테이션. 오직 MONO:DAY에서만 단독 15% 혜택으로 제시됩니다.
+                        </p>
+
+                        <div class="bg-white/5 border border-white/10 rounded-lg p-5 space-y-2 backdrop-blur-sm">
+                            <div class="flex justify-between items-center text-xs">
+                                <span class="text-gray-400">PROMOTION PERIOD</span>
+                                <span class="font-mono">2026.10.27 - 11.10</span>
+                            </div>
+                            <div class="flex justify-between items-center text-xs">
+                                <span class="text-gray-400">EXCLUSIVE BENEFIT</span>
+                                <span class="text-brand-accent font-bold">MONO:DAY 단독 15% 쿠폰 + 기프트</span>
+                            </div>
+                        </div>
+
+                        <div class="pt-2 flex items-center space-x-4">
+                            <button onclick="scrollToShop('women', 'top')" class="inline-flex items-center space-x-3 bg-white text-black px-8 py-4 text-xs font-bold tracking-widest uppercase hover:bg-gray-200 transition-colors">
+                                <span>PT 컬렉션 바로가기</span>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="lg:col-span-7 relative group rounded-xl overflow-hidden shadow-2xl">
+                        <div class="w-full h-[420px] relative bg-gray-800">
+                            <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?q=80&w=1200&auto=format&fit=crop" class="w-full h-full object-cover opacity-90" alt="Brand PT Main">
+                            <div class="absolute inset-0 bg-black/30"></div>
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <button class="w-16 h-16 rounded-full bg-white/20 backdrop-blur-md border border-white/40 text-white flex items-center justify-center hover:scale-110 hover:bg-white hover:text-black transition-all duration-300">
+                                    <i class="fa-solid fa-play ml-1 text-lg"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 4: DETAILED CATEGORY & PRODUCT SHOPPING SECTION -->
+        <section id="shop" class="max-w-[1440px] mx-auto px-6 py-16">
+            
+            <!-- Section Title -->
+            <div class="mb-8">
+                <span class="text-xs font-bold tracking-[0.2em] text-brand-gray uppercase">MONO:DAY CATALOG</span>
+                <h2 class="text-3xl font-serif font-bold mt-1">Shop Collections</h2>
+            </div>
+
+            <!-- Category Navigation Bar (Level 1: Gender / Level 2: Subcategories) -->
+            <div class="bg-gray-50 p-6 rounded-2xl border border-gray-100 mb-12 space-y-6">
+                
+                <!-- 1차 구분: Gender Segment (여성 / 남성) -->
+                <div class="flex items-center space-x-4 border-b border-gray-200 pb-4">
+                    <span class="text-xs font-bold uppercase tracking-wider text-gray-400 w-16">GENDER</span>
+                    <div class="flex space-x-3">
+                        <button id="gender-btn-women" onclick="setGenderFilter('women')" class="px-5 py-2 rounded-full text-xs font-bold tracking-widest transition-all bg-black text-white">WOMEN (여성)</button>
+                        <button id="gender-btn-men" onclick="setGenderFilter('men')" class="px-5 py-2 rounded-full text-xs font-bold tracking-widest transition-all bg-white border border-gray-200 text-gray-600 hover:border-black">MEN (남성)</button>
+                    </div>
+                </div>
+
+                <!-- 2차 구분: Subcategories (상의, 아우터, 하의, 스커트, 원피스, 신발, 가방, 액세서리) -->
+                <div class="flex flex-col sm:flex-row sm:items-center space-y-2 sm:space-y-0">
+                    <span class="text-xs font-bold uppercase tracking-wider text-gray-400 w-20">CATEGORY</span>
+                    <div class="flex flex-wrap gap-2 text-xs font-medium" id="subcat-container">
+                        <!-- Dynamic Subcategories Rendered via JavaScript -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Active Filter Status & Product Count -->
+            <div class="flex justify-between items-center mb-6 text-xs text-gray-500 font-mono">
+                <div>
+                    <span>FILTER: </span>
+                    <span id="active-filter-text" class="text-black font-bold uppercase">WOMEN > 전체</span>
+                </div>
+                <div>
+                    <span id="product-count-text">0 ITEMS</span>
+                </div>
+            </div>
+
+            <!-- Products Grid (4-Columns Layout) -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-x-6 gap-y-12" id="product-catalog-grid">
+                <!-- Products dynamically rendered by JS -->
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- SEARCH MODAL -->
+    <div id="search-modal" class="fixed inset-0 bg-black/60 backdrop-blur-md z-50 flex items-start justify-center pt-24 hidden transition-opacity duration-300">
+        <div class="bg-white w-full max-w-2xl p-8 rounded-2xl shadow-2xl relative mx-4">
+            <button id="close-search" class="absolute top-6 right-6 text-gray-400 hover:text-black">
+                <i class="fa-solid fa-xmark text-xl"></i>
+            </button>
+            <h3 class="text-xs font-bold tracking-[0.2em] text-gray-400 uppercase mb-4">SEARCH MONO:DAY</h3>
+            <div class="relative border-b-2 border-black pb-2">
+                <input type="text" placeholder="29CM 인기 브랜드, 상품명, 키워드를 검색해보세요." class="w-full text-lg focus:outline-none pr-8 font-light">
+                <i class="fa-solid fa-magnifying-glass absolute right-0 top-1 text-gray-400"></i>
+            </div>
+            <div class="mt-8 space-y-4">
+                <span class="text-[11px] font-bold text-gray-400 tracking-wider uppercase">TRENDING SEARCHES</span>
+                <div class="flex flex-wrap gap-2">
+                    <a href="#" class="text-xs bg-gray-100 hover:bg-black hover:text-white px-3 py-1.5 rounded-full transition-colors">#마르디 메르크디</a>
+                    <a href="#" class="text-xs bg-gray-100 hover:bg-black hover:text-white px-3 py-1.5 rounded-full transition-colors">#던스트 아우터</a>
+                    <a href="#" class="text-xs bg-gray-100 hover:bg-black hover:text-white px-3 py-1.5 rounded-full transition-colors">#스탠드오일 청비백</a>
+                    <a href="#" class="text-xs bg-gray-100 hover:bg-black hover:text-white px-3 py-1.5 rounded-full transition-colors">#살로몬 XT-6</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- WISHLIST SLIDE-OUT DRAWER -->
+    <div id="wishlist-drawer-overlay" class="drawer-overlay fixed inset-0 bg-black/50 z-50 opacity-0 pointer-events-none transition-opacity duration-300" onclick="toggleDrawer('wishlist')"></div>
+    <div id="wishlist-drawer" class="drawer-content fixed top-0 right-0 h-full w-full max-w-md bg-white z-50 shadow-2xl transform translate-x-full transition-transform duration-300 flex flex-col">
+        <!-- Header -->
+        <div class="p-6 border-b border-gray-100 flex items-center justify-between">
+            <div class="flex items-center space-x-2">
+                <i class="fa-solid fa-heart text-brand-accent"></i>
+                <h3 class="font-bold text-base tracking-wider uppercase">Wishlist (좋아요)</h3>
+                <span id="drawer-wish-count" class="text-xs text-gray-400 font-mono">(0)</span>
+            </div>
+            <button onclick="toggleDrawer('wishlist')" class="p-2 text-gray-400 hover:text-black">
+                <i class="fa-solid fa-xmark text-xl"></i>
+            </button>
+        </div>
+        <!-- Item List Body -->
+        <div class="flex-1 overflow-y-auto p-6 space-y-4" id="wishlist-items-container"></div>
+        <!-- Footer -->
+        <div class="p-6 border-t border-gray-100 bg-gray-50">
+            <button onclick="toggleDrawer('wishlist')" class="w-full py-4 bg-black text-white text-xs font-bold tracking-widest uppercase hover:bg-gray-800 transition-colors">
+                쇼핑 계속하기
+            </button>
+        </div>
+    </div>
+
+    <!-- CART SLIDE-OUT DRAWER -->
+    <div id="cart-drawer-overlay" class="drawer-overlay fixed inset-0 bg-black/50 z-50 opacity-0 pointer-events-none transition-opacity duration-300" onclick="toggleDrawer('cart')"></div>
+    <div id="cart-drawer" class="drawer-content fixed top-0 right-0 h-full w-full max-w-md bg-white z-50 shadow-2xl transform translate-x-full transition-transform duration-300 flex flex-col">
+        <!-- Header -->
+        <div class="p-6 border-b border-gray-100 flex items-center justify-between">
+            <div class="flex items-center space-x-2">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <h3 class="font-bold text-base tracking-wider uppercase">Shopping Bag (장바구니)</h3>
+                <span id="drawer-cart-count" class="text-xs text-gray-400 font-mono">(0)</span>
+            </div>
+            <button onclick="toggleDrawer('cart')" class="p-2 text-gray-400 hover:text-black">
+                <i class="fa-solid fa-xmark text-xl"></i>
+            </button>
+        </div>
+        <!-- Item List Body -->
+        <div class="flex-1 overflow-y-auto p-6 space-y-4" id="cart-items-container"></div>
+        <!-- Footer / Checkout -->
+        <div class="p-6 border-t border-gray-100 bg-gray-50 space-y-4">
+            <div class="flex justify-between items-center text-sm font-medium">
+                <span class="text-gray-500">총 결제 예정 금액</span>
+                <span id="cart-total-price" class="text-lg font-bold font-mono text-black">₩0</span>
+            </div>
+            <p class="text-[11px] text-gray-400 font-light">전 상품 무료배송 혜택 적용 대상입니다.</p>
+            <button onclick="checkoutMock()" class="w-full py-4 bg-black text-white text-xs font-bold tracking-widest uppercase hover:bg-gray-800 transition-colors flex items-center justify-center space-x-2">
+                <span>ORDER NOW (주문하기)</span>
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- TOAST CONTAINER -->
+    <div id="toast-container" class="fixed bottom-6 right-6 z-50 flex flex-col space-y-2 pointer-events-none"></div>
+
+    <!-- FOOTER -->
+    <footer class="bg-black text-white border-t border-gray-800 pt-16 pb-12 mt-20">
+        <div class="max-w-[1440px] mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-12 pb-16 border-b border-gray-800">
+                <div class="md:col-span-5 space-y-4">
+                    <a href="#" class="font-serif text-2xl tracking-widest font-bold uppercase block">
+                        MONO<span class="text-brand-accent">:</span>DAY
+                    </a>
+                    <p class="text-xs text-gray-400 leading-relaxed font-light max-w-sm">
+                        MONO:DAY는 29CM 라이프스타일 지향점을 모티브로, 
+                        브랜드의 취향과 이야기를 제안하는 에디토리얼 커머스 플랫폼입니다.
+                    </p>
+                </div>
+                <div class="md:col-span-3 space-y-3">
+                    <h4 class="text-xs font-bold tracking-widest uppercase text-gray-300">Customer Center</h4>
+                    <p class="text-xl font-mono font-bold">1644-2929</p>
+                    <p class="text-xs text-gray-400 font-light">평일 09:00 - 18:00 (점심시간 12:00 - 13:00)</p>
+                </div>
+                <div class="md:col-span-2 space-y-3">
+                    <h4 class="text-xs font-bold tracking-widest uppercase text-gray-300">About</h4>
+                    <ul class="text-xs text-gray-400 space-y-2 font-light">
+                        <li><a href="#" class="hover:text-white">브랜드 소개</a></li>
+                        <li><a href="#" class="hover:text-white">입점 안내</a></li>
+                    </ul>
+                </div>
+                <div class="md:col-span-2 space-y-3">
+                    <h4 class="text-xs font-bold tracking-widest uppercase text-gray-300">Terms</h4>
+                    <ul class="text-xs text-gray-400 space-y-2 font-light">
+                        <li><a href="#" class="hover:text-white font-medium text-gray-300">개인정보처리방침</a></li>
+                        <li><a href="#" class="hover:text-white">이용약관</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pt-8 text-center md:text-left text-[11px] text-gray-500 font-light">
+                <p>© 2026 MONO:DAY Inc. All rights reserved. 29CM Style Curation Web Prototype.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- INTERACTION LOGIC & PRODUCT DATA SCRIPT -->
+    <script>
+        // ==========================================
+        // 1. 29CM REAL BRAND/ITEM MASTER DATA
+        // ==========================================
+        const PRODUCTS = [
+            // --- WOMEN (여성 8개 카테고리) ---
+            // 1. 상의 (top)
+            { id: 'w-top-1', gender: 'women', category: 'top', brand: 'Mardi Mercredi', name: 'SWEATSHIRT FLOWERMARDI [GREY-NAVY]', price: 75000, discount: 10, img1: 'https://images.unsplash.com/photo-1556905055-8f358a7a47b2?q=80&w=600&auto=format&fit=crop', img2: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=600&auto=format&fit=crop' },
+            { id: 'w-top-2', gender: 'women', category: 'top', brand: 'AMOMENTO', name: 'Sheer Cotton Button Shirt [White]', price: 158000, discount: 5, img1: 'https://images.unsplash.com/photo-1598554747436-c9293d6a588f?q=80&w=600&auto=format&fit=crop', img2: 'https://images.unsplash.com/photo-1584273143981-41c073dfe8f8?q=80&w=600&auto=format&fit=crop' },
+            
+            // 2. 아우터 (outer)
+            { id: 'w-outer-1', gender: 'women', category: 'outer', brand: 'DUNST', name: 'UNISEX CLASSIC DOUBLE BREASTED TRENCH COAT', price: 298000, discount: 15, img1: 'https://images.unsplash.com/photo-1539109136881-3be0616acf4b?q=80&w=600&auto=format&fit=crop', img2: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=600&auto=format&fit=crop' },
+            { id: 'w-outer-2', gender: 'women', category: 'outer', brand: 'LOW CLASSIC', name: 'Minimal Wool Crop Blazer [Black]', price: 348000, discount: 10, img1: 'https://images.unsplash.com/photo-1591047139829-d91aecb6caea?q=80&w=600&auto=format&fit=crop', img2: 'https://images.unsplash.com/photo-1550614000-4895a10e1bfd?q=80&w=600&auto=format&fit=crop' },
+
+            // 3. 하의 (bottom)
+            { id: 'w-bottom-1', gender: 'women', category: 'bottom', brand: 'RECTO', name: 'Curved Wide Fit Denim Pants', price: 228000, discount: 0, img1: 'https://images.unsplash.com/photo-1541099649105-f69ad21f3246?q=80&w=600&auto=format&fit=crop', img2: 'https://images.unsplash.com/photo-1509631179647-0177331693ae?q=80&w=600&auto=format&fit=crop' },
+            { id: 'w-bottom-2', gender: 'women', category: 'bottom', brand: 'GROVE', name: 'Double Tuck Wide Slacks [Charcoal]', price: 138000, discount: 10, img1: 'https://images.unsplash.com/photo-1509631179647-0177331693ae?q=80&w=600&auto=format&fit=crop', img2: 'https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?q=80&w=600&auto=format&fit=crop' },
+
+            // 4. 스커트 (skirt)
+            { id: 'w-skirt-1', gender: 'women', category: 'skirt', brand: 'NOHANT', name: 'Classic Wool Pleated Long Skirt', price: 188000, discount: 10, img1: 'https://images.unsplash.com/photo-1583496661160-fb5886a0aaaa?q=80&w=600&auto=format&fit=crop', img2: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=600&auto=format&fit=crop' },
+
+            // 5. 원피스 (dress)
+            { id: 'w-dress-1', gender: 'women', category: 'dress', brand: 'SJSJ', name: 'Structured Sleeveless Linen Dress', price: 325000, discount: 5, img1: 'https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?q=80&w=600&auto=format&fit=crop', img2: 'https://images.unsplash.com/photo-1496747611176-843222e1e57c?q=80&w=600&auto=format&fit=crop' },
+
+            // 6. 신발 (shoes)
+            { id: 'w-shoes-1', gender: 'women', category: 'shoes', brand: 'AUTRY', name: 'Medalist Low Leather White/Navy', price: 265000, discount: 0, img1: 'https://images.unsplash.com/photo-1543163521-1bf539c55dd2?q=80&w=600&auto=format&fit=crop', img2: 'https://images.unsplash.com/photo-1560343776-97e7d202ff0e?q=80&w=600&auto=format&fit=crop' },
+
+            // 7. 가방 (bag)
+            { id: 'w-bag-1', gender: 'women', category: 'bag', brand: 'STAND OIL', name: 'Chubby Bag [Black]', price: 119000, discount: 5, img1: 'https://images.unsplash.com/photo-1584917865442-de89df76afd3?q=80&w=600&auto=format&fit=crop', img2: 'https://images.unsplash.com/photo-1590874103328-eac38a683ce7?q=80&w=600&auto=format&fit=crop' },
+            { id: 'w-bag-2', gender: 'women', category: 'bag', brand: 'Atelier de LUMEN', name: 'Fantine Shoulder Bag [Butter]', price: 218000, discount: 10, img1: 'https://images.unsplash.com/photo-1590874103328-eac38a683ce7?q=80&w=600&auto=format&fit=crop', img2: 'https://images.unsplash.com/photo-1584917865442-de89df76afd3?q=80&w=600&auto=format&fit=crop' },
+
+            // 8. 액세서리 (acc)
+            { id: 'w-acc-1', gender: 'women', category: 'acc', brand: 'A.P.C.', name: 'Item Logo Cotton Cap [Navy]', price: 145000, discount: 0, img1: 'https://images.unsplash.com/photo-1588850561407-ed78c282e89b?q=80&w=600&auto=format&fit=crop', img2: 'https://images.unsplash.com/photo-1520903920243-00d872a2d1c9?q=80&w=600&auto=format&fit=crop' },
+
+
+            // --- MEN (남성 6개 카테고리 - 스커트/원피스 제외) ---
+            // 1. 상의 (top)
+            { id: 'm-top-1', gender: 'men', category: 'top', brand: 'UNIFORM BRIDGE', name: '1960s Heavyweight Sweatshirt [Grey]', price: 69000, discount: 15, img1: 'https://images.unsplash.com/photo-1509967419530-da38b4704bc6?q=80&w=600&auto=format&fit=crop', img2: 'https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?q=80&w=600&auto=format&fit=crop' },
+            { id: 'm-top-2', gender: 'men', category: 'top', brand: 'ANDERSSON BELL', name: 'Unisex Patchwork Knit Sweater', price: 238000, discount: 10, img1: 'https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?q=80&w=600&auto=format&fit=crop', img2: 'https://images.unsplash.com/photo-1509967419530-da38b4704bc6?q=80&w=600&auto=format&fit=crop' },
+
+            // 2. 아우터 (outer)
+            { id: 'm-outer-1', gender: 'men', category: 'outer', brand: 'DUNST FOR MEN', name: 'UNISEX BALMACAAN COAT [KHAKI]', price: 318000, discount: 10, img1: 'https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?q=80&w=600&auto=format&fit=crop', img2: 'https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=600&auto=format&fit=crop' },
+            { id: 'm-outer-2', gender: 'men', category: 'outer', brand: 'POLYTERU', name: 'Utility Pocket Shell Jacket [Black]', price: 279000, discount: 5, img1: 'https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=600&auto=format&fit=crop', img2: 'https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?q=80&w=600&auto=format&fit=crop' },
+
+            // 3. 하의 (bottom)
+            { id: 'm-bottom-1', gender: 'men', category: 'bottom', brand: 'BEAMS', name: 'Two Tuck Tapered Chino Pants', price: 189000, discount: 0, img1: 'https://images.unsplash.com/photo-1541099649105-f69ad21f3246?q=80&w=600&auto=format&fit=crop', img2: 'https://images.unsplash.com/photo-1509631179647-0177331693ae?q=80&w=600&auto=format&fit=crop' },
+
+            // 4. 신발 (shoes)
+            { id: 'm-shoes-1', gender: 'men', category: 'shoes', brand: 'SALOMON', name: 'XT-6 Black/Phantom', price: 260000, discount: 0, img1: 'https://images.unsplash.com/photo-1552346154-21d32810aba3?q=80&w=600&auto=format&fit=crop', img2: 'https://images.unsplash.com/photo-1608256246200-53e635b5b65f?q=80&w=600&auto=format&fit=crop' },
+
+            // 5. 가방 (bag)
+            { id: 'm-bag-1', gender: 'men', category: 'bag', brand: 'BLANKOF', name: 'EI 23L Helmet Bag [Olive]', price: 238000, discount: 5, img1: 'https://images.unsplash.com/photo-1553062407-98eeb64c6a62?q=80&w=600&auto=format&fit=crop', img2: 'https://images.unsplash.com/photo-1622560480605-d83c853bc5c3?q=80&w=600&auto=format&fit=crop' },
+
+            // 6. 액세서리 (acc)
+            { id: 'm-acc-1', gender: 'men', category: 'acc', brand: 'Matin Kim', name: 'Signature Logo Card Case [Black]', price: 68000, discount: 0, img1: 'https://images.unsplash.com/photo-1627123424574-724758594e93?q=80&w=600&auto=format&fit=crop', img2: 'https://images.unsplash.com/photo-1588850561407-ed78c282e89b?q=80&w=600&auto=format&fit=crop' }
+        ];
+
+        // Standardized Subcategories Schema
+        const SUBCATEGORIES = {
+            women: [
+                { id: 'all', label: '전체' },
+                { id: 'top', label: '상의' },
+                { id: 'outer', label: '아우터' },
+                { id: 'bottom', label: '하의' },
+                { id: 'skirt', label: '스커트' },
+                { id: 'dress', label: '원피스' },
+                { id: 'shoes', label: '신발' },
+                { id: 'bag', label: '가방' },
+                { id: 'acc', label: '액세서리' }
+            ],
+            men: [
+                { id: 'all', label: '전체' },
+                { id: 'top', label: '상의' },
+                { id: 'outer', label: '아우터' },
+                { id: 'bottom', label: '하의' },
+                { id: 'shoes', label: '신발' },
+                { id: 'bag', label: '가방' },
+                { id: 'acc', label: '액세서리' }
+            ]
+        };
+
+        // State Management
+        let currentGender = 'women';
+        let currentSubCategory = 'all';
+        let wishlist = ['w-bag-1']; 
+        let cart = [
+            { id: 'w-top-1', qty: 1 },
+            { id: 'm-shoes-1', qty: 1 }
+        ];
+
+        // ==========================================
+        // 2. CATEGORY & SHOP RENDER LOGIC
+        // ==========================================
+        function setGenderFilter(gender) {
+            currentGender = gender;
+            currentSubCategory = 'all';
+
+            // Button Styles Toggle
+            const btnWomen = document.getElementById('gender-btn-women');
+            const btnMen = document.getElementById('gender-btn-men');
+
+            if (gender === 'women') {
+                btnWomen.className = 'px-5 py-2 rounded-full text-xs font-bold tracking-widest transition-all bg-black text-white';
+                btnMen.className = 'px-5 py-2 rounded-full text-xs font-bold tracking-widest transition-all bg-white border border-gray-200 text-gray-600 hover:border-black';
+            } else {
+                btnMen.className = 'px-5 py-2 rounded-full text-xs font-bold tracking-widest transition-all bg-black text-white';
+                btnWomen.className = 'px-5 py-2 rounded-full text-xs font-bold tracking-widest transition-all bg-white border border-gray-200 text-gray-600 hover:border-black';
+            }
+
+            renderSubcategories();
+            renderProducts();
+        }
+
+        function renderSubcategories() {
+            const container = document.getElementById('subcat-container');
+            const list = SUBCATEGORIES[currentGender];
+            
+            container.innerHTML = list.map(sub => {
+                const isActive = sub.id === currentSubCategory;
+                const activeClass = isActive 
+                    ? 'bg-gray-900 text-white font-bold shadow-sm' 
+                    : 'bg-white text-gray-600 border border-gray-200 hover:border-black';
+                return `<button onclick="setSubCategory('${sub.id}')" class="px-3.5 py-1.5 rounded-full transition-all ${activeClass}">${sub.label}</button>`;
+            }).join('');
+        }
+
+        function setSubCategory(subId) {
+            currentSubCategory = subId;
+            renderSubcategories();
+            renderProducts();
+        }
+
+        function renderProducts() {
+            const grid = document.getElementById('product-catalog-grid');
+            const filterText = document.getElementById('active-filter-text');
+            const countText = document.getElementById('product-count-text');
+
+            // Filter logic
+            const filtered = PRODUCTS.filter(p => {
+                const matchGender = p.gender === currentGender;
+                const matchSub = currentSubCategory === 'all' || p.category === currentSubCategory;
+                return matchGender && matchSub;
+            });
+
+            // Update UI Texts
+            const subObj = SUBCATEGORIES[currentGender].find(s => s.id === currentSubCategory);
+            filterText.textContent = `${currentGender.toUpperCase()} > ${subObj ? subObj.label : '전체'}`;
+            countText.textContent = `${filtered.length} ITEMS`;
+
+            if (filtered.length === 0) {
+                grid.innerHTML = `<div class="col-span-4 py-20 text-center text-gray-400 font-light">해당 분류에 등록된 상품이 없습니다.</div>`;
+                return;
+            }
+
+            grid.innerHTML = filtered.map(item => {
+                const isWished = wishlist.includes(item.id);
+                const wishIconClass = isWished ? 'fa-solid fa-heart text-brand-accent' : 'fa-regular fa-heart';
+                const formattedPrice = item.price.toLocaleString();
+
+                return `
+                <div class="product-card group">
+                    <div class="relative w-full aspect-[3/4] bg-gray-100 rounded-lg overflow-hidden mb-4">
+                        <img src="${item.img1}" data-hover="${item.img2}" class="product-img w-full h-full object-cover transition-opacity duration-500" alt="${item.name}">
+                        <button onclick="toggleWishlistById('${item.id}')" class="absolute top-3 right-3 w-8 h-8 rounded-full bg-white/80 backdrop-blur-sm flex items-center justify-center text-gray-600 hover:text-brand-accent transition-colors z-10 shadow-sm">
+                            <i class="${wishIconClass} text-sm wish-icon-${item.id}"></i>
+                        </button>
+                        <div onclick="addToCartById('${item.id}')" class="absolute bottom-0 inset-x-0 bg-black/90 text-white text-[11px] py-2.5 text-center font-medium opacity-0 group-hover:opacity-100 transition-opacity cursor-pointer uppercase tracking-wider">
+                            + Add to Shopping Bag
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between items-center text-[10px] font-bold tracking-widest text-gray-400 uppercase">
+                            <span>${item.brand}</span>
+                        </div>
+                        <h3 class="text-xs font-medium text-gray-900 mt-1 truncate group-hover:underline cursor-pointer" onclick="addToCartById('${item.id}')">${item.name}</h3>
+                        <div class="flex items-center space-x-2 mt-2">
+                            <span class="text-xs font-bold font-mono">₩${formattedPrice}</span>
+                            ${item.discount > 0 ? `<span class="text-[10px] text-brand-accent font-bold font-mono">${item.discount}%</span>` : ''}
+                        </div>
+                    </div>
+                </div>
+                `;
+            }).join('');
+
+            bindImageHoverEvents();
+        }
+
+        function scrollToShop(gender, sub) {
+            const shopSec = document.getElementById('shop');
+            if (shopSec) shopSec.scrollIntoView({ behavior: 'smooth' });
+            setGenderFilter(gender);
+            if(sub) setSubCategory(sub);
+        }
+
+        // ==========================================
+        // 3. WISHLIST & CART ENGINE (INTERACTION & DRAWERS)
+        // ==========================================
+        function toggleWishlistById(id) {
+            const index = wishlist.indexOf(id);
+            const item = PRODUCTS.find(p => p.id === id);
+            const title = item ? item.name : '상품';
+
+            if (index > -1) {
+                wishlist.splice(index, 1);
+                showToast(`'${title}' 좋아요 목록에서 삭제되었습니다.`);
+            } else {
+                wishlist.push(id);
+                showToast(`'${title}' 좋아요 목록에 추가되었습니다.`, 'heart');
+            }
+
+            updateBadges();
+            renderWishlistDrawer();
+            renderProducts(); 
+        }
+
+        function addToCartById(id) {
+            const existing = cart.find(c => c.id === id);
+            const item = PRODUCTS.find(p => p.id === id);
+            const title = item ? item.name : '상품';
+
+            if (existing) {
+                existing.qty++;
+            } else {
+                cart.push({ id, qty: 1 });
+            }
+
+            showToast(`'${title}' 장바구니에 담겼습니다.`, 'bag');
+            updateBadges();
+            renderCartDrawer();
+        }
+
+        function updateCartQty(id, delta) {
+            const target = cart.find(c => c.id === id);
+            if (target) {
+                target.qty += delta;
+                if (target.qty <= 0) {
+                    cart = cart.filter(c => c.id !== id);
+                }
+            }
+            updateBadges();
+            renderCartDrawer();
+        }
+
+        function removeFromCart(id) {
+            cart = cart.filter(c => c.id !== id);
+            updateBadges();
+            renderCartDrawer();
+        }
+
+        function updateBadges() {
+            const wishBadge = document.getElementById('wish-count');
+            const cartBadge = document.getElementById('cart-count');
+            const drawerWishCount = document.getElementById('drawer-wish-count');
+            const drawerCartCount = document.getElementById('drawer-cart-count');
+
+            const totalWish = wishlist.length;
+            const totalCart = cart.reduce((sum, item) => sum + item.qty, 0);
+
+            wishBadge.textContent = totalWish;
+            cartBadge.textContent = totalCart;
+            drawerWishCount.textContent = `(${totalWish})`;
+            drawerCartCount.textContent = `(${totalCart})`;
+        }
+
+        function renderWishlistDrawer() {
+            const container = document.getElementById('wishlist-items-container');
+            
+            if (wishlist.length === 0) {
+                container.innerHTML = `
+                    <div class="h-64 flex flex-col items-center justify-center text-gray-400 space-y-3">
+                        <i class="fa-regular fa-heart text-4xl stroke-1"></i>
+                        <p class="text-xs font-light">위시리스트가 비어있습니다.</p>
+                    </div>
+                `;
+                return;
+            }
+
+            const items = wishlist.map(id => PRODUCTS.find(p => p.id === id)).filter(Boolean);
+            container.innerHTML = items.map(item => `
+                <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg border border-gray-100">
+                    <div class="flex items-center space-x-3">
+                        <img src="${item.img1}" class="w-14 h-16 object-cover rounded" alt="${item.name}">
+                        <div>
+                            <span class="text-[9px] font-bold text-gray-400 uppercase">${item.brand}</span>
+                            <h4 class="text-xs font-medium text-black truncate w-40">${item.name}</h4>
+                            <p class="text-xs font-mono font-bold mt-1">₩${item.price.toLocaleString()}</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col space-y-2 items-end">
+                        <button onclick="toggleWishlistById('${item.id}')" class="text-gray-400 hover:text-red-500 text-xs">
+                            <i class="fa-solid fa-trash-can"></i>
+                        </button>
+                        <button onclick="addToCartById('${item.id}')" class="text-[10px] bg-black text-white px-2.5 py-1 rounded uppercase font-medium hover:bg-gray-800">
+                            + Cart
+                        </button>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function renderCartDrawer() {
+            const container = document.getElementById('cart-items-container');
+            const totalPriceEl = document.getElementById('cart-total-price');
+            
+            if (cart.length === 0) {
+                container.innerHTML = `
+                    <div class="h-64 flex flex-col items-center justify-center text-gray-400 space-y-3">
+                        <i class="fa-solid fa-bag-shopping text-4xl stroke-1"></i>
+                        <p class="text-xs font-light">장바구니가 비어있습니다.</p>
+                    </div>
+                `;
+                totalPriceEl.textContent = '₩0';
+                return;
+            }
+
+            let total = 0;
+            container.innerHTML = cart.map(cItem => {
+                const item = PRODUCTS.find(p => p.id === cItem.id);
+                if (!item) return '';
+                const itemTotal = item.price * cItem.qty;
+                total += itemTotal;
+
+                return `
+                <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg border border-gray-100">
+                    <div class="flex items-center space-x-3">
+                        <img src="${item.img1}" class="w-14 h-16 object-cover rounded" alt="${item.name}">
+                        <div>
+                            <span class="text-[9px] font-bold text-gray-400 uppercase">${item.brand}</span>
+                            <h4 class="text-xs font-medium text-black truncate w-36">${item.name}</h4>
+                            <p class="text-xs font-mono font-bold mt-1">₩${item.price.toLocaleString()}</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col items-end justify-between h-full space-y-3">
+                        <button onclick="removeFromCart('${item.id}')" class="text-gray-400 hover:text-black text-xs">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                        <div class="flex items-center space-x-2 border border-gray-300 bg-white rounded px-2 py-0.5 text-xs">
+                            <button onclick="updateCartQty('${item.id}', -1)" class="text-gray-500 hover:text-black">-</button>
+                            <span class="font-mono font-bold w-4 text-center">${cItem.qty}</span>
+                            <button onclick="updateCartQty('${item.id}', 1)" class="text-gray-500 hover:text-black">+</button>
+                        </div>
+                    </div>
+                </div>
+                `;
+            }).join('');
+
+            totalPriceEl.textContent = `₩${total.toLocaleString()}`;
+        }
+
+        function toggleDrawer(type) {
+            const overlay = document.getElementById(`${type}-drawer-overlay`);
+            const drawer = document.getElementById(`${type}-drawer`);
+
+            const isOpen = !drawer.classList.contains('translate-x-full');
+            if (isOpen) {
+                drawer.classList.add('translate-x-full');
+                overlay.classList.add('opacity-0', 'pointer-events-none');
+            } else {
+                if (type === 'wishlist') renderWishlistDrawer();
+                if (type === 'cart') renderCartDrawer();
+                drawer.classList.remove('translate-x-full');
+                overlay.classList.remove('opacity-0', 'pointer-events-none');
+            }
+        }
+
+        function checkoutMock() {
+            if (cart.length === 0) {
+                showToast('장바구니가 비어있어 주문할 수 없습니다.');
+                return;
+            }
+            showToast('주문 결제 페이지로 이동합니다.');
+            setTimeout(() => {
+                toggleDrawer('cart');
+            }, 1000);
+        }
+
+        function showToast(msg, iconType = 'info') {
+            const container = document.getElementById('toast-container');
+            const toast = document.createElement('div');
+            
+            let iconHtml = '<i class="fa-solid fa-circle-info text-blue-400"></i>';
+            if (iconType === 'heart') iconHtml = '<i class="fa-solid fa-heart text-brand-accent"></i>';
+            if (iconType === 'bag') iconHtml = '<i class="fa-solid fa-bag-shopping text-green-400"></i>';
+
+            toast.className = 'bg-black/90 text-white text-xs px-5 py-3.5 rounded-lg shadow-2xl backdrop-blur-md flex items-center space-x-3 pointer-events-auto transform transition-all duration-300 translate-y-2 opacity-0';
+            toast.innerHTML = `${iconHtml}<span>${msg}</span>`;
+
+            container.appendChild(toast);
+            
+            setTimeout(() => {
+                toast.classList.remove('translate-y-2', 'opacity-0');
+            }, 10);
+
+            setTimeout(() => {
+                toast.classList.add('opacity-0');
+                setTimeout(() => toast.remove(), 300);
+            }, 2500);
+        }
+
+        function bindImageHoverEvents() {
+            document.querySelectorAll('.product-img').forEach(img => {
+                const hoverSrc = img.dataset.hover;
+                if (hoverSrc) {
+                    const parent = img.parentElement;
+                    parent.onmouseenter = () => { img.src = hoverSrc; };
+                    parent.onmouseleave = () => { img.src = img.src.replace(hoverSrc, img.getAttribute('src')); };
+                }
+            });
+        }
+
+        // ==========================================
+        // 4. HERO SLIDER LOGIC & INIT
+        // ==========================================
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.hero-slide');
+        const dots = document.querySelectorAll('.slide-dot');
+        const slideNum = document.getElementById('current-slide-num');
+
+        function setSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.style.opacity = i === index ? '1' : '0';
+            });
+            dots.forEach((dot, i) => {
+                if (i === index) {
+                    dot.classList.remove('w-3', 'bg-white/40');
+                    dot.classList.add('w-8', 'bg-white');
+                } else {
+                    dot.classList.remove('w-8', 'bg-white');
+                    dot.classList.add('w-3', 'bg-white/40');
+                }
+            });
+            currentSlide = index;
+            slideNum.textContent = `0${index + 1}`;
+        }
+
+        setInterval(() => {
+            let next = (currentSlide + 1) % slides.length;
+            setSlide(next);
+        }, 6000);
+
+        // Search Modal Listeners
+        const searchBtn = document.getElementById('search-btn');
+        const searchModal = document.getElementById('search-modal');
+        const closeSearch = document.getElementById('close-search');
+
+        searchBtn.addEventListener('click', () => searchModal.classList.remove('hidden'));
+        closeSearch.addEventListener('click', () => searchModal.classList.add('hidden'));
+
+        // INITIALIZE ON LOAD
+        window.onload = function() {
+            setGenderFilter('women');
+            updateBadges();
+        };
+    </script>
+</body>
+</html>

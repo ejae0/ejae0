@@ -1,0 +1,384 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Global Safety Net
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    // Primitive Helpers
+    function isValidId(id) {
+      return id is string && id.size() >= 1 && id.size() <= 128 && id.matches('^[a-zA-Z0-9_\\-]+$');
+    }
+
+    function incoming() {
+      return request.resource.data;
+    }
+
+    function existing() {
+      return resource.data;
+    }
+
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    function isVerifiedUser() {
+      return isSignedIn() && request.auth.token.email_verified == true;
+    }
+
+    function isOwner(userId) {
+      return isVerifiedUser() && request.auth.uid == userId;
+    }
+
+    function isAdmin() {
+      return isVerifiedUser() && (
+        exists(/databases/$(database)/documents/admins/$(request.auth.uid)) ||
+        request.auth.token.email == 'ejae005@gmail.com'
+      );
+    }
+
+    // Validation Blueprint: UserProfile
+    function isValidUserProfile(data, userId) {
+      return data.keys().hasAll([
+          'uid', 'email', 'name', 'phone', 'address', 'bodySpecs',
+          'membershipTier', 'points', 'agreedTerms', 'createdAt', 'updatedAt'
+        ]) &&
+        data.keys().hasOnly([
+          'uid', 'email', 'name', 'phone', 'address', 'bodySpecs',
+          'membershipTier', 'points', 'agreedTerms', 'createdAt', 'updatedAt'
+        ]) &&
+        data.uid is string && data.uid == userId &&
+        data.email is string && data.email.size() >= 3 && data.email.size() <= 120 &&
+        data.name is string && data.name.size() >= 1 && data.name.size() <= 50 &&
+        data.phone is string && data.phone.size() >= 1 && data.phone.size() <= 30 &&
+        data.address is string && data.address.size() >= 1 && data.address.size() <= 200 &&
+        data.bodySpecs is string && data.bodySpecs.size() <= 50 &&
+        data.membershipTier in ['WELCOME', 'SILVER', 'GOLD', 'BLACK'] &&
+        data.points is number && data.points >= 0 && data.points <= 10000000 &&
+        data.agreedTerms is bool && data.agreedTerms == true &&
+        data.createdAt is timestamp &&
+        data.updatedAt is timestamp;
+    }
+
+    // Validation Blueprint: UserCoupon
+    function isValidUserCoupon(data, userId) {
+      return data.keys().hasAll([
+          'userId', 'code', 'title', 'description', 'discountType',
+          'discountValue', 'minOrderAmount', 'status', 'expiresAt',
+          'usedOrderId', 'createdAt', 'updatedAt'
+        ]) &&
+        data.keys().hasOnly([
+          'userId', 'code', 'title', 'description', 'discountType',
+          'discountValue', 'minOrderAmount', 'status', 'expiresAt',
+          'usedOrderId', 'createdAt', 'updatedAt'
+        ]) &&
+        data.userId is string && data.userId == userId &&
+        data.code in ['WELCOME15', 'MONODAY15', 'MATINKIM15', 'SPRING10', 'FIRST5000'] &&
+        data.title is string && data.title.size() >= 1 && data.title.size() <= 80 &&
+        data.description is string && data.description.size() <= 200 &&
+        data.discountType in ['percent', 'fixed'] &&
+        data.discountValue is number && data.discountValue > 0 &&
+        (
+          (data.discountType == 'percent' && data.discountValue <= 20) ||
+          (data.discountType == 'fixed' && data.discountValue <= 50000)
+        ) &&
+        data.minOrderAmount is number && data.minOrderAmount >= 0 && data.minOrderAmount <= 10000000 &&
+        data.status in ['available', 'used', 'expired'] &&
+        data.expiresAt is string && data.expiresAt.size() >= 4 && data.expiresAt.size() <= 20 &&
+        data.usedOrderId is string && data.usedOrderId.size() <= 64 &&
+        data.createdAt is timestamp &&
+        data.updatedAt is timestamp;
+    }
+
+    // Validation Blueprint: UserOrder
+    function isValidUserOrder(data, userId) {
+      return data.keys().hasAll([
+          'orderNumber', 'userId', 'recipientName', 'recipientPhone',
+          'shippingAddress', 'deliveryNote', 'paymentMethod', 'couponCode',
+          'rawTotal', 'discountAmount', 'finalPrice', 'status',
+          'cancelReturnType', 'cancelReturnReason', 'items', 'createdAt', 'updatedAt'
+        ]) &&
+        data.keys().hasOnly([
+          'orderNumber', 'userId', 'recipientName', 'recipientPhone',
+          'shippingAddress', 'deliveryNote', 'paymentMethod', 'couponCode',
+          'rawTotal', 'discountAmount', 'finalPrice', 'status',
+          'cancelReturnType', 'cancelReturnReason', 'items', 'createdAt', 'updatedAt'
+        ]) &&
+        data.orderNumber is string && data.orderNumber.size() >= 4 && data.orderNumber.size() <= 40 &&
+        data.userId is string && data.userId == userId &&
+        data.recipientName is string && data.recipientName.size() >= 1 && data.recipientName.size() <= 50 &&
+        data.recipientPhone is string && data.recipientPhone.size() >= 1 && data.recipientPhone.size() <= 30 &&
+        data.shippingAddress is string && data.shippingAddress.size() >= 1 && data.shippingAddress.size() <= 200 &&
+        data.deliveryNote is string && data.deliveryNote.size() <= 200 &&
+        data.paymentMethod in ['card', 'npay', 'kpay', 'bank'] &&
+        data.couponCode is string && data.couponCode.size() <= 32 &&
+        data.rawTotal is number && data.rawTotal >= 0 && data.rawTotal <= 100000000 &&
+        data.discountAmount is number && data.discountAmount >= 0 && data.discountAmount <= 100000000 &&
+        data.finalPrice is number && data.finalPrice >= 0 && data.finalPrice <= data.rawTotal &&
+        data.status in [
+          'paid', 'preparing', 'shipped', 'delivered',
+          'cancel_requested', 'cancelled', 'return_requested', 'returned'
+        ] &&
+        data.cancelReturnType in ['', 'cancel', 'return'] &&
+        data.cancelReturnReason is string && data.cancelReturnReason.size() <= 300 &&
+        data.items is list && data.items.size() >= 1 && data.items.size() <= 50 &&
+        data.items[0] is map &&
+        data.items[0].keys().hasAll(['productId', 'productName', 'brand', 'price', 'qty', 'selectedColor', 'selectedSize', 'imageUrl']) &&
+        data.items[0].keys().hasOnly(['productId', 'productName', 'brand', 'price', 'qty', 'selectedColor', 'selectedSize', 'imageUrl']) &&
+        data.items[0].productId is string && data.items[0].productId.size() <= 64 &&
+        data.items[0].productName is string && data.items[0].productName.size() <= 120 &&
+        data.items[0].brand is string && data.items[0].brand.size() <= 80 &&
+        data.items[0].price is number && data.items[0].price >= 0 &&
+        data.items[0].qty is number && data.items[0].qty >= 1 && data.items[0].qty <= 99 &&
+        data.items[0].selectedColor is string && data.items[0].selectedColor.size() <= 40 &&
+        data.items[0].selectedSize is string && data.items[0].selectedSize.size() <= 40 &&
+        data.items[0].imageUrl is string && data.items[0].imageUrl.size() <= 500 &&
+        data.createdAt is timestamp &&
+        data.updatedAt is timestamp;
+    }
+
+    // Validation Blueprint: UserReview
+    function isValidUserReview(data, userId) {
+      return data.keys().hasAll([
+          'userId', 'productId', 'productName', 'productBrand', 'productImage',
+          'orderId', 'selectedOption', 'userSpecs', 'rating', 'content',
+          'createdAt', 'updatedAt'
+        ]) &&
+        data.keys().hasOnly([
+          'userId', 'productId', 'productName', 'productBrand', 'productImage',
+          'orderId', 'selectedOption', 'userSpecs', 'rating', 'content',
+          'createdAt', 'updatedAt'
+        ]) &&
+        data.userId is string && data.userId == userId &&
+        data.productId is string && data.productId.size() >= 1 && data.productId.size() <= 64 &&
+        data.productName is string && data.productName.size() >= 1 && data.productName.size() <= 120 &&
+        data.productBrand is string && data.productBrand.size() >= 1 && data.productBrand.size() <= 80 &&
+        data.productImage is string && data.productImage.size() <= 500 &&
+        data.orderId is string && data.orderId.size() <= 64 &&
+        data.selectedOption is string && data.selectedOption.size() <= 80 &&
+        data.userSpecs is string && data.userSpecs.size() <= 50 &&
+        data.rating is number && data.rating >= 1 && data.rating <= 5 &&
+        data.content is string && data.content.size() >= 5 && data.content.size() <= 1000 &&
+        data.createdAt is timestamp &&
+        data.updatedAt is timestamp;
+    }
+
+    // Validation Blueprint: CustomerInquiry
+    function isValidCustomerInquiry(data, userId) {
+      return data.keys().hasAll([
+          'userId', 'category', 'orderNumber', 'title', 'content',
+          'status', 'reply', 'createdAt', 'updatedAt'
+        ]) &&
+        data.keys().hasOnly([
+          'userId', 'category', 'orderNumber', 'title', 'content',
+          'status', 'reply', 'createdAt', 'updatedAt'
+        ]) &&
+        data.userId is string && data.userId == userId &&
+        data.category in ['배송', '주문/결제', '취소/반품/교환', '상품문의', '쿠폰/회원'] &&
+        data.orderNumber is string && data.orderNumber.size() <= 40 &&
+        data.title is string && data.title.size() >= 2 && data.title.size() <= 120 &&
+        data.content is string && data.content.size() >= 5 && data.content.size() <= 2000 &&
+        data.status in ['접수완료', '답변완료'] &&
+        data.reply is string && data.reply.size() <= 2000 &&
+        data.createdAt is timestamp &&
+        data.updatedAt is timestamp;
+    }
+
+    // Match: User Profile
+    match /users/{userId} {
+      allow get: if isValidId(userId) && (isOwner(userId) || isAdmin());
+      allow list: if isAdmin();
+
+      allow create: if isValidId(userId) &&
+        isOwner(userId) &&
+        isValidUserProfile(incoming(), userId) &&
+        incoming().membershipTier == 'WELCOME' &&
+        incoming().points == 0 &&
+        incoming().createdAt == request.time &&
+        incoming().updatedAt == request.time;
+
+      allow update: if isValidId(userId) &&
+        isValidUserProfile(incoming(), userId) && (
+          isAdmin() || (
+            isOwner(userId) &&
+            incoming().diff(existing()).affectedKeys().hasOnly(['name', 'phone', 'address', 'bodySpecs', 'updatedAt']) &&
+            incoming().uid == existing().uid &&
+            incoming().email == existing().email &&
+            incoming().membershipTier == existing().membershipTier &&
+            incoming().points == existing().points &&
+            incoming().agreedTerms == existing().agreedTerms &&
+            incoming().createdAt == existing().createdAt &&
+            incoming().updatedAt == request.time
+          )
+        );
+
+      allow delete: if isValidId(userId) && (isOwner(userId) || isAdmin());
+
+      // Match: User Coupons
+      match /coupons/{couponId} {
+        allow get: if isValidId(userId) && isValidId(couponId) && (isOwner(userId) || isAdmin());
+        allow list: if isOwner(userId) && resource.data.userId == request.auth.uid;
+
+        allow create: if isValidId(userId) && isValidId(couponId) &&
+          isOwner(userId) &&
+          isValidUserCoupon(incoming(), userId) &&
+          incoming().status == 'available' &&
+          incoming().usedOrderId == '' &&
+          incoming().createdAt == request.time &&
+          incoming().updatedAt == request.time &&
+          existsAfter(/databases/$(database)/documents/users/$(userId));
+
+        allow update: if isValidId(userId) && isValidId(couponId) &&
+          isValidUserCoupon(incoming(), userId) && (
+            isAdmin() || (
+              isOwner(userId) &&
+              existing().status == 'available' &&
+              incoming().status == 'used' &&
+              incoming().usedOrderId.size() >= 1 &&
+              incoming().diff(existing()).affectedKeys().hasOnly(['status', 'usedOrderId', 'updatedAt']) &&
+              incoming().userId == existing().userId &&
+              incoming().code == existing().code &&
+              incoming().discountType == existing().discountType &&
+              incoming().discountValue == existing().discountValue &&
+              incoming().minOrderAmount == existing().minOrderAmount &&
+              incoming().createdAt == existing().createdAt &&
+              incoming().updatedAt == request.time
+            )
+          );
+
+        allow delete: if isValidId(userId) && isValidId(couponId) && (isOwner(userId) || isAdmin());
+      }
+
+      // Match: User Orders & Cancellation/Return Tracking
+      match /orders/{orderId} {
+        allow get: if isValidId(userId) && isValidId(orderId) && (isOwner(userId) || isAdmin());
+        allow list: if isOwner(userId) && resource.data.userId == request.auth.uid;
+
+        allow create: if isValidId(userId) && isValidId(orderId) &&
+          isOwner(userId) &&
+          isValidUserOrder(incoming(), userId) &&
+          incoming().status == 'paid' &&
+          incoming().cancelReturnType == '' &&
+          incoming().cancelReturnReason == '' &&
+          incoming().createdAt == request.time &&
+          incoming().updatedAt == request.time &&
+          exists(/databases/$(database)/documents/users/$(userId));
+
+        allow update: if isValidId(userId) && isValidId(orderId) &&
+          isValidUserOrder(incoming(), userId) && (
+            isAdmin() || (
+              isOwner(userId) &&
+              !(existing().status in ['cancelled', 'returned']) &&
+              incoming().orderNumber == existing().orderNumber &&
+              incoming().userId == existing().userId &&
+              incoming().rawTotal == existing().rawTotal &&
+              incoming().discountAmount == existing().discountAmount &&
+              incoming().finalPrice == existing().finalPrice &&
+              incoming().items == existing().items &&
+              incoming().createdAt == existing().createdAt &&
+              incoming().updatedAt == request.time && (
+                // Action 1: Request Order Cancellation
+                (
+                  existing().status in ['paid', 'preparing'] &&
+                  incoming().status == 'cancel_requested' &&
+                  incoming().cancelReturnType == 'cancel' &&
+                  incoming().cancelReturnReason.size() >= 2 &&
+                  incoming().diff(existing()).affectedKeys().hasOnly(['status', 'cancelReturnType', 'cancelReturnReason', 'updatedAt'])
+                ) ||
+                // Action 2: Request Return
+                (
+                  existing().status in ['shipped', 'delivered'] &&
+                  incoming().status == 'return_requested' &&
+                  incoming().cancelReturnType == 'return' &&
+                  incoming().cancelReturnReason.size() >= 2 &&
+                  incoming().diff(existing()).affectedKeys().hasOnly(['status', 'cancelReturnType', 'cancelReturnReason', 'updatedAt'])
+                ) ||
+                // Action 3: Confirm Delivery
+                (
+                  existing().status in ['paid', 'preparing', 'shipped'] &&
+                  incoming().status == 'delivered' &&
+                  incoming().cancelReturnType == '' &&
+                  incoming().cancelReturnReason == '' &&
+                  incoming().diff(existing()).affectedKeys().hasOnly(['status', 'updatedAt'])
+                ) ||
+                // Action 4: Complete Cancel/Return
+                (
+                  existing().status == 'cancel_requested' &&
+                  incoming().status == 'cancelled' &&
+                  incoming().cancelReturnType == 'cancel' &&
+                  incoming().diff(existing()).affectedKeys().hasOnly(['status', 'updatedAt'])
+                ) ||
+                (
+                  existing().status == 'return_requested' &&
+                  incoming().status == 'returned' &&
+                  incoming().cancelReturnType == 'return' &&
+                  incoming().diff(existing()).affectedKeys().hasOnly(['status', 'updatedAt'])
+                )
+              )
+            )
+          );
+
+        allow delete: if isAdmin();
+      }
+
+      // Match: User Reviews
+      match /reviews/{reviewId} {
+        allow get: if isValidId(userId) && isValidId(reviewId) && (isOwner(userId) || isAdmin());
+        allow list: if isOwner(userId) && resource.data.userId == request.auth.uid;
+
+        allow create: if isValidId(userId) && isValidId(reviewId) &&
+          isOwner(userId) &&
+          isValidUserReview(incoming(), userId) &&
+          incoming().createdAt == request.time &&
+          incoming().updatedAt == request.time &&
+          exists(/databases/$(database)/documents/users/$(userId));
+
+        allow update: if isValidId(userId) && isValidId(reviewId) &&
+          isValidUserReview(incoming(), userId) && (
+            isAdmin() || (
+              isOwner(userId) &&
+              incoming().diff(existing()).affectedKeys().hasOnly(['rating', 'content', 'userSpecs', 'selectedOption', 'updatedAt']) &&
+              incoming().userId == existing().userId &&
+              incoming().productId == existing().productId &&
+              incoming().createdAt == existing().createdAt &&
+              incoming().updatedAt == request.time
+            )
+          );
+
+        allow delete: if isValidId(userId) && isValidId(reviewId) && (isOwner(userId) || isAdmin());
+      }
+
+      // Match: Customer Service Inquiries
+      match /inquiries/{inquiryId} {
+        allow get: if isValidId(userId) && isValidId(inquiryId) && (isOwner(userId) || isAdmin());
+        allow list: if isOwner(userId) && resource.data.userId == request.auth.uid;
+
+        allow create: if isValidId(userId) && isValidId(inquiryId) &&
+          isOwner(userId) &&
+          isValidCustomerInquiry(incoming(), userId) &&
+          incoming().status == '접수완료' &&
+          incoming().reply == '' &&
+          incoming().createdAt == request.time &&
+          incoming().updatedAt == request.time &&
+          exists(/databases/$(database)/documents/users/$(userId));
+
+        allow update: if isValidId(userId) && isValidId(inquiryId) &&
+          isValidCustomerInquiry(incoming(), userId) && (
+            isAdmin() || (
+              isOwner(userId) &&
+              existing().status == '접수완료' &&
+              incoming().status == '접수완료' &&
+              incoming().reply == existing().reply &&
+              incoming().diff(existing()).affectedKeys().hasOnly(['category', 'orderNumber', 'title', 'content', 'updatedAt']) &&
+              incoming().userId == existing().userId &&
+              incoming().createdAt == existing().createdAt &&
+              incoming().updatedAt == request.time
+            )
+          );
+
+        allow delete: if isValidId(userId) && isValidId(inquiryId) && (isOwner(userId) || isAdmin());
+      }
+    }
+  }
+}

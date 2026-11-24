@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-display: 'Bebas Neue', sans-serif;
+    --font-sans: 'Inter', 'Noto Sans KR', -apple-system, BlinkMacSystemFont, sans-serif;
+    --color-ink: #111111;
+    --color-soft-cloud: #f5f5f5;
+    --color-hairline: #cacacb;
+    --color-hairline-soft: #e5e5e5;
+    --color-mute: #707072;
+    --color-sale: #d30005;
+    --color-success: #007d48;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    color: #111111;
+    background-color: #ffffff;
+    letter-spacing: -0.01em;
+  }
+
+  /* Custom minimal scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #cacacb;
+    border-radius: 9999px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #f5f5f5;
+  }
+}
+
+.font-display {
+  font-family: var(--font-display);
+  letter-spacing: -0.01em;
+}
+
+.font-sans {
+  font-family: var(--font-sans);
+}
+
+.backdrop-blur-nav {
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
