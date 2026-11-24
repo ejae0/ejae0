@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import { ShoppingBag, X, Plus, Minus, ArrowRight, Tag, Check } from 'lucide-react';
+import { ShoppingBag, X, Plus, Minus, ArrowRight, Gift, Check, ChevronDown, ChevronUp } from 'lucide-react';
 import { Product } from '../data/products';
 import { PROMO_CATALOG, PromoCodeKey } from '../types/mypage';
+import { useAuth } from '../contexts/AuthContext';
 
 export interface CartItem {
   id: string;
@@ -17,9 +18,10 @@ interface CartDrawerProps {
   cartItems: CartItem[];
   onUpdateQty: (productId: string, delta: number) => void;
   onRemoveItem: (productId: string) => void;
-  onOpenCheckout: (appliedDiscountPercent: number) => void;
+  onOpenCheckout: () => void;
   appliedPromoCode: string | null;
-  onApplyPromoCode: (code: string) => boolean;
+  onSelectPromoCode: (code: string | null) => void;
+  onShowToast?: (text: string, type?: 'info' | 'success' | 'heart' | 'bag') => void;
 }
 
 export const CartDrawer: React.FC<CartDrawerProps> = ({
@@ -30,44 +32,72 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
   onRemoveItem,
   onOpenCheckout,
   appliedPromoCode,
-  onApplyPromoCode
+  onSelectPromoCode,
+  onShowToast
 }) => {
-  const [promoInput, setPromoInput] = useState('');
-  const [promoError, setPromoError] = useState('');
+  const { isAuthenticated, coupons, claimCoupon } = useAuth();
+  const [showClaimableGifts, setShowClaimableGifts] = useState(false);
 
   const rawSubtotal = cartItems.reduce(
     (sum, item) => sum + item.product.price * item.qty,
     0
   );
 
+  const availableCoupons = isAuthenticated
+    ? coupons.filter((c) => c.status === 'available')
+    : [];
+  const unclaimedKeys = isAuthenticated
+    ? (Object.keys(PROMO_CATALOG) as PromoCodeKey[]).filter(
+        (key) => !coupons.some((c) => c.code === key)
+      )
+    : [];
+
   const promoTemplate = appliedPromoCode
     ? PROMO_CATALOG[appliedPromoCode as PromoCodeKey]
     : undefined;
-  const discountAmount = promoTemplate
-    ? promoTemplate.discountType === 'percent'
-      ? Math.round(rawSubtotal * (promoTemplate.discountValue / 100))
-      : Math.min(rawSubtotal, promoTemplate.discountValue)
-    : appliedPromoCode
-    ? Math.round(rawSubtotal * 0.15)
-    : 0;
+  const isPromoEligible = Boolean(
+    promoTemplate && rawSubtotal >= promoTemplate.minOrderAmount
+  );
+  const discountAmount =
+    isPromoEligible && promoTemplate
+      ? promoTemplate.discountType === 'percent'
+        ? Math.round(rawSubtotal * (promoTemplate.discountValue / 100))
+        : Math.min(rawSubtotal, promoTemplate.discountValue)
+      : 0;
   const discountLabel = promoTemplate
     ? promoTemplate.discountType === 'percent'
-      ? `${promoTemplate.discountValue}% 추가 할인`
-      : `₩${promoTemplate.discountValue.toLocaleString()} 할인`
-    : '15% 추가 할인';
+      ? `${promoTemplate.discountValue}%`
+      : `₩${promoTemplate.discountValue.toLocaleString()}`
+    : '';
   const finalTotal = Math.max(0, rawSubtotal - discountAmount);
 
   const totalItemsCount = cartItems.reduce((sum, item) => sum + item.qty, 0);
 
-  const handleApplyPromo = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!promoInput.trim()) return;
-    const ok = onApplyPromoCode(promoInput.trim().toUpperCase());
-    if (ok) {
-      setPromoError('');
-      setPromoInput('');
+  const handleToggleGiftCoupon = (code: PromoCodeKey, minOrderAmount: number) => {
+    if (appliedPromoCode === code) {
+      onSelectPromoCode(null);
+      return;
+    }
+    if (rawSubtotal < minOrderAmount) {
+      onShowToast?.(
+        `₩${minOrderAmount.toLocaleString()} 이상 주문 시 사용할 수 있는 기프트 쿠폰입니다.`,
+        'info'
+      );
+      return;
+    }
+    onSelectPromoCode(code);
+  };
+
+  const handleClaimInsideCart = async (key: PromoCodeKey) => {
+    const res = await claimCoupon(key);
+    if (res.ok) {
+      const tpl = PROMO_CATALOG[key];
+      onShowToast?.(`'${tpl.title}' 기프트 쿠폰을 받았습니다!`, 'success');
+      if (rawSubtotal >= tpl.minOrderAmount) {
+        onSelectPromoCode(key);
+      }
     } else {
-      setPromoError('유효하지 않은 쿠폰 코드입니다.');
+      onShowToast?.(res.message, 'info');
     }
   };
 
@@ -194,34 +224,124 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
         {/* Footer / Summary / Checkout */}
         {cartItems.length > 0 && (
           <div className="p-6 border-t border-[#e5e5e5] bg-[#f5f5f5] space-y-4">
-            {/* Promo Code Input (Nike pill input) */}
-            <form onSubmit={handleApplyPromo} className="space-y-1">
-              <div className="flex space-x-2">
-                <div className="relative flex-1">
-                  <Tag className="w-3.5 h-3.5 absolute left-3.5 top-3 text-[#707072]" />
-                  <input
-                    type="text"
-                    value={promoInput}
-                    onChange={(e) => setPromoInput(e.target.value)}
-                    placeholder="쿠폰 코드 입력 (예: MONODAY15)"
-                    className="w-full bg-white border border-[#cacacb] rounded-full px-9 py-2 text-xs focus:outline-none focus:border-[#111111] uppercase font-mono"
-                  />
-                </div>
-                <button
-                  type="submit"
-                  className="bg-[#111111] hover:bg-black text-white text-xs px-4 py-2 rounded-full font-medium transition-colors cursor-pointer active:scale-95"
-                >
-                  적용
-                </button>
+            {/* Gift Coupon Selector (Select & Claim) */}
+            <div className="space-y-2">
+              <div className="flex items-center justify-between">
+                <span className="text-xs font-semibold text-[#111111] flex items-center space-x-1.5">
+                  <Gift className="w-3.5 h-3.5 text-[#d30005]" />
+                  <span>기프트 쿠폰 선택 ({availableCoupons.length})</span>
+                </span>
+                {unclaimedKeys.length > 0 && (
+                  <button
+                    type="button"
+                    onClick={() => setShowClaimableGifts((prev) => !prev)}
+                    className="text-[11px] font-medium text-[#111111] hover:underline inline-flex items-center space-x-1 cursor-pointer"
+                  >
+                    <span>기프트 더 받기 (+{unclaimedKeys.length})</span>
+                    {showClaimableGifts ? (
+                      <ChevronUp className="w-3 h-3" />
+                    ) : (
+                      <ChevronDown className="w-3 h-3" />
+                    )}
+                  </button>
+                )}
               </div>
-              {appliedPromoCode && (
-                <p className="text-[11px] text-[#007d48] flex items-center space-x-1 font-medium pt-1">
-                  <Check className="w-3 h-3" />
-                  <span>쿠폰 '{appliedPromoCode}' 적용됨 ({discountLabel})</span>
+
+              {availableCoupons.length === 0 ? (
+                <div className="bg-white border border-[#e5e5e5] px-3 py-2.5 text-[11px] text-[#707072]">
+                  보유 중인 사용 가능 기프트 쿠폰이 없습니다.
+                </div>
+              ) : (
+                <div className="space-y-1.5 max-h-32 overflow-y-auto pr-0.5">
+                  {availableCoupons.map((coupon) => {
+                    const selected = appliedPromoCode === coupon.code;
+                    const eligible = rawSubtotal >= coupon.minOrderAmount;
+                    return (
+                      <button
+                        key={coupon.id}
+                        type="button"
+                        onClick={() => handleToggleGiftCoupon(coupon.code, coupon.minOrderAmount)}
+                        className={`w-full text-left px-3 py-2 border transition-colors flex items-center justify-between gap-2 cursor-pointer ${
+                          selected
+                            ? 'bg-[#111111] text-white border-[#111111]'
+                            : eligible
+                            ? 'bg-white text-[#111111] border-[#cacacb] hover:border-[#111111]'
+                            : 'bg-white/60 text-[#707072] border-[#e5e5e5]'
+                        }`}
+                      >
+                        <div className="min-w-0">
+                          <p className="text-[11px] font-medium truncate">{coupon.title}</p>
+                          <p
+                            className={`text-[10px] ${
+                              selected ? 'text-[#cacacb]' : 'text-[#707072]'
+                            }`}
+                          >
+                            ₩{coupon.minOrderAmount.toLocaleString()} 이상 주문 시
+                            {!eligible && ' (금액 미달)'}
+                          </p>
+                        </div>
+                        <span
+                          className={`text-[11px] font-semibold shrink-0 flex items-center space-x-1 ${
+                            selected ? 'text-white' : 'text-[#d30005]'
+                          }`}
+                        >
+                          {selected && <Check className="w-3 h-3" />}
+                          <span>
+                            {coupon.discountType === 'percent'
+                              ? `${coupon.discountValue}%`
+                              : `₩${coupon.discountValue.toLocaleString()}`}
+                          </span>
+                        </span>
+                      </button>
+                    );
+                  })}
+                </div>
+              )}
+
+              {showClaimableGifts && unclaimedKeys.length > 0 && (
+                <div className="pt-1.5 space-y-1.5 border-t border-[#e5e5e5]">
+                  <span className="text-[10px] font-medium text-[#707072] uppercase tracking-wider block">
+                    받을 수 있는 기프트 쿠폰
+                  </span>
+                  <div className="space-y-1.5 max-h-28 overflow-y-auto pr-0.5">
+                    {unclaimedKeys.map((key) => {
+                      const tpl = PROMO_CATALOG[key];
+                      return (
+                        <div
+                          key={key}
+                          className="bg-white border border-[#e5e5e5] px-3 py-2 flex items-center justify-between gap-2"
+                        >
+                          <div className="min-w-0">
+                            <p className="text-[11px] font-medium text-[#111111] truncate">
+                              {tpl.title}
+                            </p>
+                            <p className="text-[10px] text-[#707072]">
+                              {tpl.discountType === 'percent'
+                                ? `${tpl.discountValue}% 할인`
+                                : `₩${tpl.discountValue.toLocaleString()} 할인`}{' '}
+                              · ₩{tpl.minOrderAmount.toLocaleString()} 이상
+                            </p>
+                          </div>
+                          <button
+                            type="button"
+                            onClick={() => void handleClaimInsideCart(key)}
+                            className="px-2.5 py-1 bg-[#111111] hover:bg-black text-white rounded-full text-[10px] font-medium shrink-0 cursor-pointer"
+                          >
+                            선물 받기
+                          </button>
+                        </div>
+                      );
+                    })}
+                  </div>
+                </div>
+              )}
+
+              {promoTemplate && !isPromoEligible && (
+                <p className="text-[11px] text-[#d30005]">
+                  선택하신 기프트 쿠폰은 ₩{promoTemplate.minOrderAmount.toLocaleString()} 이상 주문 시 적용됩니다.
                 </p>
               )}
-              {promoError && <p className="text-[11px] text-[#d30005] pt-1">{promoError}</p>}
-            </form>
+            </div>
 
             {/* Calculations Breakdown */}
             <div className="space-y-1.5 text-xs text-[#707072] pt-2 border-t border-[#e5e5e5]">
@@ -229,10 +349,10 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
                 <span>상품 합계</span>
                 <span className="tabular-nums font-medium text-[#111111]">₩{rawSubtotal.toLocaleString()}</span>
               </div>
-              {discountAmount > 0 && (
-                <div className="flex justify-between text-[#d30005]">
-                  <span>쿠폰 할인 ({discountLabel})</span>
-                  <span className="tabular-nums font-medium">-₩{discountAmount.toLocaleString()}</span>
+              {discountAmount > 0 && promoTemplate && (
+                <div className="flex justify-between text-[#d30005] gap-2">
+                  <span className="truncate">기프트 할인 ({promoTemplate.title} · {discountLabel})</span>
+                  <span className="tabular-nums font-medium shrink-0">-₩{discountAmount.toLocaleString()}</span>
                 </div>
               )}
               <div className="flex justify-between">
@@ -251,7 +371,7 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
 
             {/* Order Now Button (Nike button-primary: black pill 48px height) */}
             <button
-              onClick={() => onOpenCheckout(promoTemplate?.discountType === 'percent' ? promoTemplate.discountValue : 15)}
+              onClick={onOpenCheckout}
               className="w-full py-3.5 bg-[#111111] text-white text-xs font-semibold tracking-wider uppercase hover:bg-black transition-all flex items-center justify-center space-x-2 cursor-pointer rounded-full active:scale-95 shadow-sm"
             >
               <span>ORDER NOW (주문하기)</span>

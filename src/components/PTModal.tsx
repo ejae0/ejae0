@@ -1,18 +1,20 @@
 import React from 'react';
-import { X, Play, Ticket, ArrowRight, Sparkles } from 'lucide-react';
+import { X, Play, Gift, Check, ArrowRight, Sparkles } from 'lucide-react';
 
 interface PTModalProps {
   isOpen: boolean;
   onClose: () => void;
   onExploreCollection: () => void;
-  onCopyCoupon: (code: string) => void;
+  onClaimGiftCoupon: (code: string) => void;
+  giftStatus?: 'unclaimed' | 'available' | 'applied' | 'used';
 }
 
 export const PTModal: React.FC<PTModalProps> = ({
   isOpen,
   onClose,
   onExploreCollection,
-  onCopyCoupon
+  onClaimGiftCoupon,
+  giftStatus = 'unclaimed'
 }) => {
   if (!isOpen) return null;
 
@@ -85,21 +87,40 @@ export const PTModal: React.FC<PTModalProps> = ({
             </p>
           </div>
 
-          {/* Exclusive Coupon Banner inside modal */}
+          {/* Exclusive Gift Coupon Banner inside modal */}
           <div className="bg-[#1e1e20] border border-[#39393b] p-5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 rounded-none">
             <div>
               <span className="text-[10px] font-mono uppercase tracking-widest text-[#9e9ea0] font-medium block mb-1">
-                LIMITED PT PROMOTION
+                LIMITED PT GIFT COUPON
               </span>
-              <h5 className="text-sm font-semibold text-white">마틴킴 24SS 전 상품 15% 추가 할인 쿠폰</h5>
-              <p className="text-xs text-[#cacacb] mt-0.5">쿠폰 코드: <span className="font-mono text-white font-bold">MATINKIM15</span></p>
+              <h5 className="text-sm font-semibold text-white">마틴킴 24SS 전 상품 15% 추가 할인 기프트</h5>
+              <p className="text-xs text-[#cacacb] mt-0.5">
+                기프트 쿠폰함으로 즉시 지급 · 장바구니 및 결제 시 선택 적용
+              </p>
             </div>
             <button
-              onClick={() => onCopyCoupon('MATINKIM15')}
-              className="bg-white text-[#111111] text-xs font-medium px-5 py-2.5 rounded-full tracking-wider uppercase hover:bg-[#f5f5f5] transition-all flex items-center space-x-2 shrink-0 cursor-pointer active:scale-95"
+              onClick={() => onClaimGiftCoupon('MATINKIM15')}
+              disabled={giftStatus === 'used'}
+              className={`text-xs font-medium px-5 py-2.5 rounded-full tracking-wider uppercase transition-all flex items-center space-x-2 shrink-0 cursor-pointer active:scale-95 ${
+                giftStatus === 'used'
+                  ? 'bg-[#39393b] text-[#9e9ea0] cursor-default'
+                  : 'bg-white text-[#111111] hover:bg-[#f5f5f5]'
+              }`}
             >
-              <Ticket className="w-3.5 h-3.5 text-[#111111]" />
-              <span>쿠폰 받기</span>
+              {giftStatus === 'applied' ? (
+                <Check className="w-3.5 h-3.5 text-[#007d48]" />
+              ) : (
+                <Gift className="w-3.5 h-3.5 text-[#111111]" />
+              )}
+              <span>
+                {giftStatus === 'applied'
+                  ? '기프트 적용됨'
+                  : giftStatus === 'available'
+                  ? '보유 기프트 적용'
+                  : giftStatus === 'used'
+                  ? '사용 완료'
+                  : '기프트 쿠폰 받기'}
+              </span>
             </button>
           </div>
         </div>

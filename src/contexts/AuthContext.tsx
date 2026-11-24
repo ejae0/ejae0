@@ -158,7 +158,7 @@ interface AuthContextValue {
     address: string;
     bodySpecs: string;
   }) => Promise<void>;
-  claimCoupon: (code: string) => Promise<{ ok: boolean; message: string }>;
+  claimCoupon: (code: string) => Promise<{ ok: boolean; message: string; alreadyAvailable?: boolean }>;
   createOrder: (input: {
     orderNumber: string;
     recipientName: string;
@@ -500,20 +500,29 @@ export const FirebaseProvider: React.FC<{ children: React.ReactNode }> = ({ chil
     }
   };
 
-  const claimCoupon = async (rawCode: string): Promise<{ ok: boolean; message: string }> => {
+  const claimCoupon = async (
+    rawCode: string
+  ): Promise<{ ok: boolean; message: string; alreadyAvailable?: boolean }> => {
     const normalized = rawCode.trim().toUpperCase() as PromoCodeKey;
     const template = PROMO_CATALOG[normalized];
     if (!template) {
       return {
         ok: false,
-        message: '유효하지 않은 쿠폰 코드입니다. (WELCOME15, MONODAY15, MATINKIM15, SPRING10, FIRST5000)',
+        message: '선택하신 기프트 쿠폰을 찾을 수 없습니다.',
       };
     }
 
     if (!user && isInstantSignedIn) {
-      const alreadyHas = instantData.coupons.some((c) => c.code === normalized);
-      if (alreadyHas) {
-        return { ok: false, message: `'${normalized}' 쿠폰은 이미 보유 중입니다.` };
+      const existing = instantData.coupons.find((c) => c.code === normalized);
+      if (existing) {
+        return {
+          ok: false,
+          alreadyAvailable: existing.status === 'available',
+          message:
+            existing.status === 'available'
+              ? `'${template.title}' 기프트 쿠폰은 이미 보유 중입니다.`
+              : `'${template.title}' 기프트 쿠폰은 이미 사용 완료되었습니다.`,
+        };
       }
       const nowIso = new Date().toISOString().slice(0, 10).replace(/-/g, '.');
       updateInstant((prev) => ({
@@ -537,19 +546,26 @@ export const FirebaseProvider: React.FC<{ children: React.ReactNode }> = ({ chil
           ...prev.coupons,
         ],
       }));
-      return { ok: true, message: `'${template.title}' 쿠폰이 발급되었습니다.` };
+      return { ok: true, message: `'${template.title}' 기프트 쿠폰을 받았습니다.` };
     }
 
     if (!user) {
-      return { ok: false, message: '로그인 후 쿠폰을 등록할 수 있습니다.' };
+      return { ok: false, message: '로그인 후 기프트 쿠폰을 받을 수 있습니다.' };
     }
     if (!fsProfile) {
       return { ok: false, message: '회원가입을 먼저 완료해 주세요.' };
     }
 
-    const alreadyHas = fsCoupons.some((c) => c.code === normalized);
-    if (alreadyHas) {
-      return { ok: false, message: `'${normalized}' 쿠폰은 이미 보유 중입니다.` };
+    const existing = fsCoupons.find((c) => c.code === normalized);
+    if (existing) {
+      return {
+        ok: false,
+        alreadyAvailable: existing.status === 'available',
+        message:
+          existing.status === 'available'
+            ? `'${template.title}' 기프트 쿠폰은 이미 보유 중입니다.`
+            : `'${template.title}' 기프트 쿠폰은 이미 사용 완료되었습니다.`,
+      };
     }
 
     const couponId = `coupon_${normalized.toLowerCase()}`;
@@ -569,7 +585,7 @@ export const FirebaseProvider: React.FC<{ children: React.ReactNode }> = ({ chil
         createdAt: serverTimestamp(),
         updatedAt: serverTimestamp(),
       });
-      return { ok: true, message: `'${template.title}' 쿠폰이 발급되었습니다.` };
+      return { ok: true, message: `'${template.title}' 기프트 쿠폰을 받았습니다.` };
     } catch (error) {
       handleFirestoreError(error, OperationType.CREATE, path);
     }

@@ -15,7 +15,8 @@ interface HomePageProps {
   onToggleWishlist: (productId: string) => void;
   isWishlisted: (productId: string) => boolean;
   highlightProduct: Product;
-  onCopyPromo: (code: string) => void;
+  onClaimGiftCoupon: (code: string) => void;
+  ptGiftStatus?: 'unclaimed' | 'available' | 'applied' | 'used';
 }
 
 export const HomePage: React.FC<HomePageProps> = ({
@@ -27,7 +28,8 @@ export const HomePage: React.FC<HomePageProps> = ({
   onToggleWishlist,
   isWishlisted,
   highlightProduct,
-  onCopyPromo
+  onClaimGiftCoupon,
+  ptGiftStatus = 'unclaimed'
 }) => {
   return (
     <div className="space-y-12">
@@ -63,7 +65,8 @@ export const HomePage: React.FC<HomePageProps> = ({
           onSelectBrand('Matin Kim');
           onNavigateTab('shop');
         }}
-        onCopyCoupon={onCopyPromo}
+        onClaimGiftCoupon={onClaimGiftCoupon}
+        giftStatus={ptGiftStatus}
       />
 
       {/* Snap Lookbook Teaser Banner on Home (Nike campaign tile style) */}
@@ -74,10 +77,10 @@ export const HomePage: React.FC<HomePageProps> = ({
               <Camera className="w-3.5 h-3.5" />
               <span>INTERACTIVE STYLE SNAP</span>
             </span>
-            <h3 className="font-display text-3xl sm:text-4xl md:text-5xl uppercase leading-[0.9] tracking-tight">
-              모델이 착용한 그 옷, 마우스만 대면 바로 확인하세요.
+            <h3 className="font-sans text-2xl sm:text-3xl md:text-4xl font-semibold leading-snug tracking-tight break-keep text-white">
+              모델 별 코디 보러가기
             </h3>
-            <p className="text-xs sm:text-sm text-[#cacacb] font-normal leading-relaxed">
+            <p className="text-xs sm:text-sm text-[#cacacb] font-normal leading-relaxed break-keep">
               성수동, 한남동 거리의 감각적인 스타일링 컷 위로 마우스 커서를 올리면
               실제 코디된 아우터, 팬츠, 슈즈, 가방의 정보를 실시간으로 확인하고 바로 장바구니에 담을 수 있습니다.
             </p>

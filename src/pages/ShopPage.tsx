@@ -79,7 +79,6 @@ export const ShopPage: React.FC<ShopPageProps> = ({
 }) => {
   const [sortBy, setSortBy] = useState<KreamSortType>('popular');
   const [isSortDropdownOpen, setIsSortDropdownOpen] = useState(false);
-  const [selectedSize, setSelectedSize] = useState<string>('all');
   const [onlyFastDelivery, setOnlyFastDelivery] = useState(false);
   const [onlySale, setOnlySale] = useState(false);
 
@@ -98,12 +97,6 @@ export const ShopPage: React.FC<ShopPageProps> = ({
 
   const subcategories = SUBCATEGORIES[currentGender] || SUBCATEGORIES.all;
 
-  // Dynamic available size options
-  const isShoesCategory = currentCategory === 'shoes';
-  const sizeOptions = isShoesCategory
-    ? ['all', '230', '235', '240', '245', '250', '255', '260', '265', '270', '275', '280']
-    : ['all', 'XS', 'S', 'M', 'L', 'XL', 'FREE'];
-
   const getWishCount = (product: Product, isWished: boolean) => {
     const hash = product.id.split('').reduce((acc, char) => acc + char.charCodeAt(0), 0);
     const base = Math.floor(product.salesCount3Days * 1.5 + product.reviewCount * 14 + (hash % 600));
@@ -114,9 +107,6 @@ export const ShopPage: React.FC<ShopPageProps> = ({
   let filtered = products.filter((p) => {
     const matchGender = currentGender === 'all' || p.gender === currentGender;
     const matchCategory = currentCategory === 'all' || p.category === currentCategory;
-    const matchSize =
-      selectedSize === 'all' ||
-      p.sizes.some((s) => s.toUpperCase().includes(selectedSize.toUpperCase()));
     const matchBrand = !selectedBrand || p.brand.toLowerCase() === selectedBrand.toLowerCase();
     const matchFastDelivery = !onlyFastDelivery || (p.salesCount3Days > 1200 || p.isBest);
     const matchSale = !onlySale || p.discount > 0;
@@ -129,7 +119,6 @@ export const ShopPage: React.FC<ShopPageProps> = ({
     return (
       matchGender &&
       matchCategory &&
-      matchSize &&
       matchBrand &&
       matchFastDelivery &&
       matchSale &&
@@ -182,73 +171,31 @@ export const ShopPage: React.FC<ShopPageProps> = ({
   };
 
   return (
-    <div className="max-w-[1440px] mx-auto px-6 sm:px-8 py-10 sm:py-12">
-      {/* Brand Store Header Banner */}
-      <div className="mb-8 border-b border-[#e5e5e5] pb-6 flex flex-col md:flex-row md:items-end justify-between gap-4">
-        <div>
-          <div className="flex items-center space-x-2 mb-1.5">
-            <span className="text-xs font-mono font-medium tracking-widest text-[#707072] uppercase">
-              KREAM BRAND STORE
-            </span>
-            <span className="text-[#cacacb]">·</span>
-            <span className="text-xs font-medium text-[#007d48]">
-              OFFICIAL STORE
-            </span>
-            {isAdmin && (
-              <>
-                <span className="text-[#cacacb]">·</span>
-                <span className="text-xs font-medium text-[#d30005]">
-                  ADMIN CRUD ACTIVE
-                </span>
-              </>
-            )}
-          </div>
-          <div className="flex flex-wrap items-center gap-3">
-            <h1 className="text-3xl sm:text-4xl font-medium text-[#111111] tracking-tight">
-              Shop Collections
-            </h1>
-
-            {/* Admin Add Product Button */}
-            {isAdmin && onOpenAddProductModal && (
-              <button
-                onClick={onOpenAddProductModal}
-                className="inline-flex items-center space-x-1.5 bg-[#111111] hover:bg-black text-white px-4 py-2 rounded-full text-xs font-medium transition-all cursor-pointer ml-1 active:scale-95"
-                title="새 상품 등록하기"
-              >
-                <Plus className="w-3.5 h-3.5" />
-                <span>+ 상품 추가</span>
-              </button>
-            )}
-          </div>
-          <p className="text-xs sm:text-sm text-[#707072] font-normal mt-1.5 max-w-2xl leading-relaxed">
-            무신사 및 크림 공식 입점 브랜드의 7개 카테고리 상품을 인기순, 관심순, 발매일순, 즉시 구매가순으로 정렬하여 둘러보세요.
-          </p>
+    <div className="max-w-[1440px] mx-auto px-6 sm:px-8 pt-4 sm:pt-6 pb-10 sm:pb-12">
+      {/* Admin Add Product Button (Admin Mode Only) */}
+      {isAdmin && onOpenAddProductModal && (
+        <div className="mb-3 flex justify-end">
+          <button
+            onClick={onOpenAddProductModal}
+            className="inline-flex items-center space-x-1.5 bg-[#111111] hover:bg-black text-white px-4 py-2 rounded-full text-xs font-medium transition-all cursor-pointer active:scale-95"
+            title="새 상품 등록하기"
+          >
+            <Plus className="w-3.5 h-3.5" />
+            <span>+ 상품 추가</span>
+          </button>
         </div>
+      )}
 
-        {/* Quick Delivery Tag */}
-        <div className="hidden lg:flex items-center space-x-3 bg-[#f5f5f5] px-4 py-2.5 rounded-full border border-[#e5e5e5] text-xs">
-          <div className="flex items-center space-x-1.5 text-[#111111] font-medium">
-            <Zap className="w-3.5 h-3.5 text-[#007d48] fill-[#007d48]" />
-            <span>빠른배송 보증</span>
-          </div>
-          <span className="text-[#cacacb]">|</span>
-          <span className="text-[#707072]">오늘 출발 · 100% 정품 인증</span>
-        </div>
-      </div>
-
-      {/* Filter Module (Nike filter-chip architecture) */}
-      <div className="bg-[#f5f5f5] p-5 sm:p-6 rounded-none border border-[#e5e5e5] mb-8 space-y-4">
+      {/* Filter Module (clean borderless strip) */}
+      <div className="py-1 mb-4 space-y-3">
         {/* 1. GENDER Filter */}
-        <div className="flex flex-col sm:flex-row sm:items-center space-y-2 sm:space-y-0 border-b border-[#e5e5e5] pb-4">
+        <div className="flex flex-col sm:flex-row sm:items-center space-y-2 sm:space-y-0 border-b border-[#e5e5e5] pb-3">
           <span className="text-xs font-semibold uppercase tracking-wider text-[#707072] w-24 shrink-0">
             GENDER
           </span>
           <div className="flex space-x-2 sm:space-x-3">
             <button
-              onClick={() => {
-                onGenderChange('all');
-                setSelectedSize('all');
-              }}
+              onClick={() => onGenderChange('all')}
               className={`px-4 py-1.5 rounded-full text-xs font-medium tracking-normal transition-all cursor-pointer ${
                 currentGender === 'all'
                   ? 'bg-[#111111] text-white'
@@ -258,10 +205,7 @@ export const ShopPage: React.FC<ShopPageProps> = ({
               ALL (전체)
             </button>
             <button
-              onClick={() => {
-                onGenderChange('women');
-                setSelectedSize('all');
-              }}
+              onClick={() => onGenderChange('women')}
               className={`px-4 py-1.5 rounded-full text-xs font-medium tracking-normal transition-all cursor-pointer ${
                 currentGender === 'women'
                   ? 'bg-[#111111] text-white'
@@ -271,10 +215,7 @@ export const ShopPage: React.FC<ShopPageProps> = ({
               WOMEN (여성)
             </button>
             <button
-              onClick={() => {
-                onGenderChange('men');
-                setSelectedSize('all');
-              }}
+              onClick={() => onGenderChange('men')}
               className={`px-4 py-1.5 rounded-full text-xs font-medium tracking-normal transition-all cursor-pointer ${
                 currentGender === 'men'
                   ? 'bg-[#111111] text-white'
@@ -287,7 +228,7 @@ export const ShopPage: React.FC<ShopPageProps> = ({
         </div>
 
         {/* 2. CATEGORY Filter */}
-        <div className="flex flex-col sm:flex-row sm:items-start space-y-2 sm:space-y-0 border-b border-[#e5e5e5] pb-4">
+        <div className="flex flex-col sm:flex-row sm:items-start space-y-2 sm:space-y-0">
           <span className="text-xs font-semibold uppercase tracking-wider text-[#707072] w-24 shrink-0 pt-1.5">
             CATEGORY
           </span>
@@ -297,10 +238,7 @@ export const ShopPage: React.FC<ShopPageProps> = ({
               return (
                 <button
                   key={sub.id}
-                  onClick={() => {
-                    onCategoryChange(sub.id);
-                    setSelectedSize('all');
-                  }}
+                  onClick={() => onCategoryChange(sub.id)}
                   className={`px-4 py-1.5 rounded-full transition-all cursor-pointer ${
                     isActive
                       ? 'bg-[#111111] text-white'
@@ -313,35 +251,10 @@ export const ShopPage: React.FC<ShopPageProps> = ({
             })}
           </div>
         </div>
-
-        {/* 3. SIZE Filter */}
-        <div className="flex flex-col sm:flex-row sm:items-start space-y-2 sm:space-y-0">
-          <span className="text-xs font-semibold uppercase tracking-wider text-[#707072] w-24 shrink-0 pt-1.5">
-            SIZE (사이즈)
-          </span>
-          <div className="flex flex-wrap gap-1.5 text-xs font-medium">
-            {sizeOptions.map((sz) => {
-              const isActive = selectedSize === sz;
-              return (
-                <button
-                  key={sz}
-                  onClick={() => setSelectedSize(sz)}
-                  className={`px-3 py-1 rounded-full font-mono transition-all cursor-pointer ${
-                    isActive
-                      ? 'bg-[#111111] text-white'
-                      : 'bg-white text-[#111111] border border-[#cacacb] hover:border-[#111111]'
-                  }`}
-                >
-                  {sz === 'all' ? '전체 사이즈' : sz}
-                </button>
-              );
-            })}
-          </div>
-        </div>
       </div>
 
       {/* Control Bar: Product Count + Fast Delivery + Sort Dropdown */}
-      <div className="flex flex-col sm:flex-row sm:items-center justify-between pb-4 mb-6 border-b border-[#e5e5e5] gap-4">
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between pb-3 mb-4 border-b border-[#e5e5e5] gap-4">
         {/* Left: Product Count & Quick Filter Chips */}
         <div className="flex items-center space-x-3 flex-wrap gap-y-2">
           <div className="text-sm font-semibold text-[#111111]">
@@ -377,14 +290,6 @@ export const ShopPage: React.FC<ShopPageProps> = ({
           </button>
 
           {/* Active Chips */}
-          {selectedSize !== 'all' && (
-            <div className="inline-flex items-center space-x-1 bg-[#111111] text-white px-3 py-1 rounded-full text-[11px]">
-              <span>사이즈: {selectedSize}</span>
-              <button onClick={() => setSelectedSize('all')} className="hover:text-red-300 ml-1 cursor-pointer">
-                <X className="w-3 h-3" />
-              </button>
-            </div>
-          )}
 
           {selectedBrand && (
             <div className="inline-flex items-center space-x-1 bg-[#111111] text-white px-3 py-1 rounded-full text-[11px]">
@@ -473,7 +378,6 @@ export const ShopPage: React.FC<ShopPageProps> = ({
             onClick={() => {
               onCategoryChange('all');
               onGenderChange('all');
-              setSelectedSize('all');
               setOnlyFastDelivery(false);
               setOnlySale(false);
               onClearBrand();

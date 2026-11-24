@@ -33,7 +33,7 @@ export const BentoGrid: React.FC<BentoGridProps> = ({
             Today's Bento Editorial
           </h2>
         </div>
-        <p className="text-xs sm:text-sm text-[#707072] max-w-md mt-4 md:mt-0 font-normal leading-relaxed">
+        <p className="text-xs sm:text-sm text-[#707072] max-w-md mt-4 md:mt-0 font-normal leading-relaxed break-keep">
           에디터가 제안하는 다채로운 레이아웃 속 단 하나의 감성 큐레이션. 단순한 쇼핑을 넘어 브랜드를 경험하세요.
         </p>
       </div>
@@ -89,7 +89,7 @@ export const BentoGrid: React.FC<BentoGridProps> = ({
               <h4 className="text-base font-semibold text-white mt-1">
                 MARDI MERCREDI FLOWER
               </h4>
-              <p className="text-xs text-[#cacacb] font-normal mt-1.5 leading-relaxed">
+              <p className="text-xs text-[#cacacb] font-normal mt-1.5 leading-relaxed break-keep">
                 위트 있는 시그니처 프렌치 그래픽 라인업과 24SS 컬러웨이.
               </p>
             </div>
@@ -162,7 +162,7 @@ export const BentoGrid: React.FC<BentoGridProps> = ({
           <span className="text-3xl font-display text-[#111111] leading-none select-none">
             “
           </span>
-          <p className="text-xs font-medium text-[#111111] leading-relaxed -mt-3">
+          <p className="text-xs font-medium text-[#111111] leading-relaxed -mt-3 break-keep">
             "취향은 매일 거치는 작은 선택들이 모여 비로소 나만의 색깔을 완성한다."
           </p>
           <div className="text-right border-t border-[#e5e5e5] pt-3">

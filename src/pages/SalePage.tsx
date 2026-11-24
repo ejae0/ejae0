@@ -52,27 +52,29 @@ export const SalePage: React.FC<SalePageProps> = ({
   };
 
   return (
-    <div className="max-w-[1440px] mx-auto px-6 sm:px-8 py-10 sm:py-12">
+    <div className="max-w-[1440px] mx-auto px-6 sm:px-8 pt-4 sm:pt-5 pb-10 sm:pb-12">
       {/* Banner (Nike display campaign style) */}
-      <div className="bg-[#111111] text-white p-8 sm:p-12 mb-10 border border-[#39393b] rounded-none">
-        <div className="max-w-xl space-y-2">
+      <div className="bg-[#111111] text-white px-6 py-5 sm:px-8 sm:py-6 mb-4 border border-[#39393b] rounded-none">
+        <div className="max-w-3xl space-y-1.5">
           <div className="inline-flex items-center space-x-1.5 text-[#d30005] text-xs font-semibold tracking-wider uppercase">
             <Percent className="w-3.5 h-3.5" />
             <span>SEASON SALE · UP TO 25% OFF</span>
           </div>
-          <h1 className="font-display text-4xl sm:text-6xl md:text-7xl uppercase leading-[0.9] tracking-tight">
-            시즌 오프 특별 할인전
+          <h1 className="font-display text-4xl sm:text-5xl md:text-6xl uppercase leading-[0.92] tracking-tight sm:whitespace-nowrap">
+            SEASON OFF SPECIAL SALE
           </h1>
-          <p className="text-xs sm:text-sm text-[#cacacb] font-normal leading-relaxed pt-1">
-            던스트, 마르디 메크르디, 아모멘토, 로우클래식 등 MONO:DAY 입점 브랜드의 단독 할인 혜택 상품을 합리적인 가격에 만나보세요. 할인율이 높은 순서로 정렬됩니다.
+          <p className="text-xs sm:text-sm text-[#cacacb] font-normal leading-relaxed pt-0.5 break-keep">
+            던스트, 마르디 메크르디, 아모멘토, 로우클래식 등 MONO:DAY 입점 브랜드의 단독 할인 혜택 상품을
+            <br />
+            합리적인 가격에 만나보세요. 할인율이 높은 순서로 정렬됩니다.
           </p>
         </div>
       </div>
 
-      {/* Filter Module (Nike filter-chip style on #f5f5f5) */}
-      <div className="bg-[#f5f5f5] p-6 border border-[#e5e5e5] mb-8 space-y-4 rounded-none">
+      {/* Filter Module (clean borderless strip close to banner) */}
+      <div className="py-2 mb-6 space-y-3">
         {/* Gender Toggle */}
-        <div className="flex flex-col sm:flex-row sm:items-center space-y-2 sm:space-y-0 border-b border-[#e5e5e5] pb-4">
+        <div className="flex flex-col sm:flex-row sm:items-center space-y-2 sm:space-y-0 border-b border-[#e5e5e5] pb-3">
           <span className="text-xs font-semibold uppercase tracking-wider text-[#707072] w-24 shrink-0">
             GENDER
           </span>

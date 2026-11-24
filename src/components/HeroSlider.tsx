@@ -80,22 +80,22 @@ export const HeroSlider: React.FC<HeroSliderProps> = ({ onExploreShop, onViewPT 
 
             {/* Campaign Lockup (Nike display-campaign: 96px uppercase Futura / Bebas Neue burned into photography) */}
             <div className="absolute inset-0 max-w-[1440px] mx-auto px-6 sm:px-12 flex flex-col justify-end pb-16 sm:pb-20">
-              <div className="max-w-3xl space-y-3">
+              <div className="max-w-3xl space-y-1.5">
                 <span className="text-xs uppercase tracking-widest font-medium text-white/90 block">
                   {slide.tag}
                 </span>
 
                 {/* Towering Display Campaign Headline */}
-                <div className="space-y-1">
+                <div className="space-y-0">
                   <h1 className="font-display text-6xl sm:text-8xl md:text-9xl leading-[0.88] tracking-tight text-white uppercase block">
                     {slide.displayTitle}
                   </h1>
-                  <h2 className="text-xl sm:text-2xl md:text-3xl font-medium tracking-tight text-white/95">
+                  <h2 className="text-xl sm:text-2xl md:text-3xl font-medium tracking-tight leading-tight text-white/95 -mt-0.5">
                     {slide.koreanTitle}
                   </h2>
                 </div>
 
-                <p className="text-xs sm:text-sm md:text-base font-normal text-white/80 whitespace-nowrap leading-relaxed pt-1 pb-4">
+                <p className="text-xs sm:text-sm md:text-base font-normal text-white/80 whitespace-nowrap leading-snug pt-0 pb-1">
                   {slide.subtitle}
                 </p>
 

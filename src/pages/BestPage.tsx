@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Trophy, Flame, Heart, ShoppingBag, Crown, Trash2 } from 'lucide-react';
+import { Flame, Heart, ShoppingBag, Crown, Trash2 } from 'lucide-react';
 import { Product, SUBCATEGORIES } from '../data/products';
 
 interface BestPageProps {
@@ -53,25 +53,11 @@ export const BestPage: React.FC<BestPageProps> = ({
   };
 
   return (
-    <div className="max-w-[1440px] mx-auto px-6 sm:px-8 py-10 sm:py-12">
-      {/* Page Header (Nike heading-xl) */}
-      <div className="mb-10 text-center max-w-2xl mx-auto space-y-2">
-        <div className="inline-flex items-center space-x-2 text-xs font-medium text-[#707072] uppercase tracking-wider">
-          <Trophy className="w-4 h-4 text-[#111111]" />
-          <span>REALTIME BEST TOP 50</span>
-        </div>
-        <h1 className="text-3xl sm:text-4xl md:text-5xl font-medium text-[#111111] tracking-tight">
-          근 3일간 가장 많이 팔린 BEST 50
-        </h1>
-        <p className="text-xs sm:text-sm text-[#707072] font-normal leading-relaxed">
-          MONO:DAY 고객들이 가장 많이 선택한 실시간 판매 랭킹 상위 50개 상품입니다. 매시간 실시간 주문 데이터를 집계하여 정렬됩니다.
-        </p>
-      </div>
-
+    <div className="max-w-[1440px] mx-auto px-6 sm:px-8 pt-4 sm:pt-6 pb-10 sm:pb-12">
       {/* Top 3 Podium Showcase Card (Nike neutral dark container) */}
       {currentGender === 'all' && currentCategory === 'all' && (
-        <div className="bg-[#111111] text-white p-6 sm:p-8 mb-12 border border-[#39393b] rounded-none">
-          <div className="flex items-center justify-between border-b border-[#39393b] pb-4 mb-6">
+        <div className="bg-[#111111] text-white p-5 sm:p-6 mb-10 border border-[#39393b] rounded-none">
+          <div className="flex items-center justify-between border-b border-[#39393b] pb-3 mb-5">
             <span className="text-xs tracking-widest text-[#cacacb] font-medium uppercase flex items-center space-x-2">
               <Crown className="w-4 h-4 text-white" />
               <span>TOP 3 PODIUM HONORS</span>
@@ -135,10 +121,10 @@ export const BestPage: React.FC<BestPageProps> = ({
         </div>
       )}
 
-      {/* Filter Module (Nike filter-chip style on #f5f5f5) */}
-      <div className="bg-[#f5f5f5] p-6 border border-[#e5e5e5] mb-8 space-y-4 rounded-none">
+      {/* Filter Module (clean borderless strip) */}
+      <div className="pt-4 pb-0 mb-6 space-y-3">
         {/* Gender Toggle */}
-        <div className="flex flex-col sm:flex-row sm:items-center space-y-2 sm:space-y-0 border-b border-[#e5e5e5] pb-4">
+        <div className="flex flex-col sm:flex-row sm:items-center space-y-2 sm:space-y-0 border-b border-[#e5e5e5] pb-3">
           <span className="text-xs font-semibold uppercase tracking-wider text-[#707072] w-24 shrink-0">
             GENDER
           </span>
@@ -203,7 +189,7 @@ export const BestPage: React.FC<BestPageProps> = ({
       </div>
 
       {/* Count & Status */}
-      <div className="flex justify-between items-center mb-8 text-xs text-[#707072]">
+      <div className="flex justify-between items-center pt-1 mb-6 text-xs text-[#707072]">
         <div>
           <span>RANKING: </span>
           <span className="text-[#111111] font-semibold uppercase">

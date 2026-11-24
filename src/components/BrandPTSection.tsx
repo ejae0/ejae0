@@ -1,16 +1,18 @@
 import React from 'react';
-import { ArrowRight, Play, Gift, Calendar, Ticket } from 'lucide-react';
+import { ArrowRight, Play, Gift, Calendar, Check } from 'lucide-react';
 
 interface BrandPTSectionProps {
   onOpenPTModal: () => void;
   onExplorePTCollection: () => void;
-  onCopyCoupon: (code: string) => void;
+  onClaimGiftCoupon: (code: string) => void;
+  giftStatus?: 'unclaimed' | 'available' | 'applied' | 'used';
 }
 
 export const BrandPTSection: React.FC<BrandPTSectionProps> = ({
   onOpenPTModal,
   onExplorePTCollection,
-  onCopyCoupon
+  onClaimGiftCoupon,
+  giftStatus = 'unclaimed'
 }) => {
   return (
     <section id="pt" className="w-full bg-[#111111] text-white py-16 sm:py-20 my-12 relative overflow-hidden">
@@ -37,7 +39,7 @@ export const BrandPTSection: React.FC<BrandPTSectionProps> = ({
               </p>
             </div>
 
-            <p className="text-xs sm:text-sm text-[#cacacb] leading-relaxed font-normal">
+            <p className="text-xs sm:text-sm text-[#cacacb] leading-relaxed font-normal break-keep">
               자유롭고 러프한 감각을 시그니처 메탈 로고와 스트릿 실루엣으로 정제해내는 마틴킴의 24SS 라이브 프레젠테이션.
               오직 MONO:DAY에서만 단독 15% 혜택 및 한정 기프트 증정 프로모션으로 제시됩니다.
             </p>
@@ -71,13 +73,32 @@ export const BrandPTSection: React.FC<BrandPTSectionProps> = ({
                 <ArrowRight className="w-4 h-4" />
               </button>
               
-              {/* Secondary: Soft Gray Pill button */}
+              {/* Secondary: Gift Coupon Claim Pill */}
               <button
-                onClick={() => onCopyCoupon('MATINKIM15')}
-                className="inline-flex items-center space-x-2 bg-[#252528] hover:bg-[#39393b] text-white px-5 py-3.5 rounded-full text-xs font-medium tracking-wider transition-colors cursor-pointer border border-[#39393b]"
+                onClick={() => onClaimGiftCoupon('MATINKIM15')}
+                disabled={giftStatus === 'used'}
+                className={`inline-flex items-center space-x-2 px-5 py-3.5 rounded-full text-xs font-medium tracking-wider transition-colors cursor-pointer border ${
+                  giftStatus === 'applied'
+                    ? 'bg-white text-[#111111] border-white'
+                    : giftStatus === 'used'
+                    ? 'bg-[#1e1e20] text-[#707072] border-[#39393b] cursor-default'
+                    : 'bg-[#252528] hover:bg-[#39393b] text-white border-[#39393b]'
+                }`}
               >
-                <Ticket className="w-4 h-4 text-white" />
-                <span>15% 쿠폰 받기</span>
+                {giftStatus === 'applied' ? (
+                  <Check className="w-4 h-4 text-[#007d48]" />
+                ) : (
+                  <Gift className="w-4 h-4 text-white" />
+                )}
+                <span>
+                  {giftStatus === 'applied'
+                    ? '15% 기프트 쿠폰 적용됨'
+                    : giftStatus === 'available'
+                    ? '보유 기프트 쿠폰 적용'
+                    : giftStatus === 'used'
+                    ? '기프트 쿠폰 사용완료'
+                    : '15% 기프트 쿠폰 받기'}
+                </span>
               </button>
             </div>
           </div>

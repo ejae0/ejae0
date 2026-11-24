@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { X, CheckCircle, ArrowRight } from 'lucide-react';
+import { X, CheckCircle, ArrowRight, Gift, Check } from 'lucide-react';
 import { CartItem } from './CartDrawer';
 import { useAuth } from '../contexts/AuthContext';
 import { PROMO_CATALOG, PromoCodeKey } from '../types/mypage';
@@ -9,7 +9,7 @@ interface CheckoutModalProps {
   onClose: () => void;
   cartItems: CartItem[];
   appliedPromoCode?: string | null;
-  discountPercent: number;
+  onSelectPromoCode?: (code: string | null) => void;
   onOrderSuccess: (orderId: string) => void;
 }
 
@@ -18,7 +18,7 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({
   onClose,
   cartItems,
   appliedPromoCode = null,
-  discountPercent,
+  onSelectPromoCode,
   onOrderSuccess
 }) => {
   const { isAuthenticated, profile, coupons, createOrder } = useAuth();
@@ -27,6 +27,7 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({
   const [address, setAddress] = useState('한신대학교');
   const [deliveryNote, setDeliveryNote] = useState('부재 시 문 앞에 놓아주세요');
   const [paymentMethod, setPaymentMethod] = useState<'card' | 'npay' | 'kpay' | 'bank'>('card');
+  const [selectedPromoCode, setSelectedPromoCode] = useState<string | null>(appliedPromoCode);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [confirmedOrderNumber, setConfirmedOrderNumber] = useState<string | null>(null);
 
@@ -38,21 +39,39 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({
     }
   }, [profile, isOpen]);
 
+  useEffect(() => {
+    if (isOpen) {
+      setSelectedPromoCode(appliedPromoCode);
+    }
+  }, [appliedPromoCode, isOpen]);
+
   if (!isOpen) return null;
 
   const rawTotal = cartItems.reduce(
     (sum, item) => sum + item.product.price * item.qty,
     0
   );
-  const promoTemplate = appliedPromoCode
-    ? PROMO_CATALOG[appliedPromoCode as PromoCodeKey]
+  const availableCoupons = isAuthenticated
+    ? coupons.filter((c) => c.status === 'available')
+    : [];
+  const promoTemplate = selectedPromoCode
+    ? PROMO_CATALOG[selectedPromoCode as PromoCodeKey]
     : undefined;
-  const discountAmount = promoTemplate
-    ? promoTemplate.discountType === 'percent'
-      ? Math.round(rawTotal * (promoTemplate.discountValue / 100))
-      : Math.min(rawTotal, promoTemplate.discountValue)
-    : Math.round(rawTotal * (discountPercent / 100));
+  const isPromoEligible = Boolean(
+    promoTemplate && rawTotal >= promoTemplate.minOrderAmount
+  );
+  const discountAmount =
+    isPromoEligible && promoTemplate
+      ? promoTemplate.discountType === 'percent'
+        ? Math.round(rawTotal * (promoTemplate.discountValue / 100))
+        : Math.min(rawTotal, promoTemplate.discountValue)
+      : 0;
   const finalPrice = Math.max(0, rawTotal - discountAmount);
+
+  const handleChoosePromo = (code: string | null) => {
+    setSelectedPromoCode(code);
+    onSelectPromoCode?.(code);
+  };
 
   const handleSubmitOrder = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -64,9 +83,10 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({
 
     try {
       if (isAuthenticated && profile && cartItems.length > 0) {
-        const matchedCoupon = appliedPromoCode
+        const activeCode = isPromoEligible && selectedPromoCode ? selectedPromoCode : '';
+        const matchedCoupon = activeCode
           ? coupons.find(
-              (c) => c.code === appliedPromoCode && c.status === 'available'
+              (c) => c.code === activeCode && c.status === 'available'
             )
           : undefined;
         await createOrder({
@@ -76,7 +96,7 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({
           shippingAddress: address,
           deliveryNote,
           paymentMethod,
-          couponCode: appliedPromoCode || '',
+          couponCode: activeCode,
           couponId: matchedCoupon?.id,
           rawTotal,
           discountAmount,
@@ -249,6 +269,75 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({
                 </div>
               </div>
 
+              {/* Gift Coupon Selection */}
+              <div className="space-y-2.5 border-t border-[#e5e5e5] pt-5">
+                <div className="flex items-center justify-between">
+                  <span className="text-xs font-semibold tracking-wider text-[#707072] uppercase flex items-center space-x-1.5">
+                    <Gift className="w-3.5 h-3.5 text-[#d30005]" />
+                    <span>GIFT COUPON (기프트 쿠폰 선택)</span>
+                  </span>
+                  {selectedPromoCode && (
+                    <button
+                      type="button"
+                      onClick={() => handleChoosePromo(null)}
+                      className="text-[11px] text-[#707072] hover:text-[#111111] underline cursor-pointer"
+                    >
+                      적용 해제
+                    </button>
+                  )}
+                </div>
+
+                {availableCoupons.length === 0 ? (
+                  <p className="text-xs text-[#707072] bg-[#f5f5f5] border border-[#e5e5e5] px-4 py-3">
+                    현재 보유 중인 사용 가능 기프트 쿠폰이 없습니다.
+                  </p>
+                ) : (
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                    {availableCoupons.map((coupon) => {
+                      const selected = selectedPromoCode === coupon.code;
+                      const eligible = rawTotal >= coupon.minOrderAmount;
+                      return (
+                        <button
+                          key={coupon.id}
+                          type="button"
+                          disabled={!eligible}
+                          onClick={() =>
+                            handleChoosePromo(selected ? null : coupon.code)
+                          }
+                          className={`text-left px-3.5 py-2.5 border transition-colors flex items-center justify-between gap-2 text-xs ${
+                            selected
+                              ? 'border-[#111111] bg-[#111111] text-white cursor-pointer'
+                              : eligible
+                              ? 'border-[#cacacb] bg-white text-[#111111] hover:border-[#111111] cursor-pointer'
+                              : 'border-[#e5e5e5] bg-[#f5f5f5] text-[#707072] opacity-60 cursor-not-allowed'
+                          }`}
+                        >
+                          <div className="min-w-0">
+                            <p className="font-medium truncate">{coupon.title}</p>
+                            <p
+                              className={`text-[10px] ${
+                                selected ? 'text-[#cacacb]' : 'text-[#707072]'
+                              }`}
+                            >
+                              ₩{coupon.minOrderAmount.toLocaleString()} 이상
+                              {!eligible && ' (조건 미달)'}
+                            </p>
+                          </div>
+                          <span className="font-semibold shrink-0 flex items-center space-x-1">
+                            {selected && <Check className="w-3 h-3" />}
+                            <span>
+                              {coupon.discountType === 'percent'
+                                ? `${coupon.discountValue}%`
+                                : `₩${coupon.discountValue.toLocaleString()}`}
+                            </span>
+                          </span>
+                        </button>
+                      );
+                    })}
+                  </div>
+                )}
+              </div>
+
               {/* Payment Methods (Nike pill selection) */}
               <div className="space-y-3 border-t border-[#e5e5e5] pt-5">
                 <span className="text-xs font-semibold tracking-wider text-[#707072] uppercase block">
@@ -308,10 +397,10 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({
                   <span className="text-[#707072]">주문 금액</span>
                   <span className="font-medium tabular-nums text-[#111111]">₩{rawTotal.toLocaleString()}</span>
                 </div>
-                {discountAmount > 0 && (
-                  <div className="flex justify-between text-[#d30005]">
-                    <span>쿠폰 할인 {appliedPromoCode ? `(${appliedPromoCode})` : `(${discountPercent}%)`}</span>
-                    <span className="font-medium tabular-nums">-₩{discountAmount.toLocaleString()}</span>
+                {discountAmount > 0 && promoTemplate && (
+                  <div className="flex justify-between text-[#d30005] gap-2">
+                    <span className="truncate">기프트 쿠폰 할인 ({promoTemplate.title})</span>
+                    <span className="font-medium tabular-nums shrink-0">-₩{discountAmount.toLocaleString()}</span>
                   </div>
                 )}
                 <div className="flex justify-between">

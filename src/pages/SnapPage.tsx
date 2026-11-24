@@ -46,26 +46,27 @@ export const SnapPage: React.FC<SnapPageProps> = ({
   };
 
   return (
-    <div className="max-w-[1440px] mx-auto px-6 sm:px-8 py-10 sm:py-12">
+    <div className="max-w-[1440px] mx-auto px-6 sm:px-8 pt-4 sm:pt-5 pb-10 sm:pb-12">
       {/* Banner */}
-      <div className="bg-[#111111] text-white p-8 sm:p-12 mb-10 border border-[#39393b] rounded-none">
-        <div className="max-w-2xl space-y-2">
+      <div className="bg-[#111111] text-white px-6 py-5 sm:px-8 sm:py-6 mb-4 border border-[#39393b] rounded-none">
+        <div className="max-w-4xl space-y-1.5">
           <div className="inline-flex items-center space-x-2 text-[#cacacb] text-xs font-semibold tracking-wider uppercase">
             <Camera className="w-3.5 h-3.5" />
             <span>INTERACTIVE STYLE SNAP &amp; LOOKBOOK</span>
           </div>
-          <h1 className="font-display text-4xl sm:text-6xl md:text-7xl uppercase leading-[0.9] tracking-tight">
-            MONO:DAY 리얼웨이 스냅
+          <h1 className="font-display text-4xl sm:text-5xl md:text-6xl uppercase leading-[0.92] tracking-tight sm:whitespace-nowrap">
+            MONO:DAY REALWAY SNAP
           </h1>
-          <p className="text-xs sm:text-sm text-[#cacacb] font-normal leading-relaxed pt-1">
+          <p className="text-xs sm:text-sm text-[#cacacb] font-normal leading-relaxed pt-0.5 sm:whitespace-nowrap break-keep">
             모델과 크리에이터들이 착용한 실제 사이트 판매 상품들의 스타일링 룩북입니다.
+            <br />
             사진 속 모델이 입고 있는 옷 위로 마우스 커서를 올리면 실시간 착용 상품의 브랜드, 가격, 구매 바로가기 팝업이 나타납니다.
           </p>
         </div>
       </div>
 
       {/* Style Filter Tabs (Nike filter-chip row) */}
-      <div className="flex items-center space-x-2 sm:space-x-3 pb-6 border-b border-[#e5e5e5] mb-8 overflow-x-auto">
+      <div className="flex items-center space-x-2 sm:space-x-3 pt-2 pb-4 border-b border-[#e5e5e5] mb-5 overflow-x-auto">
         {styles.map((st) => (
           <button
             key={st.id}
@@ -100,9 +101,6 @@ export const SnapPage: React.FC<SnapPageProps> = ({
                   <span className="text-[11px] font-mono tracking-widest text-[#707072] uppercase block">
                     {snap.styleLabel}
                   </span>
-                  <h3 className="text-base sm:text-lg font-semibold text-[#111111] mt-0.5">
-                    {snap.title}
-                  </h3>
                   <div className="flex items-center space-x-3 text-xs text-[#707072] font-normal mt-1">
                     <span className="flex items-center space-x-1">
                       <MapPin className="w-3 h-3 text-[#707072]" />

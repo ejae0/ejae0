@@ -57,27 +57,27 @@ export const NewPage: React.FC<NewPageProps> = ({
   };
 
   return (
-    <div className="max-w-[1440px] mx-auto px-6 sm:px-8 py-10 sm:py-12">
+    <div className="max-w-[1440px] mx-auto px-6 sm:px-8 pt-4 sm:pt-5 pb-10 sm:pb-12">
       {/* Banner */}
-      <div className="bg-[#111111] text-white p-8 sm:p-12 mb-10 border border-[#39393b] rounded-none">
-        <div className="max-w-xl space-y-2">
+      <div className="bg-[#111111] text-white px-6 py-5 sm:px-8 sm:py-6 mb-4 border border-[#39393b] rounded-none">
+        <div className="max-w-3xl space-y-1.5">
           <div className="inline-flex items-center space-x-1.5 text-[#cacacb] text-xs font-semibold tracking-wider uppercase">
             <Sparkles className="w-3.5 h-3.5" />
             <span>24SS NEW SEASON ARRIVALS</span>
           </div>
-          <h1 className="font-display text-4xl sm:text-6xl md:text-7xl uppercase leading-[0.9] tracking-tight">
-            24SS 신상품 컬렉션
+          <h1 className="font-display text-4xl sm:text-5xl md:text-6xl uppercase leading-[0.92] tracking-tight sm:whitespace-nowrap">
+            24SS NEW COLLECTION
           </h1>
-          <p className="text-xs sm:text-sm text-[#cacacb] font-normal leading-relaxed pt-1">
-            이번 시즌 새롭게 입고된 무신사 베스트 7대 카테고리의 최신 24SS 라인업을 가장 먼저 만나보세요. 출시일자 최신순으로 정렬됩니다.
+          <p className="text-xs sm:text-sm text-[#cacacb] font-normal leading-relaxed pt-0.5 sm:whitespace-nowrap break-keep">
+            이번 시즌 새롭게 입고된 최신 24SS 라인업을 가장 먼저 만나보세요.
           </p>
         </div>
       </div>
 
-      {/* Filter Module (Nike filter-chip style on #f5f5f5) */}
-      <div className="bg-[#f5f5f5] p-6 border border-[#e5e5e5] mb-8 space-y-4 rounded-none">
+      {/* Filter Module (clean borderless strip) */}
+      <div className="py-2 mb-4 space-y-3">
         {/* Gender Toggle */}
-        <div className="flex flex-col sm:flex-row sm:items-center space-y-2 sm:space-y-0 border-b border-[#e5e5e5] pb-4">
+        <div className="flex flex-col sm:flex-row sm:items-center space-y-2 sm:space-y-0 border-b border-[#e5e5e5] pb-3">
           <span className="text-xs font-semibold uppercase tracking-wider text-[#707072] w-24 shrink-0">
             GENDER
           </span>
@@ -142,7 +142,7 @@ export const NewPage: React.FC<NewPageProps> = ({
       </div>
 
       {/* Info Status */}
-      <div className="flex justify-between items-center mb-8 text-xs text-[#707072]">
+      <div className="flex justify-between items-center mb-4 text-xs text-[#707072]">
         <div>
           <span>FILTER: </span>
           <span className="text-[#111111] font-semibold uppercase">

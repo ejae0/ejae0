@@ -24,7 +24,7 @@ import { PRODUCTS, Product } from './data/products';
 import { MyPageTabType, PROMO_CATALOG, PromoCodeKey } from './types/mypage';
 
 function AppContent() {
-  const { isAuthenticated } = useAuth();
+  const { isAuthenticated, claimCoupon, coupons } = useAuth();
   // Navigation State: 'home' | 'shop' | 'best' | 'sale' | 'new' | 'snap' | 'mypage'
   const [activeNavTab, setActiveNavTab] = useState<NavTabType>('home');
   const [myPageInitialTab, setMyPageInitialTab] = useState<MyPageTabType>('orders');
@@ -131,6 +131,7 @@ function AppContent() {
     if (!isAuthenticated) {
       setIsWishlistOpen(false);
       setIsCartOpen(false);
+      setAppliedPromoCode(null);
     }
   }, [isAuthenticated]);
 
@@ -314,8 +315,13 @@ function AppContent() {
     setIsCheckoutOpen(true);
   };
 
-  // Promo Code Validation
-  const handleApplyPromoCode = (code: string): boolean => {
+  // Gift Coupon Selection & Claiming
+  const handleSelectPromoCode = (code: string | null) => {
+    if (!code) {
+      setAppliedPromoCode(null);
+      addToast('기프트 쿠폰 적용이 해제되었습니다.', 'info');
+      return;
+    }
     const normalized = code.trim().toUpperCase() as PromoCodeKey;
     const tpl = PROMO_CATALOG[normalized];
     if (tpl) {
@@ -324,21 +330,72 @@ function AppContent() {
         tpl.discountType === 'percent'
           ? `${tpl.discountValue}% 할인`
           : `₩${tpl.discountValue.toLocaleString()} 할인`;
-      addToast(`쿠폰 '${normalized}'이 장바구니에 적용되었습니다! (${label})`, 'success');
-      return true;
+      addToast(`'${tpl.title}' 기프트 쿠폰이 선택되었습니다. (${label})`, 'success');
     }
-    return false;
   };
 
-  const handleCopyPromo = (code: string) => {
-    navigator.clipboard.writeText(code).catch(() => {});
-    setAppliedPromoCode(code);
-    addToast(`쿠폰 코드 '${code}'가 복사 및 자동 적용되었습니다.`, 'success');
+  const handleUseGiftFromMyPage = (code: string): boolean => {
+    const normalized = code.trim().toUpperCase() as PromoCodeKey;
+    const tpl = PROMO_CATALOG[normalized];
+    if (!tpl) return false;
+    setAppliedPromoCode(normalized);
+    if (cart.length > 0) {
+      setIsCartOpen(true);
+      addToast(`'${tpl.title}' 기프트 쿠폰이 장바구니에 적용되었습니다.`, 'success');
+    } else {
+      addToast(`'${tpl.title}' 기프트 쿠폰이 선택되었습니다. 상품을 담으면 자동 적용됩니다.`, 'success');
+    }
+    return true;
+  };
+
+  const handleClaimGiftCoupon = (code: string) => {
+    const normalized = code.trim().toUpperCase() as PromoCodeKey;
+    const tpl = PROMO_CATALOG[normalized];
+
+    const performClaim = async () => {
+      const res = await claimCoupon(normalized);
+      if (res.ok) {
+        setAppliedPromoCode(normalized);
+        addToast(
+          `'${tpl?.title || '기프트 쿠폰'}' 선물을 받았습니다! 장바구니에 자동 적용됩니다.`,
+          'success'
+        );
+      } else if (res.alreadyAvailable) {
+        setAppliedPromoCode(normalized);
+        addToast(
+          `보유 중인 '${tpl?.title || '기프트 쿠폰'}'을 장바구니에 적용했습니다.`,
+          'success'
+        );
+      } else {
+        addToast(res.message, 'info');
+      }
+    };
+
+    if (!isAuthenticated) {
+      requireMemberLogin('기프트 쿠폰을 받으려면 로그인이 필요합니다.', () => {
+        void performClaim();
+      });
+      return;
+    }
+
+    void performClaim();
+  };
+
+  const getGiftStatus = (
+    code: PromoCodeKey
+  ): 'unclaimed' | 'available' | 'applied' | 'used' => {
+    if (!isAuthenticated) return 'unclaimed';
+    const found = coupons.find((c) => c.code === code);
+    if (!found) return 'unclaimed';
+    if (found.status !== 'available') return 'used';
+    if (appliedPromoCode === code) return 'applied';
+    return 'available';
   };
 
   // Order Placement
   const handleOrderSuccess = (orderId: string) => {
     setCart([]);
+    setAppliedPromoCode(null);
     addToast(`주문이 성공적으로 접수되었습니다. (주문번호: ${orderId})`, 'success');
   };
 
@@ -372,11 +429,8 @@ function AppContent() {
           setIsCartOpen(true);
         }}
         onOpenSearch={() => setIsSearchOpen(true)}
-        onCopyPromo={handleCopyPromo}
-        isAdmin={isAdmin}
-        onOpenAdminLogin={() => setIsAdminLoginModalOpen(true)}
-        onAdminLogout={handleAdminLogout}
-        onOpenAddProduct={() => setIsAddProductModalOpen(true)}
+        onClaimGiftCoupon={handleClaimGiftCoupon}
+        seasonGiftStatus={getGiftStatus('MONODAY15')}
         isMemberSignedIn={isAuthenticated}
       />
 
@@ -400,7 +454,8 @@ function AppContent() {
             onToggleWishlist={handleToggleWishlist}
             isWishlisted={isWishlisted}
             highlightProduct={highlightProduct}
-            onCopyPromo={handleCopyPromo}
+            onClaimGiftCoupon={handleClaimGiftCoupon}
+            ptGiftStatus={getGiftStatus('MATINKIM15')}
           />
         )}
 
@@ -487,8 +542,13 @@ function AppContent() {
             allProducts={productsData}
             onNavigateShop={() => handleSelectNavTab('shop')}
             onSelectProduct={setSelectedProductDetail}
-            onApplyPromoCode={handleApplyPromoCode}
+            onApplyPromoCode={handleUseGiftFromMyPage}
+            appliedPromoCode={appliedPromoCode}
             onShowToast={addToast}
+            isAdmin={isAdmin}
+            onOpenAdminLogin={() => setIsAdminLoginModalOpen(true)}
+            onAdminLogout={handleAdminLogout}
+            onOpenAddProduct={() => setIsAddProductModalOpen(true)}
           />
         )}
       </main>
@@ -548,7 +608,8 @@ function AppContent() {
           setIsCheckoutOpen(true);
         }}
         appliedPromoCode={appliedPromoCode}
-        onApplyPromoCode={handleApplyPromoCode}
+        onSelectPromoCode={handleSelectPromoCode}
+        onShowToast={addToast}
       />
 
       {/* Product Detail Modal */}
@@ -593,7 +654,7 @@ function AppContent() {
         onClose={() => setIsCheckoutOpen(false)}
         cartItems={cart}
         appliedPromoCode={appliedPromoCode}
-        discountPercent={appliedPromoCode ? 15 : 0}
+        onSelectPromoCode={handleSelectPromoCode}
         onOrderSuccess={handleOrderSuccess}
       />
 
@@ -605,7 +666,8 @@ function AppContent() {
           setSelectedBrand('Matin Kim');
           handleSelectNavTab('shop');
         }}
-        onCopyCoupon={handleCopyPromo}
+        onClaimGiftCoupon={handleClaimGiftCoupon}
+        giftStatus={getGiftStatus('MATINKIM15')}
       />
 
       {/* Admin Login Modal (Password: 1245 or admin123) */}
