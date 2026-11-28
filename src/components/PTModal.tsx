@@ -40,7 +40,7 @@ export const PTModal: React.FC<PTModalProps> = ({
               <span>MONO:DAY BRAND PRESENTATION PT #12</span>
             </div>
             <h2 className="font-display text-3xl sm:text-4xl uppercase text-white tracking-tight leading-[0.9]">
-              MATIN KIM : 24SS Showcase Film
+              MATIN KIM : 26FW Showcase Film
             </h2>
           </div>
         </div>
@@ -82,7 +82,7 @@ export const PTModal: React.FC<PTModalProps> = ({
               "자연스럽고 편안하지만, 결코 평범하지 않은 실루엣"
             </h4>
             <p>
-              이번 24SS 프레젠테이션에서 마틴킴은 브랜드 고유의 인더스트리얼 메탈 감성을 가벼운 스프링 패브릭과 접목했습니다.
+              이번 26FW 프레젠테이션에서 마틴킴은 브랜드 고유의 인더스트리얼 메탈 감성을 가벼운 스프링 패브릭과 접목했습니다.
               해체된 라이더 레더 라펠, 정밀하게 레이저 각인된 메탈 버클, 그리고 일상의 편안함을 보장하는 오버핏 구조가 어우러집니다.
             </p>
           </div>
@@ -93,7 +93,7 @@ export const PTModal: React.FC<PTModalProps> = ({
               <span className="text-[10px] font-mono uppercase tracking-widest text-[#9e9ea0] font-medium block mb-1">
                 LIMITED PT GIFT COUPON
               </span>
-              <h5 className="text-sm font-semibold text-white">마틴킴 24SS 전 상품 15% 추가 할인 기프트</h5>
+              <h5 className="text-sm font-semibold text-white">마틴킴 26FW 전 상품 15% 추가 할인 기프트</h5>
               <p className="text-xs text-[#cacacb] mt-0.5">
                 기프트 쿠폰함으로 즉시 지급 · 장바구니 및 결제 시 선택 적용
               </p>

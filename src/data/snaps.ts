@@ -147,7 +147,7 @@ export const SNAP_LOOKS: SnapLook[] = [
     styleLabel: '스트릿 (Street)',
     gender: 'unisex',
     image: '/src/assets/images/pt_matin_kim_campaign_1793684668781.jpg',
-    modelInfo: '175cm / 173cm · 24SS 쇼케이스 룩북',
+    modelInfo: '175cm / 173cm · 26FW 쇼케이스 룩북',
     location: '문래동 창작촌',
     likes: 1540,
     description: '마틴킴 특유의 메탈릭 하드웨어와 디스트레스드 레더 자켓으로 완성한 자유롭고 거친 인더스트리얼 스트릿 룩.',

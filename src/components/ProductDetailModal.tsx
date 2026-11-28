@@ -223,7 +223,7 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
                   {product.isNew && (
                     <span className="bg-white border border-[#cacacb] text-[#111111] text-[11px] font-medium px-2.5 py-0.5 rounded-full flex items-center space-x-1">
                       <Sparkles className="w-3 h-3 text-[#111111]" />
-                      <span>24SS New</span>
+                      <span>26FW New</span>
                     </span>
                   )}
                   {product.bestRank <= 50 && (

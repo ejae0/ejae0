@@ -75,7 +75,7 @@ export const PRODUCTS: Product[] = [
     "discount": 15,
     "img1": "https://images.unsplash.com/photo-1556905055-8f358a7a47b2?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=800&auto=format&fit=crop",
-    "description": "Mardi Mercredi의 시그니처 감성을 담은 24SS 상의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "Mardi Mercredi의 시그니처 감성을 담은 26FW 상의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "상의 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -110,7 +110,7 @@ export const PRODUCTS: Product[] = [
     "discount": 20,
     "img1": "https://images.unsplash.com/photo-1509967419530-da38b4704bc6?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?q=80&w=800&auto=format&fit=crop",
-    "description": "UNIFORM BRIDGE의 시그니처 감성을 담은 24SS 상의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "UNIFORM BRIDGE의 시그니처 감성을 담은 26FW 상의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "상의 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -148,7 +148,7 @@ export const PRODUCTS: Product[] = [
     "discount": 20,
     "img1": "https://images.unsplash.com/photo-1598554747436-c9293d6a588f?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1584273143981-41c073dfe8f8?q=80&w=800&auto=format&fit=crop",
-    "description": "COOR의 시그니처 감성을 담은 24SS 상의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "COOR의 시그니처 감성을 담은 26FW 상의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "상의 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -184,7 +184,7 @@ export const PRODUCTS: Product[] = [
     "discount": 10,
     "img1": "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?q=80&w=800&auto=format&fit=crop",
-    "description": "SATUR의 시그니처 감성을 담은 24SS 상의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "SATUR의 시그니처 감성을 담은 26FW 상의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "상의 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -221,7 +221,7 @@ export const PRODUCTS: Product[] = [
     "discount": 10,
     "img1": "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1509967419530-da38b4704bc6?q=80&w=800&auto=format&fit=crop",
-    "description": "Marithé François Girbaud의 시그니처 감성을 담은 24SS 상의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "Marithé François Girbaud의 시그니처 감성을 담은 26FW 상의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "상의 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -258,7 +258,7 @@ export const PRODUCTS: Product[] = [
     "discount": 10,
     "img1": "https://images.unsplash.com/photo-1556905055-8f358a7a47b2?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=800&auto=format&fit=crop",
-    "description": "ANDERSSON BELL의 시그니처 감성을 담은 24SS 상의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "ANDERSSON BELL의 시그니처 감성을 담은 26FW 상의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "상의 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -294,7 +294,7 @@ export const PRODUCTS: Product[] = [
     "discount": 10,
     "img1": "https://images.unsplash.com/photo-1509967419530-da38b4704bc6?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?q=80&w=800&auto=format&fit=crop",
-    "description": "AMOMENTO의 시그니처 감성을 담은 24SS 상의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "AMOMENTO의 시그니처 감성을 담은 26FW 상의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "상의 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -331,7 +331,7 @@ export const PRODUCTS: Product[] = [
     "discount": 10,
     "img1": "https://images.unsplash.com/photo-1598554747436-c9293d6a588f?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1584273143981-41c073dfe8f8?q=80&w=800&auto=format&fit=crop",
-    "description": "THOMAS MORE의 시그니처 감성을 담은 24SS 상의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "THOMAS MORE의 시그니처 감성을 담은 26FW 상의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "상의 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -368,7 +368,7 @@ export const PRODUCTS: Product[] = [
     "discount": 25,
     "img1": "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?q=80&w=800&auto=format&fit=crop",
-    "description": "POLYTERU의 시그니처 감성을 담은 24SS 상의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "POLYTERU의 시그니처 감성을 담은 26FW 상의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "상의 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -402,7 +402,7 @@ export const PRODUCTS: Product[] = [
     "discount": 20,
     "img1": "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1509967419530-da38b4704bc6?q=80&w=800&auto=format&fit=crop",
-    "description": "INSILENCE의 시그니처 감성을 담은 24SS 상의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "INSILENCE의 시그니처 감성을 담은 26FW 상의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "상의 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -440,7 +440,7 @@ export const PRODUCTS: Product[] = [
     "discount": 15,
     "img1": "https://images.unsplash.com/photo-1556905055-8f358a7a47b2?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=800&auto=format&fit=crop",
-    "description": "COVERNAT의 시그니처 감성을 담은 24SS 상의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "COVERNAT의 시그니처 감성을 담은 26FW 상의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "상의 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -478,7 +478,7 @@ export const PRODUCTS: Product[] = [
     "discount": 15,
     "img1": "https://images.unsplash.com/photo-1509967419530-da38b4704bc6?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?q=80&w=800&auto=format&fit=crop",
-    "description": "thisisneverthat의 시그니처 감성을 담은 24SS 상의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "thisisneverthat의 시그니처 감성을 담은 26FW 상의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "상의 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -512,7 +512,7 @@ export const PRODUCTS: Product[] = [
     "discount": 10,
     "img1": "https://images.unsplash.com/photo-1598554747436-c9293d6a588f?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1584273143981-41c073dfe8f8?q=80&w=800&auto=format&fit=crop",
-    "description": "DRAW FIT의 시그니처 감성을 담은 24SS 상의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "DRAW FIT의 시그니처 감성을 담은 26FW 상의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "상의 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -549,7 +549,7 @@ export const PRODUCTS: Product[] = [
     "discount": 15,
     "img1": "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?q=80&w=800&auto=format&fit=crop",
-    "description": "YALE의 시그니처 감성을 담은 24SS 상의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "YALE의 시그니처 감성을 담은 26FW 상의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "상의 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -587,7 +587,7 @@ export const PRODUCTS: Product[] = [
     "discount": 5,
     "img1": "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1509967419530-da38b4704bc6?q=80&w=800&auto=format&fit=crop",
-    "description": "MUSINSA STANDARD의 시그니처 감성을 담은 24SS 상의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "MUSINSA STANDARD의 시그니처 감성을 담은 26FW 상의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "상의 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -623,7 +623,7 @@ export const PRODUCTS: Product[] = [
     "discount": 15,
     "img1": "https://images.unsplash.com/photo-1556905055-8f358a7a47b2?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=800&auto=format&fit=crop",
-    "description": "POTTERY의 시그니처 감성을 담은 24SS 상의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "POTTERY의 시그니처 감성을 담은 26FW 상의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "상의 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -658,7 +658,7 @@ export const PRODUCTS: Product[] = [
     "discount": 20,
     "img1": "https://images.unsplash.com/photo-1509967419530-da38b4704bc6?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?q=80&w=800&auto=format&fit=crop",
-    "description": "BROWNYARD의 시그니처 감성을 담은 24SS 상의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "BROWNYARD의 시그니처 감성을 담은 26FW 상의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "상의 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -696,7 +696,7 @@ export const PRODUCTS: Product[] = [
     "discount": 20,
     "img1": "https://images.unsplash.com/photo-1598554747436-c9293d6a588f?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1584273143981-41c073dfe8f8?q=80&w=800&auto=format&fit=crop",
-    "description": "NOIR의 시그니처 감성을 담은 24SS 상의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "NOIR의 시그니처 감성을 담은 26FW 상의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "상의 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -732,7 +732,7 @@ export const PRODUCTS: Product[] = [
     "discount": 10,
     "img1": "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?q=80&w=800&auto=format&fit=crop",
-    "description": "BELIER의 시그니처 감성을 담은 24SS 상의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "BELIER의 시그니처 감성을 담은 26FW 상의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "상의 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -769,7 +769,7 @@ export const PRODUCTS: Product[] = [
     "discount": 10,
     "img1": "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1509967419530-da38b4704bc6?q=80&w=800&auto=format&fit=crop",
-    "description": "ADER ERROR의 시그니처 감성을 담은 24SS 상의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "ADER ERROR의 시그니처 감성을 담은 26FW 상의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "상의 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -806,7 +806,7 @@ export const PRODUCTS: Product[] = [
     "discount": 10,
     "img1": "https://images.unsplash.com/photo-1556905055-8f358a7a47b2?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=800&auto=format&fit=crop",
-    "description": "Mardi Mercredi의 시그니처 감성을 담은 24SS 상의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "Mardi Mercredi의 시그니처 감성을 담은 26FW 상의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "상의 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -842,7 +842,7 @@ export const PRODUCTS: Product[] = [
     "discount": 10,
     "img1": "https://images.unsplash.com/photo-1509967419530-da38b4704bc6?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?q=80&w=800&auto=format&fit=crop",
-    "description": "UNIFORM BRIDGE의 시그니처 감성을 담은 24SS 상의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "UNIFORM BRIDGE의 시그니처 감성을 담은 26FW 상의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "상의 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -879,7 +879,7 @@ export const PRODUCTS: Product[] = [
     "discount": 10,
     "img1": "https://images.unsplash.com/photo-1598554747436-c9293d6a588f?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1584273143981-41c073dfe8f8?q=80&w=800&auto=format&fit=crop",
-    "description": "COOR의 시그니처 감성을 담은 24SS 상의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "COOR의 시그니처 감성을 담은 26FW 상의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "상의 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -916,7 +916,7 @@ export const PRODUCTS: Product[] = [
     "discount": 25,
     "img1": "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?q=80&w=800&auto=format&fit=crop",
-    "description": "SATUR의 시그니처 감성을 담은 24SS 상의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "SATUR의 시그니처 감성을 담은 26FW 상의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "상의 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -950,7 +950,7 @@ export const PRODUCTS: Product[] = [
     "discount": 20,
     "img1": "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1509967419530-da38b4704bc6?q=80&w=800&auto=format&fit=crop",
-    "description": "Marithé François Girbaud의 시그니처 감성을 담은 24SS 상의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "Marithé François Girbaud의 시그니처 감성을 담은 26FW 상의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "상의 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -988,7 +988,7 @@ export const PRODUCTS: Product[] = [
     "discount": 15,
     "img1": "https://images.unsplash.com/photo-1556905055-8f358a7a47b2?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=800&auto=format&fit=crop",
-    "description": "ANDERSSON BELL의 시그니처 감성을 담은 24SS 상의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "ANDERSSON BELL의 시그니처 감성을 담은 26FW 상의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "상의 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -1026,7 +1026,7 @@ export const PRODUCTS: Product[] = [
     "discount": 15,
     "img1": "https://images.unsplash.com/photo-1509967419530-da38b4704bc6?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?q=80&w=800&auto=format&fit=crop",
-    "description": "AMOMENTO의 시그니처 감성을 담은 24SS 상의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "AMOMENTO의 시그니처 감성을 담은 26FW 상의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "상의 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -1060,7 +1060,7 @@ export const PRODUCTS: Product[] = [
     "discount": 10,
     "img1": "https://images.unsplash.com/photo-1598554747436-c9293d6a588f?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1584273143981-41c073dfe8f8?q=80&w=800&auto=format&fit=crop",
-    "description": "THOMAS MORE의 시그니처 감성을 담은 24SS 상의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "THOMAS MORE의 시그니처 감성을 담은 26FW 상의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "상의 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -1097,7 +1097,7 @@ export const PRODUCTS: Product[] = [
     "discount": 15,
     "img1": "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?q=80&w=800&auto=format&fit=crop",
-    "description": "POLYTERU의 시그니처 감성을 담은 24SS 상의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "POLYTERU의 시그니처 감성을 담은 26FW 상의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "상의 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -1135,7 +1135,7 @@ export const PRODUCTS: Product[] = [
     "discount": 5,
     "img1": "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1509967419530-da38b4704bc6?q=80&w=800&auto=format&fit=crop",
-    "description": "INSILENCE의 시그니처 감성을 담은 24SS 상의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "INSILENCE의 시그니처 감성을 담은 26FW 상의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "상의 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -1171,7 +1171,7 @@ export const PRODUCTS: Product[] = [
     "discount": 15,
     "img1": "https://images.unsplash.com/photo-1556905055-8f358a7a47b2?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=800&auto=format&fit=crop",
-    "description": "COVERNAT의 시그니처 감성을 담은 24SS 상의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "COVERNAT의 시그니처 감성을 담은 26FW 상의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "상의 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -1206,7 +1206,7 @@ export const PRODUCTS: Product[] = [
     "discount": 20,
     "img1": "https://images.unsplash.com/photo-1509967419530-da38b4704bc6?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?q=80&w=800&auto=format&fit=crop",
-    "description": "thisisneverthat의 시그니처 감성을 담은 24SS 상의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "thisisneverthat의 시그니처 감성을 담은 26FW 상의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "상의 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -1244,7 +1244,7 @@ export const PRODUCTS: Product[] = [
     "discount": 20,
     "img1": "https://images.unsplash.com/photo-1598554747436-c9293d6a588f?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1584273143981-41c073dfe8f8?q=80&w=800&auto=format&fit=crop",
-    "description": "DRAW FIT의 시그니처 감성을 담은 24SS 상의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "DRAW FIT의 시그니처 감성을 담은 26FW 상의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "상의 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -1280,7 +1280,7 @@ export const PRODUCTS: Product[] = [
     "discount": 10,
     "img1": "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?q=80&w=800&auto=format&fit=crop",
-    "description": "YALE의 시그니처 감성을 담은 24SS 상의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "YALE의 시그니처 감성을 담은 26FW 상의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "상의 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -1317,7 +1317,7 @@ export const PRODUCTS: Product[] = [
     "discount": 10,
     "img1": "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1509967419530-da38b4704bc6?q=80&w=800&auto=format&fit=crop",
-    "description": "MUSINSA STANDARD의 시그니처 감성을 담은 24SS 상의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "MUSINSA STANDARD의 시그니처 감성을 담은 26FW 상의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "상의 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -1354,7 +1354,7 @@ export const PRODUCTS: Product[] = [
     "discount": 10,
     "img1": "https://images.unsplash.com/photo-1556905055-8f358a7a47b2?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=800&auto=format&fit=crop",
-    "description": "POTTERY의 시그니처 감성을 담은 24SS 상의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "POTTERY의 시그니처 감성을 담은 26FW 상의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "상의 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -1390,7 +1390,7 @@ export const PRODUCTS: Product[] = [
     "discount": 10,
     "img1": "https://images.unsplash.com/photo-1509967419530-da38b4704bc6?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?q=80&w=800&auto=format&fit=crop",
-    "description": "BROWNYARD의 시그니처 감성을 담은 24SS 상의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "BROWNYARD의 시그니처 감성을 담은 26FW 상의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "상의 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -1427,7 +1427,7 @@ export const PRODUCTS: Product[] = [
     "discount": 10,
     "img1": "https://images.unsplash.com/photo-1598554747436-c9293d6a588f?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1584273143981-41c073dfe8f8?q=80&w=800&auto=format&fit=crop",
-    "description": "NOIR의 시그니처 감성을 담은 24SS 상의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "NOIR의 시그니처 감성을 담은 26FW 상의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "상의 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -1464,7 +1464,7 @@ export const PRODUCTS: Product[] = [
     "discount": 25,
     "img1": "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?q=80&w=800&auto=format&fit=crop",
-    "description": "BELIER의 시그니처 감성을 담은 24SS 상의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "BELIER의 시그니처 감성을 담은 26FW 상의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "상의 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -1498,7 +1498,7 @@ export const PRODUCTS: Product[] = [
     "discount": 20,
     "img1": "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1509967419530-da38b4704bc6?q=80&w=800&auto=format&fit=crop",
-    "description": "ADER ERROR의 시그니처 감성을 담은 24SS 상의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "ADER ERROR의 시그니처 감성을 담은 26FW 상의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "상의 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -1536,7 +1536,7 @@ export const PRODUCTS: Product[] = [
     "discount": 15,
     "img1": "https://images.unsplash.com/photo-1556905055-8f358a7a47b2?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=800&auto=format&fit=crop",
-    "description": "Mardi Mercredi의 시그니처 감성을 담은 24SS 상의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "Mardi Mercredi의 시그니처 감성을 담은 26FW 상의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "상의 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -1574,7 +1574,7 @@ export const PRODUCTS: Product[] = [
     "discount": 15,
     "img1": "https://images.unsplash.com/photo-1509967419530-da38b4704bc6?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?q=80&w=800&auto=format&fit=crop",
-    "description": "UNIFORM BRIDGE의 시그니처 감성을 담은 24SS 상의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "UNIFORM BRIDGE의 시그니처 감성을 담은 26FW 상의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "상의 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -1608,7 +1608,7 @@ export const PRODUCTS: Product[] = [
     "discount": 10,
     "img1": "https://images.unsplash.com/photo-1598554747436-c9293d6a588f?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1584273143981-41c073dfe8f8?q=80&w=800&auto=format&fit=crop",
-    "description": "COOR의 시그니처 감성을 담은 24SS 상의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "COOR의 시그니처 감성을 담은 26FW 상의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "상의 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -1645,7 +1645,7 @@ export const PRODUCTS: Product[] = [
     "discount": 15,
     "img1": "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?q=80&w=800&auto=format&fit=crop",
-    "description": "SATUR의 시그니처 감성을 담은 24SS 상의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "SATUR의 시그니처 감성을 담은 26FW 상의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "상의 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -1683,7 +1683,7 @@ export const PRODUCTS: Product[] = [
     "discount": 5,
     "img1": "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1509967419530-da38b4704bc6?q=80&w=800&auto=format&fit=crop",
-    "description": "Marithé François Girbaud의 시그니처 감성을 담은 24SS 상의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "Marithé François Girbaud의 시그니처 감성을 담은 26FW 상의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "상의 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -1719,7 +1719,7 @@ export const PRODUCTS: Product[] = [
     "discount": 15,
     "img1": "https://images.unsplash.com/photo-1556905055-8f358a7a47b2?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=800&auto=format&fit=crop",
-    "description": "ANDERSSON BELL의 시그니처 감성을 담은 24SS 상의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "ANDERSSON BELL의 시그니처 감성을 담은 26FW 상의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "상의 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -1754,7 +1754,7 @@ export const PRODUCTS: Product[] = [
     "discount": 20,
     "img1": "https://images.unsplash.com/photo-1509967419530-da38b4704bc6?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?q=80&w=800&auto=format&fit=crop",
-    "description": "AMOMENTO의 시그니처 감성을 담은 24SS 상의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "AMOMENTO의 시그니처 감성을 담은 26FW 상의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "상의 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -1792,7 +1792,7 @@ export const PRODUCTS: Product[] = [
     "discount": 20,
     "img1": "https://images.unsplash.com/photo-1598554747436-c9293d6a588f?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1584273143981-41c073dfe8f8?q=80&w=800&auto=format&fit=crop",
-    "description": "THOMAS MORE의 시그니처 감성을 담은 24SS 상의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "THOMAS MORE의 시그니처 감성을 담은 26FW 상의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "상의 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -1828,7 +1828,7 @@ export const PRODUCTS: Product[] = [
     "discount": 10,
     "img1": "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?q=80&w=800&auto=format&fit=crop",
-    "description": "POLYTERU의 시그니처 감성을 담은 24SS 상의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "POLYTERU의 시그니처 감성을 담은 26FW 상의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "상의 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -1865,7 +1865,7 @@ export const PRODUCTS: Product[] = [
     "discount": 10,
     "img1": "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1509967419530-da38b4704bc6?q=80&w=800&auto=format&fit=crop",
-    "description": "INSILENCE의 시그니처 감성을 담은 24SS 상의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "INSILENCE의 시그니처 감성을 담은 26FW 상의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "상의 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -1902,7 +1902,7 @@ export const PRODUCTS: Product[] = [
     "discount": 20,
     "img1": "/src/assets/images/editorial_bento_dunst_1793684669027.jpg",
     "img2": "https://images.unsplash.com/photo-1539109136881-3be0616acf4b?q=80&w=800&auto=format&fit=crop",
-    "description": "DUNST의 시그니처 감성을 담은 24SS 아우터 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "DUNST의 시그니처 감성을 담은 26FW 아우터 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "아우터 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -1940,7 +1940,7 @@ export const PRODUCTS: Product[] = [
     "discount": 15,
     "img1": "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=800&auto=format&fit=crop",
-    "description": "LOW CLASSIC의 시그니처 감성을 담은 24SS 아우터 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "LOW CLASSIC의 시그니처 감성을 담은 26FW 아우터 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "아우터 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -1978,7 +1978,7 @@ export const PRODUCTS: Product[] = [
     "discount": 20,
     "img1": "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1550614000-4895a10e1bfd?q=80&w=800&auto=format&fit=crop",
-    "description": "DUNST FOR MEN의 시그니처 감성을 담은 24SS 아우터 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "DUNST FOR MEN의 시그니처 감성을 담은 26FW 아우터 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "아우터 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -2014,7 +2014,7 @@ export const PRODUCTS: Product[] = [
     "discount": 15,
     "img1": "/src/assets/images/hero_quiet_luxury_1793684667332.jpg",
     "img2": "https://images.unsplash.com/photo-1539109136881-3be0616acf4b?q=80&w=800&auto=format&fit=crop",
-    "description": "POLYTERU의 시그니처 감성을 담은 24SS 아우터 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "POLYTERU의 시그니처 감성을 담은 26FW 아우터 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "아우터 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -2050,7 +2050,7 @@ export const PRODUCTS: Product[] = [
     "discount": 25,
     "img1": "/src/assets/images/hero_spring_collection_1793684668384.jpg",
     "img2": "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?q=80&w=800&auto=format&fit=crop",
-    "description": "INSILENCE의 시그니처 감성을 담은 24SS 아우터 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "INSILENCE의 시그니처 감성을 담은 26FW 아우터 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "아우터 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -2087,7 +2087,7 @@ export const PRODUCTS: Product[] = [
     "discount": 10,
     "img1": "/src/assets/images/editorial_bento_dunst_1793684669027.jpg",
     "img2": "https://images.unsplash.com/photo-1539109136881-3be0616acf4b?q=80&w=800&auto=format&fit=crop",
-    "description": "BELIER의 시그니처 감성을 담은 24SS 아우터 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "BELIER의 시그니처 감성을 담은 26FW 아우터 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "아우터 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -2122,7 +2122,7 @@ export const PRODUCTS: Product[] = [
     "discount": 20,
     "img1": "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=800&auto=format&fit=crop",
-    "description": "FACADE PATTERN의 시그니처 감성을 담은 24SS 아우터 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "FACADE PATTERN의 시그니처 감성을 담은 26FW 아우터 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "아우터 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -2158,7 +2158,7 @@ export const PRODUCTS: Product[] = [
     "discount": 25,
     "img1": "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1550614000-4895a10e1bfd?q=80&w=800&auto=format&fit=crop",
-    "description": "AMOMENTO의 시그니처 감성을 담은 24SS 아우터 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "AMOMENTO의 시그니처 감성을 담은 26FW 아우터 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "아우터 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -2195,7 +2195,7 @@ export const PRODUCTS: Product[] = [
     "discount": 25,
     "img1": "/src/assets/images/hero_quiet_luxury_1793684667332.jpg",
     "img2": "https://images.unsplash.com/photo-1539109136881-3be0616acf4b?q=80&w=800&auto=format&fit=crop",
-    "description": "COOR의 시그니처 감성을 담은 24SS 아우터 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "COOR의 시그니처 감성을 담은 26FW 아우터 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "아우터 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -2230,7 +2230,7 @@ export const PRODUCTS: Product[] = [
     "discount": 20,
     "img1": "/src/assets/images/hero_spring_collection_1793684668384.jpg",
     "img2": "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?q=80&w=800&auto=format&fit=crop",
-    "description": "DOFF JASON의 시그니처 감성을 담은 24SS 아우터 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "DOFF JASON의 시그니처 감성을 담은 26FW 아우터 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "아우터 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -2267,7 +2267,7 @@ export const PRODUCTS: Product[] = [
     "discount": 15,
     "img1": "/src/assets/images/editorial_bento_dunst_1793684669027.jpg",
     "img2": "https://images.unsplash.com/photo-1539109136881-3be0616acf4b?q=80&w=800&auto=format&fit=crop",
-    "description": "LAFUDGESTORE의 시그니처 감성을 담은 24SS 아우터 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "LAFUDGESTORE의 시그니처 감성을 담은 26FW 아우터 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "아우터 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -2304,7 +2304,7 @@ export const PRODUCTS: Product[] = [
     "discount": 15,
     "img1": "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=800&auto=format&fit=crop",
-    "description": "MUSINSA STANDARD의 시그니처 감성을 담은 24SS 아우터 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "MUSINSA STANDARD의 시그니처 감성을 담은 26FW 아우터 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "아우터 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -2339,7 +2339,7 @@ export const PRODUCTS: Product[] = [
     "discount": 15,
     "img1": "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1550614000-4895a10e1bfd?q=80&w=800&auto=format&fit=crop",
-    "description": "BARBOUR의 시그니처 감성을 담은 24SS 아우터 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "BARBOUR의 시그니처 감성을 담은 26FW 아우터 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "아우터 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -2376,7 +2376,7 @@ export const PRODUCTS: Product[] = [
     "discount": 25,
     "img1": "/src/assets/images/hero_quiet_luxury_1793684667332.jpg",
     "img2": "https://images.unsplash.com/photo-1539109136881-3be0616acf4b?q=80&w=800&auto=format&fit=crop",
-    "description": "THE NORTH FACE의 시그니처 감성을 담은 24SS 아우터 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "THE NORTH FACE의 시그니처 감성을 담은 26FW 아우터 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "아우터 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -2413,7 +2413,7 @@ export const PRODUCTS: Product[] = [
     "discount": 5,
     "img1": "/src/assets/images/hero_spring_collection_1793684668384.jpg",
     "img2": "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?q=80&w=800&auto=format&fit=crop",
-    "description": "thisisneverthat의 시그니처 감성을 담은 24SS 아우터 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "thisisneverthat의 시그니처 감성을 담은 26FW 아우터 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "아우터 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -2450,7 +2450,7 @@ export const PRODUCTS: Product[] = [
     "discount": 15,
     "img1": "/src/assets/images/editorial_bento_dunst_1793684669027.jpg",
     "img2": "https://images.unsplash.com/photo-1539109136881-3be0616acf4b?q=80&w=800&auto=format&fit=crop",
-    "description": "DUNST의 시그니처 감성을 담은 24SS 아우터 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "DUNST의 시그니처 감성을 담은 26FW 아우터 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "아우터 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -2487,7 +2487,7 @@ export const PRODUCTS: Product[] = [
     "discount": 10,
     "img1": "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=800&auto=format&fit=crop",
-    "description": "LOW CLASSIC의 시그니처 감성을 담은 24SS 아우터 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "LOW CLASSIC의 시그니처 감성을 담은 26FW 아우터 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "아우터 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -2525,7 +2525,7 @@ export const PRODUCTS: Product[] = [
     "discount": 20,
     "img1": "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1550614000-4895a10e1bfd?q=80&w=800&auto=format&fit=crop",
-    "description": "DUNST FOR MEN의 시그니처 감성을 담은 24SS 아우터 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "DUNST FOR MEN의 시그니처 감성을 담은 26FW 아우터 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "아우터 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -2560,7 +2560,7 @@ export const PRODUCTS: Product[] = [
     "discount": 25,
     "img1": "/src/assets/images/hero_quiet_luxury_1793684667332.jpg",
     "img2": "https://images.unsplash.com/photo-1539109136881-3be0616acf4b?q=80&w=800&auto=format&fit=crop",
-    "description": "POLYTERU의 시그니처 감성을 담은 24SS 아우터 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "POLYTERU의 시그니처 감성을 담은 26FW 아우터 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "아우터 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -2596,7 +2596,7 @@ export const PRODUCTS: Product[] = [
     "discount": 15,
     "img1": "/src/assets/images/hero_spring_collection_1793684668384.jpg",
     "img2": "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?q=80&w=800&auto=format&fit=crop",
-    "description": "INSILENCE의 시그니처 감성을 담은 24SS 아우터 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "INSILENCE의 시그니처 감성을 담은 26FW 아우터 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "아우터 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -2633,7 +2633,7 @@ export const PRODUCTS: Product[] = [
     "discount": 10,
     "img1": "/src/assets/images/editorial_bento_dunst_1793684669027.jpg",
     "img2": "https://images.unsplash.com/photo-1539109136881-3be0616acf4b?q=80&w=800&auto=format&fit=crop",
-    "description": "BELIER의 시그니처 감성을 담은 24SS 아우터 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "BELIER의 시그니처 감성을 담은 26FW 아우터 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "아우터 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -2668,7 +2668,7 @@ export const PRODUCTS: Product[] = [
     "discount": 25,
     "img1": "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=800&auto=format&fit=crop",
-    "description": "FACADE PATTERN의 시그니처 감성을 담은 24SS 아우터 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "FACADE PATTERN의 시그니처 감성을 담은 26FW 아우터 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "아우터 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -2704,7 +2704,7 @@ export const PRODUCTS: Product[] = [
     "discount": 20,
     "img1": "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1550614000-4895a10e1bfd?q=80&w=800&auto=format&fit=crop",
-    "description": "AMOMENTO의 시그니처 감성을 담은 24SS 아우터 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "AMOMENTO의 시그니처 감성을 담은 26FW 아우터 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "아우터 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -2741,7 +2741,7 @@ export const PRODUCTS: Product[] = [
     "discount": 25,
     "img1": "/src/assets/images/hero_quiet_luxury_1793684667332.jpg",
     "img2": "https://images.unsplash.com/photo-1539109136881-3be0616acf4b?q=80&w=800&auto=format&fit=crop",
-    "description": "COOR의 시그니처 감성을 담은 24SS 아우터 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "COOR의 시그니처 감성을 담은 26FW 아우터 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "아우터 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -2777,7 +2777,7 @@ export const PRODUCTS: Product[] = [
     "discount": 15,
     "img1": "/src/assets/images/hero_spring_collection_1793684668384.jpg",
     "img2": "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?q=80&w=800&auto=format&fit=crop",
-    "description": "DOFF JASON의 시그니처 감성을 담은 24SS 아우터 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "DOFF JASON의 시그니처 감성을 담은 26FW 아우터 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "아우터 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -2813,7 +2813,7 @@ export const PRODUCTS: Product[] = [
     "discount": 10,
     "img1": "/src/assets/images/editorial_bento_dunst_1793684669027.jpg",
     "img2": "https://images.unsplash.com/photo-1539109136881-3be0616acf4b?q=80&w=800&auto=format&fit=crop",
-    "description": "LAFUDGESTORE의 시그니처 감성을 담은 24SS 아우터 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "LAFUDGESTORE의 시그니처 감성을 담은 26FW 아우터 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "아우터 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -2850,7 +2850,7 @@ export const PRODUCTS: Product[] = [
     "discount": 15,
     "img1": "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=800&auto=format&fit=crop",
-    "description": "MUSINSA STANDARD의 시그니처 감성을 담은 24SS 아우터 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "MUSINSA STANDARD의 시그니처 감성을 담은 26FW 아우터 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "아우터 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -2886,7 +2886,7 @@ export const PRODUCTS: Product[] = [
     "discount": 25,
     "img1": "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1550614000-4895a10e1bfd?q=80&w=800&auto=format&fit=crop",
-    "description": "BARBOUR의 시그니처 감성을 담은 24SS 아우터 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "BARBOUR의 시그니처 감성을 담은 26FW 아우터 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "아우터 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -2922,7 +2922,7 @@ export const PRODUCTS: Product[] = [
     "discount": 20,
     "img1": "/src/assets/images/hero_quiet_luxury_1793684667332.jpg",
     "img2": "https://images.unsplash.com/photo-1539109136881-3be0616acf4b?q=80&w=800&auto=format&fit=crop",
-    "description": "THE NORTH FACE의 시그니처 감성을 담은 24SS 아우터 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "THE NORTH FACE의 시그니처 감성을 담은 26FW 아우터 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "아우터 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -2961,7 +2961,7 @@ export const PRODUCTS: Product[] = [
     "discount": 5,
     "img1": "/src/assets/images/hero_spring_collection_1793684668384.jpg",
     "img2": "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?q=80&w=800&auto=format&fit=crop",
-    "description": "thisisneverthat의 시그니처 감성을 담은 24SS 아우터 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "thisisneverthat의 시그니처 감성을 담은 26FW 아우터 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "아우터 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -2997,7 +2997,7 @@ export const PRODUCTS: Product[] = [
     "discount": 10,
     "img1": "/src/assets/images/editorial_bento_dunst_1793684669027.jpg",
     "img2": "https://images.unsplash.com/photo-1539109136881-3be0616acf4b?q=80&w=800&auto=format&fit=crop",
-    "description": "DUNST의 시그니처 감성을 담은 24SS 아우터 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "DUNST의 시그니처 감성을 담은 26FW 아우터 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "아우터 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -3034,7 +3034,7 @@ export const PRODUCTS: Product[] = [
     "discount": 15,
     "img1": "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=800&auto=format&fit=crop",
-    "description": "LOW CLASSIC의 시그니처 감성을 담은 24SS 아우터 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "LOW CLASSIC의 시그니처 감성을 담은 26FW 아우터 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "아우터 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -3071,7 +3071,7 @@ export const PRODUCTS: Product[] = [
     "discount": 20,
     "img1": "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1550614000-4895a10e1bfd?q=80&w=800&auto=format&fit=crop",
-    "description": "DUNST FOR MEN의 시그니처 감성을 담은 24SS 아우터 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "DUNST FOR MEN의 시그니처 감성을 담은 26FW 아우터 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "아우터 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -3106,7 +3106,7 @@ export const PRODUCTS: Product[] = [
     "discount": 15,
     "img1": "/src/assets/images/hero_quiet_luxury_1793684667332.jpg",
     "img2": "https://images.unsplash.com/photo-1539109136881-3be0616acf4b?q=80&w=800&auto=format&fit=crop",
-    "description": "POLYTERU의 시그니처 감성을 담은 24SS 아우터 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "POLYTERU의 시그니처 감성을 담은 26FW 아우터 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "아우터 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -3142,7 +3142,7 @@ export const PRODUCTS: Product[] = [
     "discount": 20,
     "img1": "/src/assets/images/hero_spring_collection_1793684668384.jpg",
     "img2": "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?q=80&w=800&auto=format&fit=crop",
-    "description": "INSILENCE의 시그니처 감성을 담은 24SS 아우터 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "INSILENCE의 시그니처 감성을 담은 26FW 아우터 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "아우터 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -3179,7 +3179,7 @@ export const PRODUCTS: Product[] = [
     "discount": 10,
     "img1": "/src/assets/images/editorial_bento_dunst_1793684669027.jpg",
     "img2": "https://images.unsplash.com/photo-1539109136881-3be0616acf4b?q=80&w=800&auto=format&fit=crop",
-    "description": "BELIER의 시그니처 감성을 담은 24SS 아우터 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "BELIER의 시그니처 감성을 담은 26FW 아우터 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "아우터 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -3214,7 +3214,7 @@ export const PRODUCTS: Product[] = [
     "discount": 20,
     "img1": "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=800&auto=format&fit=crop",
-    "description": "FACADE PATTERN의 시그니처 감성을 담은 24SS 아우터 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "FACADE PATTERN의 시그니처 감성을 담은 26FW 아우터 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "아우터 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -3250,7 +3250,7 @@ export const PRODUCTS: Product[] = [
     "discount": 20,
     "img1": "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1550614000-4895a10e1bfd?q=80&w=800&auto=format&fit=crop",
-    "description": "AMOMENTO의 시그니처 감성을 담은 24SS 아우터 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "AMOMENTO의 시그니처 감성을 담은 26FW 아우터 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "아우터 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -3288,7 +3288,7 @@ export const PRODUCTS: Product[] = [
     "discount": 25,
     "img1": "/src/assets/images/hero_quiet_luxury_1793684667332.jpg",
     "img2": "https://images.unsplash.com/photo-1539109136881-3be0616acf4b?q=80&w=800&auto=format&fit=crop",
-    "description": "COOR의 시그니처 감성을 담은 24SS 아우터 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "COOR의 시그니처 감성을 담은 26FW 아우터 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "아우터 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -3323,7 +3323,7 @@ export const PRODUCTS: Product[] = [
     "discount": 10,
     "img1": "/src/assets/images/hero_spring_collection_1793684668384.jpg",
     "img2": "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?q=80&w=800&auto=format&fit=crop",
-    "description": "DOFF JASON의 시그니처 감성을 담은 24SS 아우터 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "DOFF JASON의 시그니처 감성을 담은 26FW 아우터 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "아우터 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -3359,7 +3359,7 @@ export const PRODUCTS: Product[] = [
     "discount": 15,
     "img1": "/src/assets/images/editorial_bento_dunst_1793684669027.jpg",
     "img2": "https://images.unsplash.com/photo-1539109136881-3be0616acf4b?q=80&w=800&auto=format&fit=crop",
-    "description": "LAFUDGESTORE의 시그니처 감성을 담은 24SS 아우터 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "LAFUDGESTORE의 시그니처 감성을 담은 26FW 아우터 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "아우터 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -3397,7 +3397,7 @@ export const PRODUCTS: Product[] = [
     "discount": 15,
     "img1": "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=800&auto=format&fit=crop",
-    "description": "MUSINSA STANDARD의 시그니처 감성을 담은 24SS 아우터 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "MUSINSA STANDARD의 시그니처 감성을 담은 26FW 아우터 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "아우터 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -3432,7 +3432,7 @@ export const PRODUCTS: Product[] = [
     "discount": 20,
     "img1": "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1550614000-4895a10e1bfd?q=80&w=800&auto=format&fit=crop",
-    "description": "BARBOUR의 시그니처 감성을 담은 24SS 아우터 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "BARBOUR의 시그니처 감성을 담은 26FW 아우터 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "아우터 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -3470,7 +3470,7 @@ export const PRODUCTS: Product[] = [
     "discount": 15,
     "img1": "/src/assets/images/hero_quiet_luxury_1793684667332.jpg",
     "img2": "https://images.unsplash.com/photo-1539109136881-3be0616acf4b?q=80&w=800&auto=format&fit=crop",
-    "description": "THE NORTH FACE의 시그니처 감성을 담은 24SS 아우터 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "THE NORTH FACE의 시그니처 감성을 담은 26FW 아우터 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "아우터 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -3508,7 +3508,7 @@ export const PRODUCTS: Product[] = [
     "discount": 5,
     "img1": "/src/assets/images/hero_spring_collection_1793684668384.jpg",
     "img2": "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?q=80&w=800&auto=format&fit=crop",
-    "description": "thisisneverthat의 시그니처 감성을 담은 24SS 아우터 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "thisisneverthat의 시그니처 감성을 담은 26FW 아우터 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "아우터 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -3544,7 +3544,7 @@ export const PRODUCTS: Product[] = [
     "discount": 15,
     "img1": "/src/assets/images/editorial_bento_dunst_1793684669027.jpg",
     "img2": "https://images.unsplash.com/photo-1539109136881-3be0616acf4b?q=80&w=800&auto=format&fit=crop",
-    "description": "DUNST의 시그니처 감성을 담은 24SS 아우터 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "DUNST의 시그니처 감성을 담은 26FW 아우터 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "아우터 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -3580,7 +3580,7 @@ export const PRODUCTS: Product[] = [
     "discount": 25,
     "img1": "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=800&auto=format&fit=crop",
-    "description": "LOW CLASSIC의 시그니처 감성을 담은 24SS 아우터 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "LOW CLASSIC의 시그니처 감성을 담은 26FW 아우터 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "아우터 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -3617,7 +3617,7 @@ export const PRODUCTS: Product[] = [
     "discount": 20,
     "img1": "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1550614000-4895a10e1bfd?q=80&w=800&auto=format&fit=crop",
-    "description": "DUNST FOR MEN의 시그니처 감성을 담은 24SS 아우터 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "DUNST FOR MEN의 시그니처 감성을 담은 26FW 아우터 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "아우터 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -3652,7 +3652,7 @@ export const PRODUCTS: Product[] = [
     "discount": 20,
     "img1": "/src/assets/images/hero_quiet_luxury_1793684667332.jpg",
     "img2": "https://images.unsplash.com/photo-1539109136881-3be0616acf4b?q=80&w=800&auto=format&fit=crop",
-    "description": "POLYTERU의 시그니처 감성을 담은 24SS 아우터 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "POLYTERU의 시그니처 감성을 담은 26FW 아우터 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "아우터 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -3688,7 +3688,7 @@ export const PRODUCTS: Product[] = [
     "discount": 25,
     "img1": "/src/assets/images/hero_spring_collection_1793684668384.jpg",
     "img2": "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?q=80&w=800&auto=format&fit=crop",
-    "description": "INSILENCE의 시그니처 감성을 담은 24SS 아우터 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "INSILENCE의 시그니처 감성을 담은 26FW 아우터 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "아우터 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -3725,7 +3725,7 @@ export const PRODUCTS: Product[] = [
     "discount": 0,
     "img1": "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1509631179647-0177331693ae?q=80&w=800&auto=format&fit=crop",
-    "description": "RECTO의 시그니처 감성을 담은 24SS 하의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "RECTO의 시그니처 감성을 담은 26FW 하의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "하의 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -3764,7 +3764,7 @@ export const PRODUCTS: Product[] = [
     "discount": 10,
     "img1": "https://images.unsplash.com/photo-1509631179647-0177331693ae?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?q=80&w=800&auto=format&fit=crop",
-    "description": "GROVE의 시그니처 감성을 담은 24SS 하의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "GROVE의 시그니처 감성을 담은 26FW 하의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "하의 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -3802,7 +3802,7 @@ export const PRODUCTS: Product[] = [
     "discount": 20,
     "img1": "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1509631179647-0177331693ae?q=80&w=800&auto=format&fit=crop",
-    "description": "BEAMS의 시그니처 감성을 담은 24SS 하의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "BEAMS의 시그니처 감성을 담은 26FW 하의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "하의 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -3838,7 +3838,7 @@ export const PRODUCTS: Product[] = [
     "discount": 10,
     "img1": "https://images.unsplash.com/photo-1509631179647-0177331693ae?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?q=80&w=800&auto=format&fit=crop",
-    "description": "THOMAS MORE의 시그니처 감성을 담은 24SS 하의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "THOMAS MORE의 시그니처 감성을 담은 26FW 하의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "하의 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -3875,7 +3875,7 @@ export const PRODUCTS: Product[] = [
     "discount": 10,
     "img1": "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1509631179647-0177331693ae?q=80&w=800&auto=format&fit=crop",
-    "description": "UNIFORM BRIDGE의 시그니처 감성을 담은 24SS 하의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "UNIFORM BRIDGE의 시그니처 감성을 담은 26FW 하의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "하의 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -3912,7 +3912,7 @@ export const PRODUCTS: Product[] = [
     "discount": 10,
     "img1": "https://images.unsplash.com/photo-1509631179647-0177331693ae?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?q=80&w=800&auto=format&fit=crop",
-    "description": "MUSINSA STANDARD의 시그니처 감성을 담은 24SS 하의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "MUSINSA STANDARD의 시그니처 감성을 담은 26FW 하의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "하의 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -3948,7 +3948,7 @@ export const PRODUCTS: Product[] = [
     "discount": 15,
     "img1": "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1509631179647-0177331693ae?q=80&w=800&auto=format&fit=crop",
-    "description": "MODIFIED의 시그니처 감성을 담은 24SS 하의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "MODIFIED의 시그니처 감성을 담은 26FW 하의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "하의 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -3987,7 +3987,7 @@ export const PRODUCTS: Product[] = [
     "discount": 10,
     "img1": "https://images.unsplash.com/photo-1509631179647-0177331693ae?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?q=80&w=800&auto=format&fit=crop",
-    "description": "PLAC의 시그니처 감성을 담은 24SS 하의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "PLAC의 시그니처 감성을 담은 26FW 하의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "하의 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -4026,7 +4026,7 @@ export const PRODUCTS: Product[] = [
     "discount": 25,
     "img1": "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1509631179647-0177331693ae?q=80&w=800&auto=format&fit=crop",
-    "description": "BRANDED의 시그니처 감성을 담은 24SS 하의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "BRANDED의 시그니처 감성을 담은 26FW 하의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "하의 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -4061,7 +4061,7 @@ export const PRODUCTS: Product[] = [
     "discount": 10,
     "img1": "https://images.unsplash.com/photo-1509631179647-0177331693ae?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?q=80&w=800&auto=format&fit=crop",
-    "description": "FATALISM의 시그니처 감성을 담은 24SS 하의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "FATALISM의 시그니처 감성을 담은 26FW 하의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "하의 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -4099,7 +4099,7 @@ export const PRODUCTS: Product[] = [
     "discount": 15,
     "img1": "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1509631179647-0177331693ae?q=80&w=800&auto=format&fit=crop",
-    "description": "FACADE PATTERN의 시그니처 감성을 담은 24SS 하의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "FACADE PATTERN의 시그니처 감성을 담은 26FW 하의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "하의 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -4138,7 +4138,7 @@ export const PRODUCTS: Product[] = [
     "discount": 15,
     "img1": "https://images.unsplash.com/photo-1509631179647-0177331693ae?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?q=80&w=800&auto=format&fit=crop",
-    "description": "LOW CLASSIC의 시그니처 감성을 담은 24SS 하의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "LOW CLASSIC의 시그니처 감성을 담은 26FW 하의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "하의 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -4173,7 +4173,7 @@ export const PRODUCTS: Product[] = [
     "discount": 0,
     "img1": "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1509631179647-0177331693ae?q=80&w=800&auto=format&fit=crop",
-    "description": "COOR의 시그니처 감성을 담은 24SS 하의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "COOR의 시그니처 감성을 담은 26FW 하의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "하의 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -4212,7 +4212,7 @@ export const PRODUCTS: Product[] = [
     "discount": 10,
     "img1": "https://images.unsplash.com/photo-1509631179647-0177331693ae?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?q=80&w=800&auto=format&fit=crop",
-    "description": "POTTERY의 시그니처 감성을 담은 24SS 하의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "POTTERY의 시그니처 감성을 담은 26FW 하의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "하의 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -4250,7 +4250,7 @@ export const PRODUCTS: Product[] = [
     "discount": 5,
     "img1": "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1509631179647-0177331693ae?q=80&w=800&auto=format&fit=crop",
-    "description": "COVERNAT의 시그니처 감성을 담은 24SS 하의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "COVERNAT의 시그니처 감성을 담은 26FW 하의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "하의 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -4286,7 +4286,7 @@ export const PRODUCTS: Product[] = [
     "discount": 10,
     "img1": "https://images.unsplash.com/photo-1509631179647-0177331693ae?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?q=80&w=800&auto=format&fit=crop",
-    "description": "RECTO의 시그니처 감성을 담은 24SS 하의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "RECTO의 시그니처 감성을 담은 26FW 하의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "하의 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -4323,7 +4323,7 @@ export const PRODUCTS: Product[] = [
     "discount": 10,
     "img1": "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1509631179647-0177331693ae?q=80&w=800&auto=format&fit=crop",
-    "description": "GROVE의 시그니처 감성을 담은 24SS 하의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "GROVE의 시그니처 감성을 담은 26FW 하의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "하의 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -4360,7 +4360,7 @@ export const PRODUCTS: Product[] = [
     "discount": 20,
     "img1": "https://images.unsplash.com/photo-1509631179647-0177331693ae?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?q=80&w=800&auto=format&fit=crop",
-    "description": "BEAMS의 시그니처 감성을 담은 24SS 하의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "BEAMS의 시그니처 감성을 담은 26FW 하의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "하의 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -4396,7 +4396,7 @@ export const PRODUCTS: Product[] = [
     "discount": 15,
     "img1": "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1509631179647-0177331693ae?q=80&w=800&auto=format&fit=crop",
-    "description": "THOMAS MORE의 시그니처 감성을 담은 24SS 하의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "THOMAS MORE의 시그니처 감성을 담은 26FW 하의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "하의 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -4435,7 +4435,7 @@ export const PRODUCTS: Product[] = [
     "discount": 10,
     "img1": "https://images.unsplash.com/photo-1509631179647-0177331693ae?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?q=80&w=800&auto=format&fit=crop",
-    "description": "UNIFORM BRIDGE의 시그니처 감성을 담은 24SS 하의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "UNIFORM BRIDGE의 시그니처 감성을 담은 26FW 하의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "하의 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -4474,7 +4474,7 @@ export const PRODUCTS: Product[] = [
     "discount": 10,
     "img1": "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1509631179647-0177331693ae?q=80&w=800&auto=format&fit=crop",
-    "description": "MUSINSA STANDARD의 시그니처 감성을 담은 24SS 하의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "MUSINSA STANDARD의 시그니처 감성을 담은 26FW 하의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "하의 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -4509,7 +4509,7 @@ export const PRODUCTS: Product[] = [
     "discount": 10,
     "img1": "https://images.unsplash.com/photo-1509631179647-0177331693ae?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?q=80&w=800&auto=format&fit=crop",
-    "description": "MODIFIED의 시그니처 감성을 담은 24SS 하의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "MODIFIED의 시그니처 감성을 담은 26FW 하의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "하의 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -4547,7 +4547,7 @@ export const PRODUCTS: Product[] = [
     "discount": 15,
     "img1": "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1509631179647-0177331693ae?q=80&w=800&auto=format&fit=crop",
-    "description": "PLAC의 시그니처 감성을 담은 24SS 하의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "PLAC의 시그니처 감성을 담은 26FW 하의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "하의 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -4586,7 +4586,7 @@ export const PRODUCTS: Product[] = [
     "discount": 25,
     "img1": "https://images.unsplash.com/photo-1509631179647-0177331693ae?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?q=80&w=800&auto=format&fit=crop",
-    "description": "BRANDED의 시그니처 감성을 담은 24SS 하의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "BRANDED의 시그니처 감성을 담은 26FW 하의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "하의 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -4621,7 +4621,7 @@ export const PRODUCTS: Product[] = [
     "discount": 0,
     "img1": "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1509631179647-0177331693ae?q=80&w=800&auto=format&fit=crop",
-    "description": "FATALISM의 시그니처 감성을 담은 24SS 하의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "FATALISM의 시그니처 감성을 담은 26FW 하의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "하의 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -4660,7 +4660,7 @@ export const PRODUCTS: Product[] = [
     "discount": 10,
     "img1": "https://images.unsplash.com/photo-1509631179647-0177331693ae?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?q=80&w=800&auto=format&fit=crop",
-    "description": "FACADE PATTERN의 시그니처 감성을 담은 24SS 하의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "FACADE PATTERN의 시그니처 감성을 담은 26FW 하의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "하의 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -4698,7 +4698,7 @@ export const PRODUCTS: Product[] = [
     "discount": 15,
     "img1": "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1509631179647-0177331693ae?q=80&w=800&auto=format&fit=crop",
-    "description": "LOW CLASSIC의 시그니처 감성을 담은 24SS 하의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "LOW CLASSIC의 시그니처 감성을 담은 26FW 하의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "하의 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -4734,7 +4734,7 @@ export const PRODUCTS: Product[] = [
     "discount": 10,
     "img1": "https://images.unsplash.com/photo-1509631179647-0177331693ae?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?q=80&w=800&auto=format&fit=crop",
-    "description": "COOR의 시그니처 감성을 담은 24SS 하의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "COOR의 시그니처 감성을 담은 26FW 하의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "하의 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -4771,7 +4771,7 @@ export const PRODUCTS: Product[] = [
     "discount": 10,
     "img1": "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1509631179647-0177331693ae?q=80&w=800&auto=format&fit=crop",
-    "description": "POTTERY의 시그니처 감성을 담은 24SS 하의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "POTTERY의 시그니처 감성을 담은 26FW 하의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "하의 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -4808,7 +4808,7 @@ export const PRODUCTS: Product[] = [
     "discount": 5,
     "img1": "https://images.unsplash.com/photo-1509631179647-0177331693ae?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?q=80&w=800&auto=format&fit=crop",
-    "description": "COVERNAT의 시그니처 감성을 담은 24SS 하의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "COVERNAT의 시그니처 감성을 담은 26FW 하의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "하의 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -4844,7 +4844,7 @@ export const PRODUCTS: Product[] = [
     "discount": 15,
     "img1": "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1509631179647-0177331693ae?q=80&w=800&auto=format&fit=crop",
-    "description": "RECTO의 시그니처 감성을 담은 24SS 하의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "RECTO의 시그니처 감성을 담은 26FW 하의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "하의 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -4883,7 +4883,7 @@ export const PRODUCTS: Product[] = [
     "discount": 10,
     "img1": "https://images.unsplash.com/photo-1509631179647-0177331693ae?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?q=80&w=800&auto=format&fit=crop",
-    "description": "GROVE의 시그니처 감성을 담은 24SS 하의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "GROVE의 시그니처 감성을 담은 26FW 하의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "하의 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -4922,7 +4922,7 @@ export const PRODUCTS: Product[] = [
     "discount": 20,
     "img1": "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1509631179647-0177331693ae?q=80&w=800&auto=format&fit=crop",
-    "description": "BEAMS의 시그니처 감성을 담은 24SS 하의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "BEAMS의 시그니처 감성을 담은 26FW 하의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "하의 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -4957,7 +4957,7 @@ export const PRODUCTS: Product[] = [
     "discount": 10,
     "img1": "https://images.unsplash.com/photo-1509631179647-0177331693ae?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?q=80&w=800&auto=format&fit=crop",
-    "description": "THOMAS MORE의 시그니처 감성을 담은 24SS 하의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "THOMAS MORE의 시그니처 감성을 담은 26FW 하의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "하의 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -4995,7 +4995,7 @@ export const PRODUCTS: Product[] = [
     "discount": 15,
     "img1": "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1509631179647-0177331693ae?q=80&w=800&auto=format&fit=crop",
-    "description": "UNIFORM BRIDGE의 시그니처 감성을 담은 24SS 하의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "UNIFORM BRIDGE의 시그니처 감성을 담은 26FW 하의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "하의 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -5034,7 +5034,7 @@ export const PRODUCTS: Product[] = [
     "discount": 10,
     "img1": "https://images.unsplash.com/photo-1509631179647-0177331693ae?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?q=80&w=800&auto=format&fit=crop",
-    "description": "MUSINSA STANDARD의 시그니처 감성을 담은 24SS 하의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "MUSINSA STANDARD의 시그니처 감성을 담은 26FW 하의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "하의 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -5069,7 +5069,7 @@ export const PRODUCTS: Product[] = [
     "discount": 0,
     "img1": "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1509631179647-0177331693ae?q=80&w=800&auto=format&fit=crop",
-    "description": "MODIFIED의 시그니처 감성을 담은 24SS 하의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "MODIFIED의 시그니처 감성을 담은 26FW 하의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "하의 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -5108,7 +5108,7 @@ export const PRODUCTS: Product[] = [
     "discount": 10,
     "img1": "https://images.unsplash.com/photo-1509631179647-0177331693ae?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?q=80&w=800&auto=format&fit=crop",
-    "description": "PLAC의 시그니처 감성을 담은 24SS 하의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "PLAC의 시그니처 감성을 담은 26FW 하의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "하의 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -5146,7 +5146,7 @@ export const PRODUCTS: Product[] = [
     "discount": 25,
     "img1": "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1509631179647-0177331693ae?q=80&w=800&auto=format&fit=crop",
-    "description": "BRANDED의 시그니처 감성을 담은 24SS 하의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "BRANDED의 시그니처 감성을 담은 26FW 하의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "하의 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -5182,7 +5182,7 @@ export const PRODUCTS: Product[] = [
     "discount": 10,
     "img1": "https://images.unsplash.com/photo-1509631179647-0177331693ae?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?q=80&w=800&auto=format&fit=crop",
-    "description": "FATALISM의 시그니처 감성을 담은 24SS 하의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "FATALISM의 시그니처 감성을 담은 26FW 하의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "하의 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -5219,7 +5219,7 @@ export const PRODUCTS: Product[] = [
     "discount": 10,
     "img1": "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1509631179647-0177331693ae?q=80&w=800&auto=format&fit=crop",
-    "description": "FACADE PATTERN의 시그니처 감성을 담은 24SS 하의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "FACADE PATTERN의 시그니처 감성을 담은 26FW 하의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "하의 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -5256,7 +5256,7 @@ export const PRODUCTS: Product[] = [
     "discount": 15,
     "img1": "https://images.unsplash.com/photo-1509631179647-0177331693ae?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?q=80&w=800&auto=format&fit=crop",
-    "description": "LOW CLASSIC의 시그니처 감성을 담은 24SS 하의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "LOW CLASSIC의 시그니처 감성을 담은 26FW 하의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "하의 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -5292,7 +5292,7 @@ export const PRODUCTS: Product[] = [
     "discount": 15,
     "img1": "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1509631179647-0177331693ae?q=80&w=800&auto=format&fit=crop",
-    "description": "COOR의 시그니처 감성을 담은 24SS 하의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "COOR의 시그니처 감성을 담은 26FW 하의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "하의 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -5331,7 +5331,7 @@ export const PRODUCTS: Product[] = [
     "discount": 10,
     "img1": "https://images.unsplash.com/photo-1509631179647-0177331693ae?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?q=80&w=800&auto=format&fit=crop",
-    "description": "POTTERY의 시그니처 감성을 담은 24SS 하의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "POTTERY의 시그니처 감성을 담은 26FW 하의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "하의 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -5370,7 +5370,7 @@ export const PRODUCTS: Product[] = [
     "discount": 5,
     "img1": "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1509631179647-0177331693ae?q=80&w=800&auto=format&fit=crop",
-    "description": "COVERNAT의 시그니처 감성을 담은 24SS 하의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "COVERNAT의 시그니처 감성을 담은 26FW 하의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "하의 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -5405,7 +5405,7 @@ export const PRODUCTS: Product[] = [
     "discount": 10,
     "img1": "https://images.unsplash.com/photo-1509631179647-0177331693ae?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?q=80&w=800&auto=format&fit=crop",
-    "description": "RECTO의 시그니처 감성을 담은 24SS 하의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "RECTO의 시그니처 감성을 담은 26FW 하의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "하의 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -5443,7 +5443,7 @@ export const PRODUCTS: Product[] = [
     "discount": 15,
     "img1": "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1509631179647-0177331693ae?q=80&w=800&auto=format&fit=crop",
-    "description": "GROVE의 시그니처 감성을 담은 24SS 하의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "GROVE의 시그니처 감성을 담은 26FW 하의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "하의 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -5482,7 +5482,7 @@ export const PRODUCTS: Product[] = [
     "discount": 20,
     "img1": "https://images.unsplash.com/photo-1509631179647-0177331693ae?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?q=80&w=800&auto=format&fit=crop",
-    "description": "BEAMS의 시그니처 감성을 담은 24SS 하의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "BEAMS의 시그니처 감성을 담은 26FW 하의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "하의 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -5517,7 +5517,7 @@ export const PRODUCTS: Product[] = [
     "discount": 0,
     "img1": "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1509631179647-0177331693ae?q=80&w=800&auto=format&fit=crop",
-    "description": "THOMAS MORE의 시그니처 감성을 담은 24SS 하의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "THOMAS MORE의 시그니처 감성을 담은 26FW 하의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "하의 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -5556,7 +5556,7 @@ export const PRODUCTS: Product[] = [
     "discount": 10,
     "img1": "https://images.unsplash.com/photo-1509631179647-0177331693ae?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?q=80&w=800&auto=format&fit=crop",
-    "description": "UNIFORM BRIDGE의 시그니처 감성을 담은 24SS 하의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "UNIFORM BRIDGE의 시그니처 감성을 담은 26FW 하의 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "하의 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -5594,7 +5594,7 @@ export const PRODUCTS: Product[] = [
     "discount": 10,
     "img1": "https://images.unsplash.com/photo-1584917865442-de89df76afd3?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?q=80&w=800&auto=format&fit=crop",
-    "description": "STAND OIL의 시그니처 감성을 담은 24SS 가방 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "STAND OIL의 시그니처 감성을 담은 26FW 가방 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "가방 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -5629,7 +5629,7 @@ export const PRODUCTS: Product[] = [
     "discount": 15,
     "img1": "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1584917865442-de89df76afd3?q=80&w=800&auto=format&fit=crop",
-    "description": "Atelier de LUMEN의 시그니처 감성을 담은 24SS 가방 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "Atelier de LUMEN의 시그니처 감성을 담은 26FW 가방 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "가방 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -5665,7 +5665,7 @@ export const PRODUCTS: Product[] = [
     "discount": 20,
     "img1": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1622560480605-d83c853bc5c3?q=80&w=800&auto=format&fit=crop",
-    "description": "OSOI의 시그니처 감성을 담은 24SS 가방 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "OSOI의 시그니처 감성을 담은 26FW 가방 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "가방 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -5699,7 +5699,7 @@ export const PRODUCTS: Product[] = [
     "discount": 15,
     "img1": "https://images.unsplash.com/photo-1584917865442-de89df76afd3?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?q=80&w=800&auto=format&fit=crop",
-    "description": "ARCHIVÉPKÉ의 시그니처 감성을 담은 24SS 가방 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "ARCHIVÉPKÉ의 시그니처 감성을 담은 26FW 가방 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "가방 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -5734,7 +5734,7 @@ export const PRODUCTS: Product[] = [
     "discount": 10,
     "img1": "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1584917865442-de89df76afd3?q=80&w=800&auto=format&fit=crop",
-    "description": "BLANKOF의 시그니처 감성을 담은 24SS 가방 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "BLANKOF의 시그니처 감성을 담은 26FW 가방 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "가방 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -5770,7 +5770,7 @@ export const PRODUCTS: Product[] = [
     "discount": 10,
     "img1": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1622560480605-d83c853bc5c3?q=80&w=800&auto=format&fit=crop",
-    "description": "VUNQUE의 시그니처 감성을 담은 24SS 가방 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "VUNQUE의 시그니처 감성을 담은 26FW 가방 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "가방 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -5804,7 +5804,7 @@ export const PRODUCTS: Product[] = [
     "discount": 10,
     "img1": "https://images.unsplash.com/photo-1584917865442-de89df76afd3?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?q=80&w=800&auto=format&fit=crop",
-    "description": "PORTER의 시그니처 감성을 담은 24SS 가방 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "PORTER의 시그니처 감성을 담은 26FW 가방 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "가방 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -5839,7 +5839,7 @@ export const PRODUCTS: Product[] = [
     "discount": 0,
     "img1": "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1584917865442-de89df76afd3?q=80&w=800&auto=format&fit=crop",
-    "description": "FREITAG의 시그니처 감성을 담은 24SS 가방 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "FREITAG의 시그니처 감성을 담은 26FW 가방 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "가방 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -5875,7 +5875,7 @@ export const PRODUCTS: Product[] = [
     "discount": 25,
     "img1": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1622560480605-d83c853bc5c3?q=80&w=800&auto=format&fit=crop",
-    "description": "JANSPORT의 시그니처 감성을 담은 24SS 가방 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "JANSPORT의 시그니처 감성을 담은 26FW 가방 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "가방 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -5909,7 +5909,7 @@ export const PRODUCTS: Product[] = [
     "discount": 5,
     "img1": "https://images.unsplash.com/photo-1584917865442-de89df76afd3?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?q=80&w=800&auto=format&fit=crop",
-    "description": "THE NORTH FACE의 시그니처 감성을 담은 24SS 가방 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "THE NORTH FACE의 시그니처 감성을 담은 26FW 가방 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "가방 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -5944,7 +5944,7 @@ export const PRODUCTS: Product[] = [
     "discount": 10,
     "img1": "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1584917865442-de89df76afd3?q=80&w=800&auto=format&fit=crop",
-    "description": "Matin Kim의 시그니처 감성을 담은 24SS 가방 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "Matin Kim의 시그니처 감성을 담은 26FW 가방 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "가방 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -5980,7 +5980,7 @@ export const PRODUCTS: Product[] = [
     "discount": 15,
     "img1": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1622560480605-d83c853bc5c3?q=80&w=800&auto=format&fit=crop",
-    "description": "LEMAIRE의 시그니처 감성을 담은 24SS 가방 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "LEMAIRE의 시그니처 감성을 담은 26FW 가방 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "가방 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -6014,7 +6014,7 @@ export const PRODUCTS: Product[] = [
     "discount": 10,
     "img1": "https://images.unsplash.com/photo-1584917865442-de89df76afd3?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?q=80&w=800&auto=format&fit=crop",
-    "description": "EMIS의 시그니처 감성을 담은 24SS 가방 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "EMIS의 시그니처 감성을 담은 26FW 가방 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "가방 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -6049,7 +6049,7 @@ export const PRODUCTS: Product[] = [
     "discount": 15,
     "img1": "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1584917865442-de89df76afd3?q=80&w=800&auto=format&fit=crop",
-    "description": "STAND OIL의 시그니처 감성을 담은 24SS 가방 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "STAND OIL의 시그니처 감성을 담은 26FW 가방 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "가방 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -6085,7 +6085,7 @@ export const PRODUCTS: Product[] = [
     "discount": 5,
     "img1": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1622560480605-d83c853bc5c3?q=80&w=800&auto=format&fit=crop",
-    "description": "Atelier de LUMEN의 시그니처 감성을 담은 24SS 가방 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "Atelier de LUMEN의 시그니처 감성을 담은 26FW 가방 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "가방 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -6119,7 +6119,7 @@ export const PRODUCTS: Product[] = [
     "discount": 15,
     "img1": "https://images.unsplash.com/photo-1584917865442-de89df76afd3?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?q=80&w=800&auto=format&fit=crop",
-    "description": "OSOI의 시그니처 감성을 담은 24SS 가방 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "OSOI의 시그니처 감성을 담은 26FW 가방 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "가방 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -6154,7 +6154,7 @@ export const PRODUCTS: Product[] = [
     "discount": 10,
     "img1": "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1584917865442-de89df76afd3?q=80&w=800&auto=format&fit=crop",
-    "description": "ARCHIVÉPKÉ의 시그니처 감성을 담은 24SS 가방 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "ARCHIVÉPKÉ의 시그니처 감성을 담은 26FW 가방 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "가방 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -6190,7 +6190,7 @@ export const PRODUCTS: Product[] = [
     "discount": 20,
     "img1": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1622560480605-d83c853bc5c3?q=80&w=800&auto=format&fit=crop",
-    "description": "BLANKOF의 시그니처 감성을 담은 24SS 가방 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "BLANKOF의 시그니처 감성을 담은 26FW 가방 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "가방 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -6224,7 +6224,7 @@ export const PRODUCTS: Product[] = [
     "discount": 10,
     "img1": "https://images.unsplash.com/photo-1584917865442-de89df76afd3?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?q=80&w=800&auto=format&fit=crop",
-    "description": "VUNQUE의 시그니처 감성을 담은 24SS 가방 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "VUNQUE의 시그니처 감성을 담은 26FW 가방 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "가방 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -6259,7 +6259,7 @@ export const PRODUCTS: Product[] = [
     "discount": 0,
     "img1": "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1584917865442-de89df76afd3?q=80&w=800&auto=format&fit=crop",
-    "description": "PORTER의 시그니처 감성을 담은 24SS 가방 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "PORTER의 시그니처 감성을 담은 26FW 가방 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "가방 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -6295,7 +6295,7 @@ export const PRODUCTS: Product[] = [
     "discount": 10,
     "img1": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1622560480605-d83c853bc5c3?q=80&w=800&auto=format&fit=crop",
-    "description": "FREITAG의 시그니처 감성을 담은 24SS 가방 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "FREITAG의 시그니처 감성을 담은 26FW 가방 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "가방 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -6329,7 +6329,7 @@ export const PRODUCTS: Product[] = [
     "discount": 5,
     "img1": "https://images.unsplash.com/photo-1584917865442-de89df76afd3?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?q=80&w=800&auto=format&fit=crop",
-    "description": "JANSPORT의 시그니처 감성을 담은 24SS 가방 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "JANSPORT의 시그니처 감성을 담은 26FW 가방 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "가방 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -6364,7 +6364,7 @@ export const PRODUCTS: Product[] = [
     "discount": 10,
     "img1": "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1584917865442-de89df76afd3?q=80&w=800&auto=format&fit=crop",
-    "description": "THE NORTH FACE의 시그니처 감성을 담은 24SS 가방 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "THE NORTH FACE의 시그니처 감성을 담은 26FW 가방 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "가방 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -6400,7 +6400,7 @@ export const PRODUCTS: Product[] = [
     "discount": 25,
     "img1": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1622560480605-d83c853bc5c3?q=80&w=800&auto=format&fit=crop",
-    "description": "Matin Kim의 시그니처 감성을 담은 24SS 가방 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "Matin Kim의 시그니처 감성을 담은 26FW 가방 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "가방 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -6434,7 +6434,7 @@ export const PRODUCTS: Product[] = [
     "discount": 10,
     "img1": "https://images.unsplash.com/photo-1584917865442-de89df76afd3?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?q=80&w=800&auto=format&fit=crop",
-    "description": "LEMAIRE의 시그니처 감성을 담은 24SS 가방 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "LEMAIRE의 시그니처 감성을 담은 26FW 가방 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "가방 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -6469,7 +6469,7 @@ export const PRODUCTS: Product[] = [
     "discount": 15,
     "img1": "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1584917865442-de89df76afd3?q=80&w=800&auto=format&fit=crop",
-    "description": "EMIS의 시그니처 감성을 담은 24SS 가방 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "EMIS의 시그니처 감성을 담은 26FW 가방 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "가방 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -6505,7 +6505,7 @@ export const PRODUCTS: Product[] = [
     "discount": 15,
     "img1": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1622560480605-d83c853bc5c3?q=80&w=800&auto=format&fit=crop",
-    "description": "STAND OIL의 시그니처 감성을 담은 24SS 가방 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "STAND OIL의 시그니처 감성을 담은 26FW 가방 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "가방 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -6539,7 +6539,7 @@ export const PRODUCTS: Product[] = [
     "discount": 15,
     "img1": "https://images.unsplash.com/photo-1584917865442-de89df76afd3?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?q=80&w=800&auto=format&fit=crop",
-    "description": "Atelier de LUMEN의 시그니처 감성을 담은 24SS 가방 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "Atelier de LUMEN의 시그니처 감성을 담은 26FW 가방 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "가방 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -6574,7 +6574,7 @@ export const PRODUCTS: Product[] = [
     "discount": 10,
     "img1": "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1584917865442-de89df76afd3?q=80&w=800&auto=format&fit=crop",
-    "description": "OSOI의 시그니처 감성을 담은 24SS 가방 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "OSOI의 시그니처 감성을 담은 26FW 가방 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "가방 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -6610,7 +6610,7 @@ export const PRODUCTS: Product[] = [
     "discount": 5,
     "img1": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1622560480605-d83c853bc5c3?q=80&w=800&auto=format&fit=crop",
-    "description": "ARCHIVÉPKÉ의 시그니처 감성을 담은 24SS 가방 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "ARCHIVÉPKÉ의 시그니처 감성을 담은 26FW 가방 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "가방 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -6644,7 +6644,7 @@ export const PRODUCTS: Product[] = [
     "discount": 10,
     "img1": "https://images.unsplash.com/photo-1584917865442-de89df76afd3?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?q=80&w=800&auto=format&fit=crop",
-    "description": "BLANKOF의 시그니처 감성을 담은 24SS 가방 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "BLANKOF의 시그니처 감성을 담은 26FW 가방 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "가방 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -6679,7 +6679,7 @@ export const PRODUCTS: Product[] = [
     "discount": 0,
     "img1": "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1584917865442-de89df76afd3?q=80&w=800&auto=format&fit=crop",
-    "description": "VUNQUE의 시그니처 감성을 담은 24SS 가방 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "VUNQUE의 시그니처 감성을 담은 26FW 가방 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "가방 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -6715,7 +6715,7 @@ export const PRODUCTS: Product[] = [
     "discount": 20,
     "img1": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1622560480605-d83c853bc5c3?q=80&w=800&auto=format&fit=crop",
-    "description": "PORTER의 시그니처 감성을 담은 24SS 가방 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "PORTER의 시그니처 감성을 담은 26FW 가방 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "가방 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -6749,7 +6749,7 @@ export const PRODUCTS: Product[] = [
     "discount": 5,
     "img1": "https://images.unsplash.com/photo-1584917865442-de89df76afd3?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?q=80&w=800&auto=format&fit=crop",
-    "description": "FREITAG의 시그니처 감성을 담은 24SS 가방 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "FREITAG의 시그니처 감성을 담은 26FW 가방 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "가방 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -6784,7 +6784,7 @@ export const PRODUCTS: Product[] = [
     "discount": 10,
     "img1": "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1584917865442-de89df76afd3?q=80&w=800&auto=format&fit=crop",
-    "description": "JANSPORT의 시그니처 감성을 담은 24SS 가방 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "JANSPORT의 시그니처 감성을 담은 26FW 가방 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "가방 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -6820,7 +6820,7 @@ export const PRODUCTS: Product[] = [
     "discount": 10,
     "img1": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1622560480605-d83c853bc5c3?q=80&w=800&auto=format&fit=crop",
-    "description": "THE NORTH FACE의 시그니처 감성을 담은 24SS 가방 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "THE NORTH FACE의 시그니처 감성을 담은 26FW 가방 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "가방 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -6854,7 +6854,7 @@ export const PRODUCTS: Product[] = [
     "discount": 10,
     "img1": "https://images.unsplash.com/photo-1584917865442-de89df76afd3?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?q=80&w=800&auto=format&fit=crop",
-    "description": "Matin Kim의 시그니처 감성을 담은 24SS 가방 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "Matin Kim의 시그니처 감성을 담은 26FW 가방 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "가방 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -6889,7 +6889,7 @@ export const PRODUCTS: Product[] = [
     "discount": 15,
     "img1": "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1584917865442-de89df76afd3?q=80&w=800&auto=format&fit=crop",
-    "description": "LEMAIRE의 시그니처 감성을 담은 24SS 가방 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "LEMAIRE의 시그니처 감성을 담은 26FW 가방 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "가방 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -6925,7 +6925,7 @@ export const PRODUCTS: Product[] = [
     "discount": 25,
     "img1": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1622560480605-d83c853bc5c3?q=80&w=800&auto=format&fit=crop",
-    "description": "EMIS의 시그니처 감성을 담은 24SS 가방 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "EMIS의 시그니처 감성을 담은 26FW 가방 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "가방 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -6959,7 +6959,7 @@ export const PRODUCTS: Product[] = [
     "discount": 15,
     "img1": "https://images.unsplash.com/photo-1584917865442-de89df76afd3?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?q=80&w=800&auto=format&fit=crop",
-    "description": "STAND OIL의 시그니처 감성을 담은 24SS 가방 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "STAND OIL의 시그니처 감성을 담은 26FW 가방 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "가방 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -6994,7 +6994,7 @@ export const PRODUCTS: Product[] = [
     "discount": 10,
     "img1": "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1584917865442-de89df76afd3?q=80&w=800&auto=format&fit=crop",
-    "description": "Atelier de LUMEN의 시그니처 감성을 담은 24SS 가방 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "Atelier de LUMEN의 시그니처 감성을 담은 26FW 가방 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "가방 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -7030,7 +7030,7 @@ export const PRODUCTS: Product[] = [
     "discount": 15,
     "img1": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1622560480605-d83c853bc5c3?q=80&w=800&auto=format&fit=crop",
-    "description": "OSOI의 시그니처 감성을 담은 24SS 가방 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "OSOI의 시그니처 감성을 담은 26FW 가방 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "가방 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -7064,7 +7064,7 @@ export const PRODUCTS: Product[] = [
     "discount": 10,
     "img1": "https://images.unsplash.com/photo-1584917865442-de89df76afd3?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?q=80&w=800&auto=format&fit=crop",
-    "description": "ARCHIVÉPKÉ의 시그니처 감성을 담은 24SS 가방 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "ARCHIVÉPKÉ의 시그니처 감성을 담은 26FW 가방 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "가방 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -7099,7 +7099,7 @@ export const PRODUCTS: Product[] = [
     "discount": 0,
     "img1": "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1584917865442-de89df76afd3?q=80&w=800&auto=format&fit=crop",
-    "description": "BLANKOF의 시그니처 감성을 담은 24SS 가방 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "BLANKOF의 시그니처 감성을 담은 26FW 가방 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "가방 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -7135,7 +7135,7 @@ export const PRODUCTS: Product[] = [
     "discount": 5,
     "img1": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1622560480605-d83c853bc5c3?q=80&w=800&auto=format&fit=crop",
-    "description": "VUNQUE의 시그니처 감성을 담은 24SS 가방 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "VUNQUE의 시그니처 감성을 담은 26FW 가방 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "가방 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -7169,7 +7169,7 @@ export const PRODUCTS: Product[] = [
     "discount": 5,
     "img1": "https://images.unsplash.com/photo-1584917865442-de89df76afd3?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?q=80&w=800&auto=format&fit=crop",
-    "description": "PORTER의 시그니처 감성을 담은 24SS 가방 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "PORTER의 시그니처 감성을 담은 26FW 가방 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "가방 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -7204,7 +7204,7 @@ export const PRODUCTS: Product[] = [
     "discount": 10,
     "img1": "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1584917865442-de89df76afd3?q=80&w=800&auto=format&fit=crop",
-    "description": "FREITAG의 시그니처 감성을 담은 24SS 가방 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "FREITAG의 시그니처 감성을 담은 26FW 가방 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "가방 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -7240,7 +7240,7 @@ export const PRODUCTS: Product[] = [
     "discount": 20,
     "img1": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1622560480605-d83c853bc5c3?q=80&w=800&auto=format&fit=crop",
-    "description": "JANSPORT의 시그니처 감성을 담은 24SS 가방 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "JANSPORT의 시그니처 감성을 담은 26FW 가방 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "가방 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -7274,7 +7274,7 @@ export const PRODUCTS: Product[] = [
     "discount": 10,
     "img1": "https://images.unsplash.com/photo-1584917865442-de89df76afd3?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?q=80&w=800&auto=format&fit=crop",
-    "description": "THE NORTH FACE의 시그니처 감성을 담은 24SS 가방 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "THE NORTH FACE의 시그니처 감성을 담은 26FW 가방 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "가방 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -7309,7 +7309,7 @@ export const PRODUCTS: Product[] = [
     "discount": 15,
     "img1": "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1584917865442-de89df76afd3?q=80&w=800&auto=format&fit=crop",
-    "description": "Matin Kim의 시그니처 감성을 담은 24SS 가방 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "Matin Kim의 시그니처 감성을 담은 26FW 가방 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "가방 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -7345,7 +7345,7 @@ export const PRODUCTS: Product[] = [
     "discount": 10,
     "img1": "https://images.unsplash.com/photo-1583496661160-fb5886a0aaaa?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=800&auto=format&fit=crop",
-    "description": "NOHANT의 시그니처 감성을 담은 24SS 스커트/원피스 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "NOHANT의 시그니처 감성을 담은 26FW 스커트/원피스 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "스커트/원피스 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -7381,7 +7381,7 @@ export const PRODUCTS: Product[] = [
     "discount": 10,
     "img1": "https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1496747611176-843222e1e57c?q=80&w=800&auto=format&fit=crop",
-    "description": "SJSJ의 시그니처 감성을 담은 24SS 스커트/원피스 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "SJSJ의 시그니처 감성을 담은 26FW 스커트/원피스 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "스커트/원피스 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -7418,7 +7418,7 @@ export const PRODUCTS: Product[] = [
     "discount": 20,
     "img1": "https://images.unsplash.com/photo-1496747611176-843222e1e57c?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?q=80&w=800&auto=format&fit=crop",
-    "description": "RECTO의 시그니처 감성을 담은 24SS 스커트/원피스 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "RECTO의 시그니처 감성을 담은 26FW 스커트/원피스 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "스커트/원피스 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -7453,7 +7453,7 @@ export const PRODUCTS: Product[] = [
     "discount": 15,
     "img1": "https://images.unsplash.com/photo-1583496661160-fb5886a0aaaa?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=800&auto=format&fit=crop",
-    "description": "DUNST의 시그니처 감성을 담은 24SS 스커트/원피스 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "DUNST의 시그니처 감성을 담은 26FW 스커트/원피스 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "스커트/원피스 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -7490,7 +7490,7 @@ export const PRODUCTS: Product[] = [
     "discount": 20,
     "img1": "https://images.unsplash.com/photo-1583496661160-fb5886a0aaaa?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=800&auto=format&fit=crop",
-    "description": "LOW CLASSIC의 시그니처 감성을 담은 24SS 스커트/원피스 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "LOW CLASSIC의 시그니처 감성을 담은 26FW 스커트/원피스 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "스커트/원피스 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -7527,7 +7527,7 @@ export const PRODUCTS: Product[] = [
     "discount": 10,
     "img1": "https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1496747611176-843222e1e57c?q=80&w=800&auto=format&fit=crop",
-    "description": "SIE의 시그니처 감성을 담은 24SS 스커트/원피스 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "SIE의 시그니처 감성을 담은 26FW 스커트/원피스 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "스커트/원피스 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -7561,7 +7561,7 @@ export const PRODUCTS: Product[] = [
     "discount": 10,
     "img1": "https://images.unsplash.com/photo-1496747611176-843222e1e57c?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?q=80&w=800&auto=format&fit=crop",
-    "description": "GROVE의 시그니처 감성을 담은 24SS 스커트/원피스 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "GROVE의 시그니처 감성을 담은 26FW 스커트/원피스 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "스커트/원피스 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -7597,7 +7597,7 @@ export const PRODUCTS: Product[] = [
     "discount": 15,
     "img1": "https://images.unsplash.com/photo-1583496661160-fb5886a0aaaa?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=800&auto=format&fit=crop",
-    "description": "FACADE PATTERN의 시그니처 감성을 담은 24SS 스커트/원피스 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "FACADE PATTERN의 시그니처 감성을 담은 26FW 스커트/원피스 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "스커트/원피스 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -7635,7 +7635,7 @@ export const PRODUCTS: Product[] = [
     "discount": 25,
     "img1": "https://images.unsplash.com/photo-1583496661160-fb5886a0aaaa?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=800&auto=format&fit=crop",
-    "description": "Marithé François Girbaud의 시그니처 감성을 담은 24SS 스커트/원피스 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "Marithé François Girbaud의 시그니처 감성을 담은 26FW 스커트/원피스 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "스커트/원피스 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -7670,7 +7670,7 @@ export const PRODUCTS: Product[] = [
     "discount": 15,
     "img1": "https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1496747611176-843222e1e57c?q=80&w=800&auto=format&fit=crop",
-    "description": "AMOMENTO의 시그니처 감성을 담은 24SS 스커트/원피스 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "AMOMENTO의 시그니처 감성을 담은 26FW 스커트/원피스 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "스커트/원피스 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -7705,7 +7705,7 @@ export const PRODUCTS: Product[] = [
     "discount": 20,
     "img1": "https://images.unsplash.com/photo-1496747611176-843222e1e57c?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?q=80&w=800&auto=format&fit=crop",
-    "description": "LENINA의 시그니처 감성을 담은 24SS 스커트/원피스 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "LENINA의 시그니처 감성을 담은 26FW 스커트/원피스 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "스커트/원피스 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -7742,7 +7742,7 @@ export const PRODUCTS: Product[] = [
     "discount": 15,
     "img1": "https://images.unsplash.com/photo-1583496661160-fb5886a0aaaa?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=800&auto=format&fit=crop",
-    "description": "TILL I DIE의 시그니처 감성을 담은 24SS 스커트/원피스 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "TILL I DIE의 시그니처 감성을 담은 26FW 스커트/원피스 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "스커트/원피스 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -7777,7 +7777,7 @@ export const PRODUCTS: Product[] = [
     "discount": 10,
     "img1": "https://images.unsplash.com/photo-1583496661160-fb5886a0aaaa?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=800&auto=format&fit=crop",
-    "description": "NOHANT의 시그니처 감성을 담은 24SS 스커트/원피스 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "NOHANT의 시그니처 감성을 담은 26FW 스커트/원피스 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "스커트/원피스 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -7813,7 +7813,7 @@ export const PRODUCTS: Product[] = [
     "discount": 10,
     "img1": "https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1496747611176-843222e1e57c?q=80&w=800&auto=format&fit=crop",
-    "description": "SJSJ의 시그니처 감성을 담은 24SS 스커트/원피스 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "SJSJ의 시그니처 감성을 담은 26FW 스커트/원피스 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "스커트/원피스 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -7850,7 +7850,7 @@ export const PRODUCTS: Product[] = [
     "discount": 5,
     "img1": "https://images.unsplash.com/photo-1496747611176-843222e1e57c?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?q=80&w=800&auto=format&fit=crop",
-    "description": "RECTO의 시그니처 감성을 담은 24SS 스커트/원피스 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "RECTO의 시그니처 감성을 담은 26FW 스커트/원피스 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "스커트/원피스 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -7885,7 +7885,7 @@ export const PRODUCTS: Product[] = [
     "discount": 15,
     "img1": "https://images.unsplash.com/photo-1583496661160-fb5886a0aaaa?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=800&auto=format&fit=crop",
-    "description": "DUNST의 시그니처 감성을 담은 24SS 스커트/원피스 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "DUNST의 시그니처 감성을 담은 26FW 스커트/원피스 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "스커트/원피스 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -7922,7 +7922,7 @@ export const PRODUCTS: Product[] = [
     "discount": 20,
     "img1": "https://images.unsplash.com/photo-1583496661160-fb5886a0aaaa?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=800&auto=format&fit=crop",
-    "description": "LOW CLASSIC의 시그니처 감성을 담은 24SS 스커트/원피스 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "LOW CLASSIC의 시그니처 감성을 담은 26FW 스커트/원피스 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "스커트/원피스 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -7959,7 +7959,7 @@ export const PRODUCTS: Product[] = [
     "discount": 20,
     "img1": "https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1496747611176-843222e1e57c?q=80&w=800&auto=format&fit=crop",
-    "description": "SIE의 시그니처 감성을 담은 24SS 스커트/원피스 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "SIE의 시그니처 감성을 담은 26FW 스커트/원피스 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "스커트/원피스 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -7993,7 +7993,7 @@ export const PRODUCTS: Product[] = [
     "discount": 10,
     "img1": "https://images.unsplash.com/photo-1496747611176-843222e1e57c?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?q=80&w=800&auto=format&fit=crop",
-    "description": "GROVE의 시그니처 감성을 담은 24SS 스커트/원피스 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "GROVE의 시그니처 감성을 담은 26FW 스커트/원피스 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "스커트/원피스 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -8029,7 +8029,7 @@ export const PRODUCTS: Product[] = [
     "discount": 15,
     "img1": "https://images.unsplash.com/photo-1583496661160-fb5886a0aaaa?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=800&auto=format&fit=crop",
-    "description": "FACADE PATTERN의 시그니처 감성을 담은 24SS 스커트/원피스 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "FACADE PATTERN의 시그니처 감성을 담은 26FW 스커트/원피스 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "스커트/원피스 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -8067,7 +8067,7 @@ export const PRODUCTS: Product[] = [
     "discount": 10,
     "img1": "https://images.unsplash.com/photo-1583496661160-fb5886a0aaaa?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=800&auto=format&fit=crop",
-    "description": "Marithé François Girbaud의 시그니처 감성을 담은 24SS 스커트/원피스 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "Marithé François Girbaud의 시그니처 감성을 담은 26FW 스커트/원피스 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "스커트/원피스 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -8102,7 +8102,7 @@ export const PRODUCTS: Product[] = [
     "discount": 15,
     "img1": "https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1496747611176-843222e1e57c?q=80&w=800&auto=format&fit=crop",
-    "description": "AMOMENTO의 시그니처 감성을 담은 24SS 스커트/원피스 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "AMOMENTO의 시그니처 감성을 담은 26FW 스커트/원피스 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "스커트/원피스 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -8137,7 +8137,7 @@ export const PRODUCTS: Product[] = [
     "discount": 20,
     "img1": "https://images.unsplash.com/photo-1496747611176-843222e1e57c?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?q=80&w=800&auto=format&fit=crop",
-    "description": "LENINA의 시그니처 감성을 담은 24SS 스커트/원피스 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "LENINA의 시그니처 감성을 담은 26FW 스커트/원피스 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "스커트/원피스 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -8174,7 +8174,7 @@ export const PRODUCTS: Product[] = [
     "discount": 25,
     "img1": "https://images.unsplash.com/photo-1583496661160-fb5886a0aaaa?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=800&auto=format&fit=crop",
-    "description": "TILL I DIE의 시그니처 감성을 담은 24SS 스커트/원피스 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "TILL I DIE의 시그니처 감성을 담은 26FW 스커트/원피스 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "스커트/원피스 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -8209,7 +8209,7 @@ export const PRODUCTS: Product[] = [
     "discount": 10,
     "img1": "https://images.unsplash.com/photo-1583496661160-fb5886a0aaaa?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=800&auto=format&fit=crop",
-    "description": "NOHANT의 시그니처 감성을 담은 24SS 스커트/원피스 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "NOHANT의 시그니처 감성을 담은 26FW 스커트/원피스 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "스커트/원피스 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -8245,7 +8245,7 @@ export const PRODUCTS: Product[] = [
     "discount": 10,
     "img1": "https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1496747611176-843222e1e57c?q=80&w=800&auto=format&fit=crop",
-    "description": "SJSJ의 시그니처 감성을 담은 24SS 스커트/원피스 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "SJSJ의 시그니처 감성을 담은 26FW 스커트/원피스 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "스커트/원피스 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -8282,7 +8282,7 @@ export const PRODUCTS: Product[] = [
     "discount": 15,
     "img1": "https://images.unsplash.com/photo-1496747611176-843222e1e57c?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?q=80&w=800&auto=format&fit=crop",
-    "description": "RECTO의 시그니처 감성을 담은 24SS 스커트/원피스 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "RECTO의 시그니처 감성을 담은 26FW 스커트/원피스 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "스커트/원피스 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -8317,7 +8317,7 @@ export const PRODUCTS: Product[] = [
     "discount": 15,
     "img1": "https://images.unsplash.com/photo-1583496661160-fb5886a0aaaa?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=800&auto=format&fit=crop",
-    "description": "DUNST의 시그니처 감성을 담은 24SS 스커트/원피스 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "DUNST의 시그니처 감성을 담은 26FW 스커트/원피스 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "스커트/원피스 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -8354,7 +8354,7 @@ export const PRODUCTS: Product[] = [
     "discount": 20,
     "img1": "https://images.unsplash.com/photo-1583496661160-fb5886a0aaaa?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=800&auto=format&fit=crop",
-    "description": "LOW CLASSIC의 시그니처 감성을 담은 24SS 스커트/원피스 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "LOW CLASSIC의 시그니처 감성을 담은 26FW 스커트/원피스 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "스커트/원피스 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -8391,7 +8391,7 @@ export const PRODUCTS: Product[] = [
     "discount": 5,
     "img1": "https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1496747611176-843222e1e57c?q=80&w=800&auto=format&fit=crop",
-    "description": "SIE의 시그니처 감성을 담은 24SS 스커트/원피스 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "SIE의 시그니처 감성을 담은 26FW 스커트/원피스 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "스커트/원피스 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -8425,7 +8425,7 @@ export const PRODUCTS: Product[] = [
     "discount": 10,
     "img1": "https://images.unsplash.com/photo-1496747611176-843222e1e57c?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?q=80&w=800&auto=format&fit=crop",
-    "description": "GROVE의 시그니처 감성을 담은 24SS 스커트/원피스 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "GROVE의 시그니처 감성을 담은 26FW 스커트/원피스 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "스커트/원피스 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -8461,7 +8461,7 @@ export const PRODUCTS: Product[] = [
     "discount": 15,
     "img1": "https://images.unsplash.com/photo-1583496661160-fb5886a0aaaa?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=800&auto=format&fit=crop",
-    "description": "FACADE PATTERN의 시그니처 감성을 담은 24SS 스커트/원피스 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "FACADE PATTERN의 시그니처 감성을 담은 26FW 스커트/원피스 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "스커트/원피스 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -8499,7 +8499,7 @@ export const PRODUCTS: Product[] = [
     "discount": 20,
     "img1": "https://images.unsplash.com/photo-1583496661160-fb5886a0aaaa?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=800&auto=format&fit=crop",
-    "description": "Marithé François Girbaud의 시그니처 감성을 담은 24SS 스커트/원피스 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "Marithé François Girbaud의 시그니처 감성을 담은 26FW 스커트/원피스 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "스커트/원피스 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -8534,7 +8534,7 @@ export const PRODUCTS: Product[] = [
     "discount": 15,
     "img1": "https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1496747611176-843222e1e57c?q=80&w=800&auto=format&fit=crop",
-    "description": "AMOMENTO의 시그니처 감성을 담은 24SS 스커트/원피스 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "AMOMENTO의 시그니처 감성을 담은 26FW 스커트/원피스 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "스커트/원피스 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -8569,7 +8569,7 @@ export const PRODUCTS: Product[] = [
     "discount": 20,
     "img1": "https://images.unsplash.com/photo-1496747611176-843222e1e57c?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?q=80&w=800&auto=format&fit=crop",
-    "description": "LENINA의 시그니처 감성을 담은 24SS 스커트/원피스 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "LENINA의 시그니처 감성을 담은 26FW 스커트/원피스 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "스커트/원피스 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -8606,7 +8606,7 @@ export const PRODUCTS: Product[] = [
     "discount": 10,
     "img1": "https://images.unsplash.com/photo-1583496661160-fb5886a0aaaa?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=800&auto=format&fit=crop",
-    "description": "TILL I DIE의 시그니처 감성을 담은 24SS 스커트/원피스 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "TILL I DIE의 시그니처 감성을 담은 26FW 스커트/원피스 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "스커트/원피스 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -8641,7 +8641,7 @@ export const PRODUCTS: Product[] = [
     "discount": 10,
     "img1": "https://images.unsplash.com/photo-1583496661160-fb5886a0aaaa?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=800&auto=format&fit=crop",
-    "description": "NOHANT의 시그니처 감성을 담은 24SS 스커트/원피스 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "NOHANT의 시그니처 감성을 담은 26FW 스커트/원피스 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "스커트/원피스 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -8677,7 +8677,7 @@ export const PRODUCTS: Product[] = [
     "discount": 10,
     "img1": "https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1496747611176-843222e1e57c?q=80&w=800&auto=format&fit=crop",
-    "description": "SJSJ의 시그니처 감성을 담은 24SS 스커트/원피스 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "SJSJ의 시그니처 감성을 담은 26FW 스커트/원피스 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "스커트/원피스 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -8714,7 +8714,7 @@ export const PRODUCTS: Product[] = [
     "discount": 25,
     "img1": "https://images.unsplash.com/photo-1496747611176-843222e1e57c?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?q=80&w=800&auto=format&fit=crop",
-    "description": "RECTO의 시그니처 감성을 담은 24SS 스커트/원피스 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "RECTO의 시그니처 감성을 담은 26FW 스커트/원피스 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "스커트/원피스 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -8749,7 +8749,7 @@ export const PRODUCTS: Product[] = [
     "discount": 15,
     "img1": "https://images.unsplash.com/photo-1583496661160-fb5886a0aaaa?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=800&auto=format&fit=crop",
-    "description": "DUNST의 시그니처 감성을 담은 24SS 스커트/원피스 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "DUNST의 시그니처 감성을 담은 26FW 스커트/원피스 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "스커트/원피스 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -8786,7 +8786,7 @@ export const PRODUCTS: Product[] = [
     "discount": 20,
     "img1": "https://images.unsplash.com/photo-1583496661160-fb5886a0aaaa?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=800&auto=format&fit=crop",
-    "description": "LOW CLASSIC의 시그니처 감성을 담은 24SS 스커트/원피스 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "LOW CLASSIC의 시그니처 감성을 담은 26FW 스커트/원피스 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "스커트/원피스 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -8823,7 +8823,7 @@ export const PRODUCTS: Product[] = [
     "discount": 15,
     "img1": "https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1496747611176-843222e1e57c?q=80&w=800&auto=format&fit=crop",
-    "description": "SIE의 시그니처 감성을 담은 24SS 스커트/원피스 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "SIE의 시그니처 감성을 담은 26FW 스커트/원피스 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "스커트/원피스 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -8857,7 +8857,7 @@ export const PRODUCTS: Product[] = [
     "discount": 10,
     "img1": "https://images.unsplash.com/photo-1496747611176-843222e1e57c?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?q=80&w=800&auto=format&fit=crop",
-    "description": "GROVE의 시그니처 감성을 담은 24SS 스커트/원피스 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "GROVE의 시그니처 감성을 담은 26FW 스커트/원피스 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "스커트/원피스 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -8893,7 +8893,7 @@ export const PRODUCTS: Product[] = [
     "discount": 15,
     "img1": "https://images.unsplash.com/photo-1583496661160-fb5886a0aaaa?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=800&auto=format&fit=crop",
-    "description": "FACADE PATTERN의 시그니처 감성을 담은 24SS 스커트/원피스 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "FACADE PATTERN의 시그니처 감성을 담은 26FW 스커트/원피스 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "스커트/원피스 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -8931,7 +8931,7 @@ export const PRODUCTS: Product[] = [
     "discount": 5,
     "img1": "https://images.unsplash.com/photo-1583496661160-fb5886a0aaaa?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=800&auto=format&fit=crop",
-    "description": "Marithé François Girbaud의 시그니처 감성을 담은 24SS 스커트/원피스 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "Marithé François Girbaud의 시그니처 감성을 담은 26FW 스커트/원피스 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "스커트/원피스 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -8966,7 +8966,7 @@ export const PRODUCTS: Product[] = [
     "discount": 15,
     "img1": "https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1496747611176-843222e1e57c?q=80&w=800&auto=format&fit=crop",
-    "description": "AMOMENTO의 시그니처 감성을 담은 24SS 스커트/원피스 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "AMOMENTO의 시그니처 감성을 담은 26FW 스커트/원피스 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "스커트/원피스 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -9001,7 +9001,7 @@ export const PRODUCTS: Product[] = [
     "discount": 20,
     "img1": "https://images.unsplash.com/photo-1496747611176-843222e1e57c?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?q=80&w=800&auto=format&fit=crop",
-    "description": "LENINA의 시그니처 감성을 담은 24SS 스커트/원피스 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "LENINA의 시그니처 감성을 담은 26FW 스커트/원피스 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "스커트/원피스 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -9038,7 +9038,7 @@ export const PRODUCTS: Product[] = [
     "discount": 20,
     "img1": "https://images.unsplash.com/photo-1583496661160-fb5886a0aaaa?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=800&auto=format&fit=crop",
-    "description": "TILL I DIE의 시그니처 감성을 담은 24SS 스커트/원피스 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "TILL I DIE의 시그니처 감성을 담은 26FW 스커트/원피스 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "스커트/원피스 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -9073,7 +9073,7 @@ export const PRODUCTS: Product[] = [
     "discount": 10,
     "img1": "https://images.unsplash.com/photo-1583496661160-fb5886a0aaaa?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=800&auto=format&fit=crop",
-    "description": "NOHANT의 시그니처 감성을 담은 24SS 스커트/원피스 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "NOHANT의 시그니처 감성을 담은 26FW 스커트/원피스 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "스커트/원피스 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -9109,7 +9109,7 @@ export const PRODUCTS: Product[] = [
     "discount": 10,
     "img1": "https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1496747611176-843222e1e57c?q=80&w=800&auto=format&fit=crop",
-    "description": "SJSJ의 시그니처 감성을 담은 24SS 스커트/원피스 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "SJSJ의 시그니처 감성을 담은 26FW 스커트/원피스 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "스커트/원피스 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -9146,7 +9146,7 @@ export const PRODUCTS: Product[] = [
     "discount": 10,
     "img1": "https://images.unsplash.com/photo-1627123424574-724758594e93?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1588850561407-ed78c282e89b?q=80&w=800&auto=format&fit=crop",
-    "description": "Matin Kim의 시그니처 감성을 담은 24SS 액세서리 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "Matin Kim의 시그니처 감성을 담은 26FW 액세서리 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "액세서리 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -9181,7 +9181,7 @@ export const PRODUCTS: Product[] = [
     "discount": 0,
     "img1": "https://images.unsplash.com/photo-1588850561407-ed78c282e89b?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1520903920243-00d872a2d1c9?q=80&w=800&auto=format&fit=crop",
-    "description": "A.P.C.의 시그니처 감성을 담은 24SS 액세서리 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "A.P.C.의 시그니처 감성을 담은 26FW 액세서리 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "액세서리 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -9217,7 +9217,7 @@ export const PRODUCTS: Product[] = [
     "discount": 20,
     "img1": "https://images.unsplash.com/photo-1627123424574-724758594e93?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1588850561407-ed78c282e89b?q=80&w=800&auto=format&fit=crop",
-    "description": "EMIS의 시그니처 감성을 담은 24SS 액세서리 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "EMIS의 시그니처 감성을 담은 26FW 액세서리 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "액세서리 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -9251,7 +9251,7 @@ export const PRODUCTS: Product[] = [
     "discount": 10,
     "img1": "https://images.unsplash.com/photo-1627123424574-724758594e93?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1588850561407-ed78c282e89b?q=80&w=800&auto=format&fit=crop",
-    "description": "ADER ERROR의 시그니처 감성을 담은 24SS 액세서리 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "ADER ERROR의 시그니처 감성을 담은 26FW 액세서리 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "액세서리 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -9286,7 +9286,7 @@ export const PRODUCTS: Product[] = [
     "discount": 10,
     "img1": "https://images.unsplash.com/photo-1588850561407-ed78c282e89b?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1520903920243-00d872a2d1c9?q=80&w=800&auto=format&fit=crop",
-    "description": "NONFICTION의 시그니처 감성을 담은 24SS 액세서리 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "NONFICTION의 시그니처 감성을 담은 26FW 액세서리 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "액세서리 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -9322,7 +9322,7 @@ export const PRODUCTS: Product[] = [
     "discount": 10,
     "img1": "https://images.unsplash.com/photo-1627123424574-724758594e93?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1588850561407-ed78c282e89b?q=80&w=800&auto=format&fit=crop",
-    "description": "TAMBURINS의 시그니처 감성을 담은 24SS 액세서리 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "TAMBURINS의 시그니처 감성을 담은 26FW 액세서리 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "액세서리 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -9356,7 +9356,7 @@ export const PRODUCTS: Product[] = [
     "discount": 15,
     "img1": "https://images.unsplash.com/photo-1627123424574-724758594e93?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1588850561407-ed78c282e89b?q=80&w=800&auto=format&fit=crop",
-    "description": "BLANKOF의 시그니처 감성을 담은 24SS 액세서리 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "BLANKOF의 시그니처 감성을 담은 26FW 액세서리 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "액세서리 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -9391,7 +9391,7 @@ export const PRODUCTS: Product[] = [
     "discount": 0,
     "img1": "https://images.unsplash.com/photo-1588850561407-ed78c282e89b?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1520903920243-00d872a2d1c9?q=80&w=800&auto=format&fit=crop",
-    "description": "ANDERSSON BELL의 시그니처 감성을 담은 24SS 액세서리 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "ANDERSSON BELL의 시그니처 감성을 담은 26FW 액세서리 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "액세서리 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -9427,7 +9427,7 @@ export const PRODUCTS: Product[] = [
     "discount": 25,
     "img1": "https://images.unsplash.com/photo-1627123424574-724758594e93?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1588850561407-ed78c282e89b?q=80&w=800&auto=format&fit=crop",
-    "description": "LEMAIRE의 시그니처 감성을 담은 24SS 액세서리 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "LEMAIRE의 시그니처 감성을 담은 26FW 액세서리 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "액세서리 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -9461,7 +9461,7 @@ export const PRODUCTS: Product[] = [
     "discount": 10,
     "img1": "https://images.unsplash.com/photo-1627123424574-724758594e93?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1588850561407-ed78c282e89b?q=80&w=800&auto=format&fit=crop",
-    "description": "GENTLE MONSTER의 시그니처 감성을 담은 24SS 액세서리 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "GENTLE MONSTER의 시그니처 감성을 담은 26FW 액세서리 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "액세서리 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -9496,7 +9496,7 @@ export const PRODUCTS: Product[] = [
     "discount": 10,
     "img1": "https://images.unsplash.com/photo-1588850561407-ed78c282e89b?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1520903920243-00d872a2d1c9?q=80&w=800&auto=format&fit=crop",
-    "description": "Matin Kim의 시그니처 감성을 담은 24SS 액세서리 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "Matin Kim의 시그니처 감성을 담은 26FW 액세서리 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "액세서리 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -9532,7 +9532,7 @@ export const PRODUCTS: Product[] = [
     "discount": 15,
     "img1": "https://images.unsplash.com/photo-1627123424574-724758594e93?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1588850561407-ed78c282e89b?q=80&w=800&auto=format&fit=crop",
-    "description": "A.P.C.의 시그니처 감성을 담은 24SS 액세서리 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "A.P.C.의 시그니처 감성을 담은 26FW 액세서리 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "액세서리 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -9566,7 +9566,7 @@ export const PRODUCTS: Product[] = [
     "discount": 0,
     "img1": "https://images.unsplash.com/photo-1627123424574-724758594e93?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1588850561407-ed78c282e89b?q=80&w=800&auto=format&fit=crop",
-    "description": "EMIS의 시그니처 감성을 담은 24SS 액세서리 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "EMIS의 시그니처 감성을 담은 26FW 액세서리 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "액세서리 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -9601,7 +9601,7 @@ export const PRODUCTS: Product[] = [
     "discount": 15,
     "img1": "https://images.unsplash.com/photo-1588850561407-ed78c282e89b?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1520903920243-00d872a2d1c9?q=80&w=800&auto=format&fit=crop",
-    "description": "ADER ERROR의 시그니처 감성을 담은 24SS 액세서리 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "ADER ERROR의 시그니처 감성을 담은 26FW 액세서리 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "액세서리 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -9637,7 +9637,7 @@ export const PRODUCTS: Product[] = [
     "discount": 5,
     "img1": "https://images.unsplash.com/photo-1627123424574-724758594e93?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1588850561407-ed78c282e89b?q=80&w=800&auto=format&fit=crop",
-    "description": "NONFICTION의 시그니처 감성을 담은 24SS 액세서리 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "NONFICTION의 시그니처 감성을 담은 26FW 액세서리 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "액세서리 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -9671,7 +9671,7 @@ export const PRODUCTS: Product[] = [
     "discount": 10,
     "img1": "https://images.unsplash.com/photo-1627123424574-724758594e93?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1588850561407-ed78c282e89b?q=80&w=800&auto=format&fit=crop",
-    "description": "TAMBURINS의 시그니처 감성을 담은 24SS 액세서리 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "TAMBURINS의 시그니처 감성을 담은 26FW 액세서리 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "액세서리 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -9706,7 +9706,7 @@ export const PRODUCTS: Product[] = [
     "discount": 10,
     "img1": "https://images.unsplash.com/photo-1588850561407-ed78c282e89b?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1520903920243-00d872a2d1c9?q=80&w=800&auto=format&fit=crop",
-    "description": "BLANKOF의 시그니처 감성을 담은 24SS 액세서리 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "BLANKOF의 시그니처 감성을 담은 26FW 액세서리 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "액세서리 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -9742,7 +9742,7 @@ export const PRODUCTS: Product[] = [
     "discount": 20,
     "img1": "https://images.unsplash.com/photo-1627123424574-724758594e93?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1588850561407-ed78c282e89b?q=80&w=800&auto=format&fit=crop",
-    "description": "ANDERSSON BELL의 시그니처 감성을 담은 24SS 액세서리 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "ANDERSSON BELL의 시그니처 감성을 담은 26FW 액세서리 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "액세서리 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -9776,7 +9776,7 @@ export const PRODUCTS: Product[] = [
     "discount": 0,
     "img1": "https://images.unsplash.com/photo-1627123424574-724758594e93?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1588850561407-ed78c282e89b?q=80&w=800&auto=format&fit=crop",
-    "description": "LEMAIRE의 시그니처 감성을 담은 24SS 액세서리 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "LEMAIRE의 시그니처 감성을 담은 26FW 액세서리 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "액세서리 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -9811,7 +9811,7 @@ export const PRODUCTS: Product[] = [
     "discount": 20,
     "img1": "https://images.unsplash.com/photo-1588850561407-ed78c282e89b?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1520903920243-00d872a2d1c9?q=80&w=800&auto=format&fit=crop",
-    "description": "GENTLE MONSTER의 시그니처 감성을 담은 24SS 액세서리 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "GENTLE MONSTER의 시그니처 감성을 담은 26FW 액세서리 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "액세서리 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -9847,7 +9847,7 @@ export const PRODUCTS: Product[] = [
     "discount": 10,
     "img1": "https://images.unsplash.com/photo-1627123424574-724758594e93?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1588850561407-ed78c282e89b?q=80&w=800&auto=format&fit=crop",
-    "description": "Matin Kim의 시그니처 감성을 담은 24SS 액세서리 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "Matin Kim의 시그니처 감성을 담은 26FW 액세서리 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "액세서리 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -9881,7 +9881,7 @@ export const PRODUCTS: Product[] = [
     "discount": 10,
     "img1": "https://images.unsplash.com/photo-1627123424574-724758594e93?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1588850561407-ed78c282e89b?q=80&w=800&auto=format&fit=crop",
-    "description": "A.P.C.의 시그니처 감성을 담은 24SS 액세서리 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "A.P.C.의 시그니처 감성을 담은 26FW 액세서리 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "액세서리 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -9916,7 +9916,7 @@ export const PRODUCTS: Product[] = [
     "discount": 10,
     "img1": "https://images.unsplash.com/photo-1588850561407-ed78c282e89b?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1520903920243-00d872a2d1c9?q=80&w=800&auto=format&fit=crop",
-    "description": "EMIS의 시그니처 감성을 담은 24SS 액세서리 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "EMIS의 시그니처 감성을 담은 26FW 액세서리 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "액세서리 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -9952,7 +9952,7 @@ export const PRODUCTS: Product[] = [
     "discount": 25,
     "img1": "https://images.unsplash.com/photo-1627123424574-724758594e93?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1588850561407-ed78c282e89b?q=80&w=800&auto=format&fit=crop",
-    "description": "ADER ERROR의 시그니처 감성을 담은 24SS 액세서리 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "ADER ERROR의 시그니처 감성을 담은 26FW 액세서리 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "액세서리 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -9986,7 +9986,7 @@ export const PRODUCTS: Product[] = [
     "discount": 15,
     "img1": "https://images.unsplash.com/photo-1627123424574-724758594e93?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1588850561407-ed78c282e89b?q=80&w=800&auto=format&fit=crop",
-    "description": "NONFICTION의 시그니처 감성을 담은 24SS 액세서리 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "NONFICTION의 시그니처 감성을 담은 26FW 액세서리 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "액세서리 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -10021,7 +10021,7 @@ export const PRODUCTS: Product[] = [
     "discount": 10,
     "img1": "https://images.unsplash.com/photo-1588850561407-ed78c282e89b?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1520903920243-00d872a2d1c9?q=80&w=800&auto=format&fit=crop",
-    "description": "TAMBURINS의 시그니처 감성을 담은 24SS 액세서리 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "TAMBURINS의 시그니처 감성을 담은 26FW 액세서리 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "액세서리 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -10057,7 +10057,7 @@ export const PRODUCTS: Product[] = [
     "discount": 15,
     "img1": "https://images.unsplash.com/photo-1627123424574-724758594e93?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1588850561407-ed78c282e89b?q=80&w=800&auto=format&fit=crop",
-    "description": "BLANKOF의 시그니처 감성을 담은 24SS 액세서리 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "BLANKOF의 시그니처 감성을 담은 26FW 액세서리 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "액세서리 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -10091,7 +10091,7 @@ export const PRODUCTS: Product[] = [
     "discount": 10,
     "img1": "https://images.unsplash.com/photo-1627123424574-724758594e93?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1588850561407-ed78c282e89b?q=80&w=800&auto=format&fit=crop",
-    "description": "ANDERSSON BELL의 시그니처 감성을 담은 24SS 액세서리 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "ANDERSSON BELL의 시그니처 감성을 담은 26FW 액세서리 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "액세서리 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -10126,7 +10126,7 @@ export const PRODUCTS: Product[] = [
     "discount": 15,
     "img1": "https://images.unsplash.com/photo-1588850561407-ed78c282e89b?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1520903920243-00d872a2d1c9?q=80&w=800&auto=format&fit=crop",
-    "description": "LEMAIRE의 시그니처 감성을 담은 24SS 액세서리 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "LEMAIRE의 시그니처 감성을 담은 26FW 액세서리 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "액세서리 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -10162,7 +10162,7 @@ export const PRODUCTS: Product[] = [
     "discount": 5,
     "img1": "https://images.unsplash.com/photo-1627123424574-724758594e93?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1588850561407-ed78c282e89b?q=80&w=800&auto=format&fit=crop",
-    "description": "GENTLE MONSTER의 시그니처 감성을 담은 24SS 액세서리 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "GENTLE MONSTER의 시그니처 감성을 담은 26FW 액세서리 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "액세서리 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -10196,7 +10196,7 @@ export const PRODUCTS: Product[] = [
     "discount": 20,
     "img1": "https://images.unsplash.com/photo-1627123424574-724758594e93?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1588850561407-ed78c282e89b?q=80&w=800&auto=format&fit=crop",
-    "description": "Matin Kim의 시그니처 감성을 담은 24SS 액세서리 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "Matin Kim의 시그니처 감성을 담은 26FW 액세서리 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "액세서리 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -10231,7 +10231,7 @@ export const PRODUCTS: Product[] = [
     "discount": 10,
     "img1": "https://images.unsplash.com/photo-1588850561407-ed78c282e89b?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1520903920243-00d872a2d1c9?q=80&w=800&auto=format&fit=crop",
-    "description": "A.P.C.의 시그니처 감성을 담은 24SS 액세서리 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "A.P.C.의 시그니처 감성을 담은 26FW 액세서리 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "액세서리 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -10267,7 +10267,7 @@ export const PRODUCTS: Product[] = [
     "discount": 20,
     "img1": "https://images.unsplash.com/photo-1627123424574-724758594e93?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1588850561407-ed78c282e89b?q=80&w=800&auto=format&fit=crop",
-    "description": "EMIS의 시그니처 감성을 담은 24SS 액세서리 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "EMIS의 시그니처 감성을 담은 26FW 액세서리 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "액세서리 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -10301,7 +10301,7 @@ export const PRODUCTS: Product[] = [
     "discount": 10,
     "img1": "https://images.unsplash.com/photo-1627123424574-724758594e93?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1588850561407-ed78c282e89b?q=80&w=800&auto=format&fit=crop",
-    "description": "ADER ERROR의 시그니처 감성을 담은 24SS 액세서리 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "ADER ERROR의 시그니처 감성을 담은 26FW 액세서리 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "액세서리 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -10336,7 +10336,7 @@ export const PRODUCTS: Product[] = [
     "discount": 0,
     "img1": "https://images.unsplash.com/photo-1588850561407-ed78c282e89b?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1520903920243-00d872a2d1c9?q=80&w=800&auto=format&fit=crop",
-    "description": "NONFICTION의 시그니처 감성을 담은 24SS 액세서리 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "NONFICTION의 시그니처 감성을 담은 26FW 액세서리 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "액세서리 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -10372,7 +10372,7 @@ export const PRODUCTS: Product[] = [
     "discount": 10,
     "img1": "https://images.unsplash.com/photo-1627123424574-724758594e93?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1588850561407-ed78c282e89b?q=80&w=800&auto=format&fit=crop",
-    "description": "TAMBURINS의 시그니처 감성을 담은 24SS 액세서리 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "TAMBURINS의 시그니처 감성을 담은 26FW 액세서리 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "액세서리 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -10406,7 +10406,7 @@ export const PRODUCTS: Product[] = [
     "discount": 10,
     "img1": "https://images.unsplash.com/photo-1627123424574-724758594e93?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1588850561407-ed78c282e89b?q=80&w=800&auto=format&fit=crop",
-    "description": "BLANKOF의 시그니처 감성을 담은 24SS 액세서리 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "BLANKOF의 시그니처 감성을 담은 26FW 액세서리 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "액세서리 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -10441,7 +10441,7 @@ export const PRODUCTS: Product[] = [
     "discount": 10,
     "img1": "https://images.unsplash.com/photo-1588850561407-ed78c282e89b?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1520903920243-00d872a2d1c9?q=80&w=800&auto=format&fit=crop",
-    "description": "ANDERSSON BELL의 시그니처 감성을 담은 24SS 액세서리 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "ANDERSSON BELL의 시그니처 감성을 담은 26FW 액세서리 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "액세서리 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -10477,7 +10477,7 @@ export const PRODUCTS: Product[] = [
     "discount": 25,
     "img1": "https://images.unsplash.com/photo-1627123424574-724758594e93?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1588850561407-ed78c282e89b?q=80&w=800&auto=format&fit=crop",
-    "description": "LEMAIRE의 시그니처 감성을 담은 24SS 액세서리 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "LEMAIRE의 시그니처 감성을 담은 26FW 액세서리 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "액세서리 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -10511,7 +10511,7 @@ export const PRODUCTS: Product[] = [
     "discount": 15,
     "img1": "https://images.unsplash.com/photo-1627123424574-724758594e93?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1588850561407-ed78c282e89b?q=80&w=800&auto=format&fit=crop",
-    "description": "GENTLE MONSTER의 시그니처 감성을 담은 24SS 액세서리 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "GENTLE MONSTER의 시그니처 감성을 담은 26FW 액세서리 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "액세서리 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -10546,7 +10546,7 @@ export const PRODUCTS: Product[] = [
     "discount": 0,
     "img1": "https://images.unsplash.com/photo-1588850561407-ed78c282e89b?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1520903920243-00d872a2d1c9?q=80&w=800&auto=format&fit=crop",
-    "description": "Matin Kim의 시그니처 감성을 담은 24SS 액세서리 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "Matin Kim의 시그니처 감성을 담은 26FW 액세서리 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "액세서리 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -10582,7 +10582,7 @@ export const PRODUCTS: Product[] = [
     "discount": 15,
     "img1": "https://images.unsplash.com/photo-1627123424574-724758594e93?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1588850561407-ed78c282e89b?q=80&w=800&auto=format&fit=crop",
-    "description": "A.P.C.의 시그니처 감성을 담은 24SS 액세서리 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "A.P.C.의 시그니처 감성을 담은 26FW 액세서리 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "액세서리 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -10616,7 +10616,7 @@ export const PRODUCTS: Product[] = [
     "discount": 10,
     "img1": "https://images.unsplash.com/photo-1627123424574-724758594e93?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1588850561407-ed78c282e89b?q=80&w=800&auto=format&fit=crop",
-    "description": "EMIS의 시그니처 감성을 담은 24SS 액세서리 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "EMIS의 시그니처 감성을 담은 26FW 액세서리 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "액세서리 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -10651,7 +10651,7 @@ export const PRODUCTS: Product[] = [
     "discount": 10,
     "img1": "https://images.unsplash.com/photo-1588850561407-ed78c282e89b?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1520903920243-00d872a2d1c9?q=80&w=800&auto=format&fit=crop",
-    "description": "ADER ERROR의 시그니처 감성을 담은 24SS 액세서리 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "ADER ERROR의 시그니처 감성을 담은 26FW 액세서리 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "액세서리 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -10687,7 +10687,7 @@ export const PRODUCTS: Product[] = [
     "discount": 5,
     "img1": "https://images.unsplash.com/photo-1627123424574-724758594e93?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1588850561407-ed78c282e89b?q=80&w=800&auto=format&fit=crop",
-    "description": "NONFICTION의 시그니처 감성을 담은 24SS 액세서리 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "NONFICTION의 시그니처 감성을 담은 26FW 액세서리 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "액세서리 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -10721,7 +10721,7 @@ export const PRODUCTS: Product[] = [
     "discount": 0,
     "img1": "https://images.unsplash.com/photo-1627123424574-724758594e93?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1588850561407-ed78c282e89b?q=80&w=800&auto=format&fit=crop",
-    "description": "TAMBURINS의 시그니처 감성을 담은 24SS 액세서리 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "TAMBURINS의 시그니처 감성을 담은 26FW 액세서리 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "액세서리 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -10756,7 +10756,7 @@ export const PRODUCTS: Product[] = [
     "discount": 15,
     "img1": "https://images.unsplash.com/photo-1588850561407-ed78c282e89b?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1520903920243-00d872a2d1c9?q=80&w=800&auto=format&fit=crop",
-    "description": "BLANKOF의 시그니처 감성을 담은 24SS 액세서리 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "BLANKOF의 시그니처 감성을 담은 26FW 액세서리 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "액세서리 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -10792,7 +10792,7 @@ export const PRODUCTS: Product[] = [
     "discount": 20,
     "img1": "https://images.unsplash.com/photo-1627123424574-724758594e93?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1588850561407-ed78c282e89b?q=80&w=800&auto=format&fit=crop",
-    "description": "ANDERSSON BELL의 시그니처 감성을 담은 24SS 액세서리 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "ANDERSSON BELL의 시그니처 감성을 담은 26FW 액세서리 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "액세서리 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -10826,7 +10826,7 @@ export const PRODUCTS: Product[] = [
     "discount": 10,
     "img1": "https://images.unsplash.com/photo-1627123424574-724758594e93?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1588850561407-ed78c282e89b?q=80&w=800&auto=format&fit=crop",
-    "description": "LEMAIRE의 시그니처 감성을 담은 24SS 액세서리 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "LEMAIRE의 시그니처 감성을 담은 26FW 액세서리 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "액세서리 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -10861,7 +10861,7 @@ export const PRODUCTS: Product[] = [
     "discount": 10,
     "img1": "https://images.unsplash.com/photo-1588850561407-ed78c282e89b?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1520903920243-00d872a2d1c9?q=80&w=800&auto=format&fit=crop",
-    "description": "GENTLE MONSTER의 시그니처 감성을 담은 24SS 액세서리 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "GENTLE MONSTER의 시그니처 감성을 담은 26FW 액세서리 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "액세서리 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -10897,7 +10897,7 @@ export const PRODUCTS: Product[] = [
     "discount": 0,
     "img1": "https://images.unsplash.com/photo-1552346154-21d32810aba3?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1608256246200-53e635b5b65f?q=80&w=800&auto=format&fit=crop",
-    "description": "SALOMON의 시그니처 감성을 담은 24SS 신발 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "SALOMON의 시그니처 감성을 담은 26FW 신발 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "신발 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -10938,7 +10938,7 @@ export const PRODUCTS: Product[] = [
     "discount": 15,
     "img1": "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1560343776-97e7d202ff0e?q=80&w=800&auto=format&fit=crop",
-    "description": "AUTRY의 시그니처 감성을 담은 24SS 신발 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "AUTRY의 시그니처 감성을 담은 26FW 신발 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "신발 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -10977,7 +10977,7 @@ export const PRODUCTS: Product[] = [
     "discount": 20,
     "img1": "https://images.unsplash.com/photo-1608256246200-53e635b5b65f?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1552346154-21d32810aba3?q=80&w=800&auto=format&fit=crop",
-    "description": "NEW BALANCE의 시그니처 감성을 담은 24SS 신발 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "NEW BALANCE의 시그니처 감성을 담은 26FW 신발 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "신발 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -11015,7 +11015,7 @@ export const PRODUCTS: Product[] = [
     "discount": 10,
     "img1": "https://images.unsplash.com/photo-1552346154-21d32810aba3?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1608256246200-53e635b5b65f?q=80&w=800&auto=format&fit=crop",
-    "description": "KEEN의 시그니처 감성을 담은 24SS 신발 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "KEEN의 시그니처 감성을 담은 26FW 신발 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "신발 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -11054,7 +11054,7 @@ export const PRODUCTS: Product[] = [
     "discount": 10,
     "img1": "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1560343776-97e7d202ff0e?q=80&w=800&auto=format&fit=crop",
-    "description": "ADIDAS의 시그니처 감성을 담은 24SS 신발 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "ADIDAS의 시그니처 감성을 담은 26FW 신발 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "신발 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -11093,7 +11093,7 @@ export const PRODUCTS: Product[] = [
     "discount": 10,
     "img1": "https://images.unsplash.com/photo-1608256246200-53e635b5b65f?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1552346154-21d32810aba3?q=80&w=800&auto=format&fit=crop",
-    "description": "NIKE의 시그니처 감성을 담은 24SS 신발 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "NIKE의 시그니처 감성을 담은 26FW 신발 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "신발 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -11131,7 +11131,7 @@ export const PRODUCTS: Product[] = [
     "discount": 0,
     "img1": "https://images.unsplash.com/photo-1552346154-21d32810aba3?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1608256246200-53e635b5b65f?q=80&w=800&auto=format&fit=crop",
-    "description": "ASICS의 시그니처 감성을 담은 24SS 신발 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "ASICS의 시그니처 감성을 담은 26FW 신발 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "신발 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -11170,7 +11170,7 @@ export const PRODUCTS: Product[] = [
     "discount": 0,
     "img1": "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1560343776-97e7d202ff0e?q=80&w=800&auto=format&fit=crop",
-    "description": "CLARKS의 시그니처 감성을 담은 24SS 신발 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "CLARKS의 시그니처 감성을 담은 26FW 신발 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "신발 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -11210,7 +11210,7 @@ export const PRODUCTS: Product[] = [
     "discount": 25,
     "img1": "https://images.unsplash.com/photo-1608256246200-53e635b5b65f?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1552346154-21d32810aba3?q=80&w=800&auto=format&fit=crop",
-    "description": "DR.MARTENS의 시그니처 감성을 담은 24SS 신발 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "DR.MARTENS의 시그니처 감성을 담은 26FW 신발 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "신발 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -11247,7 +11247,7 @@ export const PRODUCTS: Product[] = [
     "discount": 10,
     "img1": "https://images.unsplash.com/photo-1552346154-21d32810aba3?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1608256246200-53e635b5b65f?q=80&w=800&auto=format&fit=crop",
-    "description": "MIZUNO의 시그니처 감성을 담은 24SS 신발 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "MIZUNO의 시그니처 감성을 담은 26FW 신발 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "신발 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -11286,7 +11286,7 @@ export const PRODUCTS: Product[] = [
     "discount": 0,
     "img1": "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1560343776-97e7d202ff0e?q=80&w=800&auto=format&fit=crop",
-    "description": "SALOMON의 시그니처 감성을 담은 24SS 신발 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "SALOMON의 시그니처 감성을 담은 26FW 신발 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "신발 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -11325,7 +11325,7 @@ export const PRODUCTS: Product[] = [
     "discount": 15,
     "img1": "https://images.unsplash.com/photo-1608256246200-53e635b5b65f?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1552346154-21d32810aba3?q=80&w=800&auto=format&fit=crop",
-    "description": "AUTRY의 시그니처 감성을 담은 24SS 신발 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "AUTRY의 시그니처 감성을 담은 26FW 신발 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "신발 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -11365,7 +11365,7 @@ export const PRODUCTS: Product[] = [
     "discount": 15,
     "img1": "https://images.unsplash.com/photo-1552346154-21d32810aba3?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1608256246200-53e635b5b65f?q=80&w=800&auto=format&fit=crop",
-    "description": "NEW BALANCE의 시그니처 감성을 담은 24SS 신발 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "NEW BALANCE의 시그니처 감성을 담은 26FW 신발 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "신발 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -11403,7 +11403,7 @@ export const PRODUCTS: Product[] = [
     "discount": 0,
     "img1": "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1560343776-97e7d202ff0e?q=80&w=800&auto=format&fit=crop",
-    "description": "KEEN의 시그니처 감성을 담은 24SS 신발 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "KEEN의 시그니처 감성을 담은 26FW 신발 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "신발 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -11443,7 +11443,7 @@ export const PRODUCTS: Product[] = [
     "discount": 5,
     "img1": "https://images.unsplash.com/photo-1608256246200-53e635b5b65f?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1552346154-21d32810aba3?q=80&w=800&auto=format&fit=crop",
-    "description": "ADIDAS의 시그니처 감성을 담은 24SS 신발 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "ADIDAS의 시그니처 감성을 담은 26FW 신발 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "신발 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -11481,7 +11481,7 @@ export const PRODUCTS: Product[] = [
     "discount": 10,
     "img1": "https://images.unsplash.com/photo-1552346154-21d32810aba3?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1608256246200-53e635b5b65f?q=80&w=800&auto=format&fit=crop",
-    "description": "NIKE의 시그니처 감성을 담은 24SS 신발 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "NIKE의 시그니처 감성을 담은 26FW 신발 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "신발 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -11519,7 +11519,7 @@ export const PRODUCTS: Product[] = [
     "discount": 0,
     "img1": "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1560343776-97e7d202ff0e?q=80&w=800&auto=format&fit=crop",
-    "description": "ASICS의 시그니처 감성을 담은 24SS 신발 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "ASICS의 시그니처 감성을 담은 26FW 신발 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "신발 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -11559,7 +11559,7 @@ export const PRODUCTS: Product[] = [
     "discount": 20,
     "img1": "https://images.unsplash.com/photo-1608256246200-53e635b5b65f?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1552346154-21d32810aba3?q=80&w=800&auto=format&fit=crop",
-    "description": "CLARKS의 시그니처 감성을 담은 24SS 신발 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "CLARKS의 시그니처 감성을 담은 26FW 신발 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "신발 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -11597,7 +11597,7 @@ export const PRODUCTS: Product[] = [
     "discount": 0,
     "img1": "https://images.unsplash.com/photo-1552346154-21d32810aba3?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1608256246200-53e635b5b65f?q=80&w=800&auto=format&fit=crop",
-    "description": "DR.MARTENS의 시그니처 감성을 담은 24SS 신발 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "DR.MARTENS의 시그니처 감성을 담은 26FW 신발 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "신발 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -11636,7 +11636,7 @@ export const PRODUCTS: Product[] = [
     "discount": 15,
     "img1": "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1560343776-97e7d202ff0e?q=80&w=800&auto=format&fit=crop",
-    "description": "MIZUNO의 시그니처 감성을 담은 24SS 신발 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "MIZUNO의 시그니처 감성을 담은 26FW 신발 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "신발 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -11675,7 +11675,7 @@ export const PRODUCTS: Product[] = [
     "discount": 10,
     "img1": "https://images.unsplash.com/photo-1608256246200-53e635b5b65f?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1552346154-21d32810aba3?q=80&w=800&auto=format&fit=crop",
-    "description": "SALOMON의 시그니처 감성을 담은 24SS 신발 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "SALOMON의 시그니처 감성을 담은 26FW 신발 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "신발 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -11713,7 +11713,7 @@ export const PRODUCTS: Product[] = [
     "discount": 0,
     "img1": "https://images.unsplash.com/photo-1552346154-21d32810aba3?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1608256246200-53e635b5b65f?q=80&w=800&auto=format&fit=crop",
-    "description": "AUTRY의 시그니처 감성을 담은 24SS 신발 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "AUTRY의 시그니처 감성을 담은 26FW 신발 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "신발 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -11751,7 +11751,7 @@ export const PRODUCTS: Product[] = [
     "discount": 0,
     "img1": "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1560343776-97e7d202ff0e?q=80&w=800&auto=format&fit=crop",
-    "description": "NEW BALANCE의 시그니처 감성을 담은 24SS 신발 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "NEW BALANCE의 시그니처 감성을 담은 26FW 신발 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "신발 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -11793,7 +11793,7 @@ export const PRODUCTS: Product[] = [
     "discount": 25,
     "img1": "https://images.unsplash.com/photo-1608256246200-53e635b5b65f?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1552346154-21d32810aba3?q=80&w=800&auto=format&fit=crop",
-    "description": "KEEN의 시그니처 감성을 담은 24SS 신발 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "KEEN의 시그니처 감성을 담은 26FW 신발 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "신발 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -11830,7 +11830,7 @@ export const PRODUCTS: Product[] = [
     "discount": 0,
     "img1": "https://images.unsplash.com/photo-1552346154-21d32810aba3?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1608256246200-53e635b5b65f?q=80&w=800&auto=format&fit=crop",
-    "description": "ADIDAS의 시그니처 감성을 담은 24SS 신발 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "ADIDAS의 시그니처 감성을 담은 26FW 신발 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "신발 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -11869,7 +11869,7 @@ export const PRODUCTS: Product[] = [
     "discount": 10,
     "img1": "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1560343776-97e7d202ff0e?q=80&w=800&auto=format&fit=crop",
-    "description": "NIKE의 시그니처 감성을 담은 24SS 신발 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "NIKE의 시그니처 감성을 담은 26FW 신발 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "신발 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -11909,7 +11909,7 @@ export const PRODUCTS: Product[] = [
     "discount": 15,
     "img1": "https://images.unsplash.com/photo-1608256246200-53e635b5b65f?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1552346154-21d32810aba3?q=80&w=800&auto=format&fit=crop",
-    "description": "ASICS의 시그니처 감성을 담은 24SS 신발 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "ASICS의 시그니처 감성을 담은 26FW 신발 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "신발 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -11946,7 +11946,7 @@ export const PRODUCTS: Product[] = [
     "discount": 0,
     "img1": "https://images.unsplash.com/photo-1552346154-21d32810aba3?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1608256246200-53e635b5b65f?q=80&w=800&auto=format&fit=crop",
-    "description": "CLARKS의 시그니처 감성을 담은 24SS 신발 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "CLARKS의 시그니처 감성을 담은 26FW 신발 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "신발 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -11985,7 +11985,7 @@ export const PRODUCTS: Product[] = [
     "discount": 0,
     "img1": "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1560343776-97e7d202ff0e?q=80&w=800&auto=format&fit=crop",
-    "description": "DR.MARTENS의 시그니처 감성을 담은 24SS 신발 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "DR.MARTENS의 시그니처 감성을 담은 26FW 신발 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "신발 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -12025,7 +12025,7 @@ export const PRODUCTS: Product[] = [
     "discount": 5,
     "img1": "https://images.unsplash.com/photo-1608256246200-53e635b5b65f?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1552346154-21d32810aba3?q=80&w=800&auto=format&fit=crop",
-    "description": "MIZUNO의 시그니처 감성을 담은 24SS 신발 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "MIZUNO의 시그니처 감성을 담은 26FW 신발 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "신발 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -12063,7 +12063,7 @@ export const PRODUCTS: Product[] = [
     "discount": 15,
     "img1": "https://images.unsplash.com/photo-1552346154-21d32810aba3?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1608256246200-53e635b5b65f?q=80&w=800&auto=format&fit=crop",
-    "description": "SALOMON의 시그니처 감성을 담은 24SS 신발 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "SALOMON의 시그니처 감성을 담은 26FW 신발 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "신발 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -12101,7 +12101,7 @@ export const PRODUCTS: Product[] = [
     "discount": 10,
     "img1": "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1560343776-97e7d202ff0e?q=80&w=800&auto=format&fit=crop",
-    "description": "AUTRY의 시그니처 감성을 담은 24SS 신발 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "AUTRY의 시그니처 감성을 담은 26FW 신발 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "신발 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -12141,7 +12141,7 @@ export const PRODUCTS: Product[] = [
     "discount": 20,
     "img1": "https://images.unsplash.com/photo-1608256246200-53e635b5b65f?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1552346154-21d32810aba3?q=80&w=800&auto=format&fit=crop",
-    "description": "NEW BALANCE의 시그니처 감성을 담은 24SS 신발 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "NEW BALANCE의 시그니처 감성을 담은 26FW 신발 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "신발 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -12178,7 +12178,7 @@ export const PRODUCTS: Product[] = [
     "discount": 0,
     "img1": "https://images.unsplash.com/photo-1552346154-21d32810aba3?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1608256246200-53e635b5b65f?q=80&w=800&auto=format&fit=crop",
-    "description": "KEEN의 시그니처 감성을 담은 24SS 신발 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "KEEN의 시그니처 감성을 담은 26FW 신발 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "신발 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -12219,7 +12219,7 @@ export const PRODUCTS: Product[] = [
     "discount": 15,
     "img1": "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1560343776-97e7d202ff0e?q=80&w=800&auto=format&fit=crop",
-    "description": "ADIDAS의 시그니처 감성을 담은 24SS 신발 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "ADIDAS의 시그니처 감성을 담은 26FW 신발 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "신발 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -12258,7 +12258,7 @@ export const PRODUCTS: Product[] = [
     "discount": 10,
     "img1": "https://images.unsplash.com/photo-1608256246200-53e635b5b65f?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1552346154-21d32810aba3?q=80&w=800&auto=format&fit=crop",
-    "description": "NIKE의 시그니처 감성을 담은 24SS 신발 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "NIKE의 시그니처 감성을 담은 26FW 신발 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "신발 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -12296,7 +12296,7 @@ export const PRODUCTS: Product[] = [
     "discount": 10,
     "img1": "https://images.unsplash.com/photo-1552346154-21d32810aba3?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1608256246200-53e635b5b65f?q=80&w=800&auto=format&fit=crop",
-    "description": "ASICS의 시그니처 감성을 담은 24SS 신발 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "ASICS의 시그니처 감성을 담은 26FW 신발 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "신발 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -12335,7 +12335,7 @@ export const PRODUCTS: Product[] = [
     "discount": 10,
     "img1": "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1560343776-97e7d202ff0e?q=80&w=800&auto=format&fit=crop",
-    "description": "CLARKS의 시그니처 감성을 담은 24SS 신발 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "CLARKS의 시그니처 감성을 담은 26FW 신발 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "신발 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -12374,7 +12374,7 @@ export const PRODUCTS: Product[] = [
     "discount": 25,
     "img1": "https://images.unsplash.com/photo-1608256246200-53e635b5b65f?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1552346154-21d32810aba3?q=80&w=800&auto=format&fit=crop",
-    "description": "DR.MARTENS의 시그니처 감성을 담은 24SS 신발 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "DR.MARTENS의 시그니처 감성을 담은 26FW 신발 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "신발 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -12412,7 +12412,7 @@ export const PRODUCTS: Product[] = [
     "discount": 0,
     "img1": "https://images.unsplash.com/photo-1552346154-21d32810aba3?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1608256246200-53e635b5b65f?q=80&w=800&auto=format&fit=crop",
-    "description": "MIZUNO의 시그니처 감성을 담은 24SS 신발 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "MIZUNO의 시그니처 감성을 담은 26FW 신발 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "신발 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -12451,7 +12451,7 @@ export const PRODUCTS: Product[] = [
     "discount": 0,
     "img1": "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1560343776-97e7d202ff0e?q=80&w=800&auto=format&fit=crop",
-    "description": "SALOMON의 시그니처 감성을 담은 24SS 신발 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "SALOMON의 시그니처 감성을 담은 26FW 신발 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "신발 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -12491,7 +12491,7 @@ export const PRODUCTS: Product[] = [
     "discount": 15,
     "img1": "https://images.unsplash.com/photo-1608256246200-53e635b5b65f?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1552346154-21d32810aba3?q=80&w=800&auto=format&fit=crop",
-    "description": "AUTRY의 시그니처 감성을 담은 24SS 신발 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "AUTRY의 시그니처 감성을 담은 26FW 신발 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "신발 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -12528,7 +12528,7 @@ export const PRODUCTS: Product[] = [
     "discount": 10,
     "img1": "https://images.unsplash.com/photo-1552346154-21d32810aba3?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1608256246200-53e635b5b65f?q=80&w=800&auto=format&fit=crop",
-    "description": "NEW BALANCE의 시그니처 감성을 담은 24SS 신발 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "NEW BALANCE의 시그니처 감성을 담은 26FW 신발 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "신발 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -12567,7 +12567,7 @@ export const PRODUCTS: Product[] = [
     "discount": 0,
     "img1": "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1560343776-97e7d202ff0e?q=80&w=800&auto=format&fit=crop",
-    "description": "KEEN의 시그니처 감성을 담은 24SS 신발 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "KEEN의 시그니처 감성을 담은 26FW 신발 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "신발 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -12606,7 +12606,7 @@ export const PRODUCTS: Product[] = [
     "discount": 5,
     "img1": "https://images.unsplash.com/photo-1608256246200-53e635b5b65f?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1552346154-21d32810aba3?q=80&w=800&auto=format&fit=crop",
-    "description": "ADIDAS의 시그니처 감성을 담은 24SS 신발 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "ADIDAS의 시그니처 감성을 담은 26FW 신발 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "신발 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -12646,7 +12646,7 @@ export const PRODUCTS: Product[] = [
     "discount": 15,
     "img1": "https://images.unsplash.com/photo-1552346154-21d32810aba3?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1608256246200-53e635b5b65f?q=80&w=800&auto=format&fit=crop",
-    "description": "NIKE의 시그니처 감성을 담은 24SS 신발 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "NIKE의 시그니처 감성을 담은 26FW 신발 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "신발 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -12684,7 +12684,7 @@ export const PRODUCTS: Product[] = [
     "discount": 0,
     "img1": "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1560343776-97e7d202ff0e?q=80&w=800&auto=format&fit=crop",
-    "description": "ASICS의 시그니처 감성을 담은 24SS 신발 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "ASICS의 시그니처 감성을 담은 26FW 신발 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "신발 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -12724,7 +12724,7 @@ export const PRODUCTS: Product[] = [
     "discount": 20,
     "img1": "https://images.unsplash.com/photo-1608256246200-53e635b5b65f?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1552346154-21d32810aba3?q=80&w=800&auto=format&fit=crop",
-    "description": "CLARKS의 시그니처 감성을 담은 24SS 신발 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "CLARKS의 시그니처 감성을 담은 26FW 신발 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "신발 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -12762,7 +12762,7 @@ export const PRODUCTS: Product[] = [
     "discount": 10,
     "img1": "https://images.unsplash.com/photo-1552346154-21d32810aba3?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1608256246200-53e635b5b65f?q=80&w=800&auto=format&fit=crop",
-    "description": "DR.MARTENS의 시그니처 감성을 담은 24SS 신발 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "DR.MARTENS의 시그니처 감성을 담은 26FW 신발 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "신발 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",
@@ -12800,7 +12800,7 @@ export const PRODUCTS: Product[] = [
     "discount": 0,
     "img1": "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?q=80&w=800&auto=format&fit=crop",
     "img2": "https://images.unsplash.com/photo-1560343776-97e7d202ff0e?q=80&w=800&auto=format&fit=crop",
-    "description": "MIZUNO의 시그니처 감성을 담은 24SS 신발 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
+    "description": "MIZUNO의 시그니처 감성을 담은 26FW 신발 컬렉션 상품입니다. 뛰어난 내구성과 완성도 높은 실루엣으로 일상 속 자연스러운 스타일링을 제안합니다.",
     "details": [
       "신발 부문 무신사 실시간 랭킹 베스트 아이템",
       "프리미엄 원단 및 정밀 봉제 공정 적용",

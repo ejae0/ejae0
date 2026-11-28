@@ -127,8 +127,8 @@ export const PROMO_CATALOG: Record<PromoCodeKey, PromoTemplate> = {
   },
   MONODAY15: {
     code: 'MONODAY15',
-    title: '24SS 시즌 오픈 15% 스페셜 쿠폰',
-    description: 'MONO:DAY 24SS 에디토리얼 컬렉션 전용 할인',
+    title: '26FW 시즌 오픈 15% 스페셜 쿠폰',
+    description: 'MONO:DAY 26FW 에디토리얼 컬렉션 전용 할인',
     discountType: 'percent',
     discountValue: 15,
     minOrderAmount: 50000,

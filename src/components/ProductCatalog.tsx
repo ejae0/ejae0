@@ -191,7 +191,7 @@ export const ProductCatalog: React.FC<ProductCatalogProps> = ({
               : 'bg-white text-[#111111] border border-[#cacacb] hover:border-[#111111]'
           }`}
         >
-          <span>NEW (24SS 신상품)</span>
+          <span>NEW (26FW 신상품)</span>
         </button>
       </div>
 
@@ -202,13 +202,13 @@ export const ProductCatalog: React.FC<ProductCatalogProps> = ({
             {activeNavTab === 'shop' && 'MONO:DAY CATALOG'}
             {activeNavTab === 'best' && 'REALTIME SALES RANKING'}
             {activeNavTab === 'sale' && 'SEASON SPECIAL BENEFIT'}
-            {activeNavTab === 'new' && '24SS NEW ARRIVALS'}
+            {activeNavTab === 'new' && '26FW NEW ARRIVALS'}
           </span>
           <h2 className="text-2xl sm:text-3xl font-medium text-[#111111] tracking-tight">
             {activeNavTab === 'shop' && 'Shop Collections'}
             {activeNavTab === 'best' && '근 3일간 가장 많이 팔린 BEST 50'}
             {activeNavTab === 'sale' && '시즌 오프 특별 할인 (SALE)'}
-            {activeNavTab === 'new' && '24SS 신규 입고 상품 (NEW)'}
+            {activeNavTab === 'new' && '26FW 신규 입고 상품 (NEW)'}
           </h2>
           <p className="text-xs sm:text-sm text-[#707072] font-normal mt-1.5">
             {activeNavTab === 'shop' && '모든 상품을 성별 및 카테고리별로 자유롭게 둘러보세요.'}
@@ -424,7 +424,7 @@ export const ProductCatalog: React.FC<ProductCatalogProps> = ({
                       )}
                       {item.isNew && (
                         <span className="bg-white border border-[#cacacb] text-[#111111] text-[11px] font-medium rounded-full px-2.5 py-0.5">
-                          24SS New
+                          26FW New
                         </span>
                       )}
                     </div>

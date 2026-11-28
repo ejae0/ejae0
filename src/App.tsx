@@ -42,7 +42,13 @@ function AppContent() {
       if (saved) {
         const parsed = JSON.parse(saved);
         if (Array.isArray(parsed) && parsed.length > 0) {
-          return parsed;
+          return parsed.map((item: Product) => ({
+            ...item,
+            description:
+              typeof item.description === 'string'
+                ? item.description.replace(/24SS/gi, '26FW')
+                : item.description
+          }));
         }
       }
     } catch (e) {
@@ -555,7 +561,7 @@ function AppContent() {
           />
         )}
 
-        {/* VIEW 5: NEW PAGE (24SS NEW ARRIVALS) */}
+        {/* VIEW 5: NEW PAGE (26FW NEW ARRIVALS) */}
         {activeNavTab === 'new' && (
           <NewPage
             products={productsData}

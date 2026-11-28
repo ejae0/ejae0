@@ -42,7 +42,7 @@ export const BrandPTSection: React.FC<BrandPTSectionProps> = ({
       {/* Full-bleed Widescreen Video Canvas */}
       <img
         src="/src/assets/images/pt_matin_kim_campaign_1793684668781.jpg"
-        alt="Matin Kim 24SS Showcase Film"
+        alt="Matin Kim 26FW Showcase Film"
         referrerPolicy="no-referrer"
         className={`absolute inset-0 w-full h-full object-cover transition-transform duration-[8000ms] ease-linear ${
           isPlaying ? 'scale-105 opacity-90' : 'scale-100 opacity-75'
@@ -96,7 +96,7 @@ export const BrandPTSection: React.FC<BrandPTSectionProps> = ({
             )}
           </button>
           <span className="mt-3 text-[11px] font-mono tracking-widest text-white/90 bg-black/60 px-4 py-1 rounded-full uppercase">
-            {isPlaying ? 'NOW STREAMING · MATIN KIM 24SS' : 'PAUSED · CLICK TO RESUME'}
+            {isPlaying ? 'NOW STREAMING · MATIN KIM 26FW' : 'PAUSED · CLICK TO RESUME'}
           </span>
         </div>
 
@@ -108,7 +108,7 @@ export const BrandPTSection: React.FC<BrandPTSectionProps> = ({
                 MATIN KIM × MONO:DAY · 2026.10.27 - 11.10
               </span>
               <h2 className="font-display text-4xl sm:text-5xl md:text-6xl uppercase tracking-tight leading-[0.9] text-white">
-                MATIN KIM : 24SS SHOWCASE FILM
+                MATIN KIM : 26FW SHOWCASE FILM
               </h2>
               <p className="text-xs sm:text-sm text-[#cacacb] font-normal break-keep">
                 Rough &amp; Chic Culture — 단독 15% 기프트 쿠폰 &amp; 한정 에코백 증정 프로모션

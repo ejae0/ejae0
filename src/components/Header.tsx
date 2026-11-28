@@ -50,7 +50,7 @@ export const Header: React.FC<HeaderProps> = ({
         <div className="bg-[#f5f5f5] text-[#111111] text-xs h-9 px-4 sm:px-8 flex items-center justify-between border-b border-[#e5e5e5] transition-all select-none">
           <div className="flex-1 text-center flex items-center justify-center space-x-3 text-[12px] font-medium">
             <span className="text-[#111111]">
-              MONO:DAY 24SS SEASON OPEN — 15% 시즌 오픈 기프트 쿠폰 &amp; 전 상품 무료 배송
+              MONO:DAY 26FW SEASON OPEN — 15% 시즌 오픈 기프트 쿠폰 &amp; 전 상품 무료 배송
             </span>
             <button
               onClick={handleGiftClick}
@@ -152,7 +152,7 @@ export const Header: React.FC<HeaderProps> = ({
                 }`}
               >
                 <span>NEW</span>
-                <span className="text-[11px] text-[#707072] font-normal">24SS</span>
+                <span className="text-[11px] text-[#707072] font-normal">26FW</span>
               </button>
 
               {/* SNAP BUTTON */}

@@ -92,7 +92,7 @@ export const BentoGrid: React.FC<BentoGridProps> = ({
                 MARDI MERCREDI FLOWER
               </h4>
               <p className="text-xs text-[#cacacb] font-normal mt-1.5 leading-relaxed break-keep">
-                위트 있는 시그니처 프렌치 그래픽 라인업과 24SS 컬러웨이.
+                위트 있는 시그니처 프렌치 그래픽 라인업과 26FW 컬러웨이.
               </p>
             </div>
             <div className="mt-4 flex justify-between items-center text-xs">
@@ -159,7 +159,7 @@ export const BentoGrid: React.FC<BentoGridProps> = ({
           </div>
         </div>
 
-        {/* Bento Card 4: 24SS Style Palette & Curation Edit */}
+        {/* Bento Card 4: 26FW Style Palette & Curation Edit */}
         <div
           onClick={() => onSelectCategory('women', 'outer')}
           className="group relative md:col-span-1 md:row-span-1 bg-[#f5f5f5] border border-[#e5e5e5] hover:border-[#111111] transition-colors p-6 flex flex-col justify-between rounded-none cursor-pointer"
@@ -167,7 +167,7 @@ export const BentoGrid: React.FC<BentoGridProps> = ({
           <div className="space-y-3">
             <div className="flex items-center justify-between">
               <span className="text-[11px] font-medium tracking-widest text-[#707072] uppercase">
-                24SS KEY PALETTE
+                26FW KEY PALETTE
               </span>
               <span className="text-[10px] font-mono text-[#707072]">EDIT 04</span>
             </div>

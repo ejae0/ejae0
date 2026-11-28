@@ -64,13 +64,13 @@ export const NewPage: React.FC<NewPageProps> = ({
         <div className="max-w-3xl space-y-1.5">
           <div className="inline-flex items-center space-x-1.5 text-[#cacacb] text-xs font-semibold tracking-wider uppercase">
             <Sparkles className="w-3.5 h-3.5" />
-            <span>24SS NEW SEASON ARRIVALS</span>
+            <span>26FW NEW SEASON ARRIVALS</span>
           </div>
           <h1 className="font-display text-4xl sm:text-5xl md:text-6xl uppercase leading-[0.92] tracking-tight sm:whitespace-nowrap">
-            24SS NEW COLLECTION
+            26FW NEW COLLECTION
           </h1>
           <p className="text-xs sm:text-sm text-[#cacacb] font-normal leading-relaxed pt-0.5 sm:whitespace-nowrap break-keep">
-            이번 시즌 새롭게 입고된 최신 24SS 라인업을 가장 먼저 만나보세요.
+            이번 시즌 새롭게 입고된 최신 26FW 라인업을 가장 먼저 만나보세요.
             <br />
             단독 입점 브랜드의 뉴 시즌 컬렉션을 최신 발매일 순서로 확인하실 수 있습니다.
           </p>
@@ -149,7 +149,7 @@ export const NewPage: React.FC<NewPageProps> = ({
         <div>
           <span>FILTER: </span>
           <span className="text-[#111111] font-semibold uppercase">
-            NEW 24SS &gt; {currentGender.toUpperCase()} &gt; {activeCategoryObj?.label || '전체'}
+            NEW 26FW &gt; {currentGender.toUpperCase()} &gt; {activeCategoryObj?.label || '전체'}
           </span>
         </div>
         <div className="text-[#111111] font-medium">
@@ -183,9 +183,9 @@ export const NewPage: React.FC<NewPageProps> = ({
                   className="w-full h-full object-cover cursor-pointer"
                 />
 
-                {/* 24SS Promo Tag (Nike badge-promo: white pill, hairline border) */}
+                {/* 26FW Promo Tag (Nike badge-promo: white pill, hairline border) */}
                 <div className="absolute top-2.5 left-2.5 bg-white border border-[#cacacb] text-[#111111] text-[11px] font-medium px-2.5 py-0.5 rounded-full">
-                  <span>24SS New</span>
+                  <span>26FW New</span>
                 </div>
 
                 {/* Wishlist Button */}

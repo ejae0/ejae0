@@ -26,12 +26,12 @@ export const HeroSlider: React.FC<HeroSliderProps> = ({ onExploreShop, onViewPT 
       id: 1,
       tag: 'SPECIAL PRESENTATION',
       displayTitle: 'DUNST & MARDI',
-      koreanTitle: '24SS Exclusive Launching',
+      koreanTitle: '26FW Exclusive Launching',
       subtitle: 'MONO:DAY 단독 혜택으로 만나는 이번 시즌 프리미엄 아카이브 라인업.',
       btnText: 'VIEW PT ISSUE',
       action: onViewPT,
       image: '/src/assets/images/hero_spring_collection_1793684668384.jpg',
-      alt: 'Dunst and Mardi 24SS exclusive presentation'
+      alt: 'Dunst and Mardi 26FW exclusive presentation'
     }
   ];
 
