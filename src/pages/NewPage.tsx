@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Sparkles, Heart, ShoppingBag, Calendar, Trash2 } from 'lucide-react';
 import { Product, SUBCATEGORIES } from '../data/products';
+import { getProductWishCount, formatWishCount } from './ShopPage';
 
 interface NewPageProps {
   products: Product[];
@@ -70,6 +71,8 @@ export const NewPage: React.FC<NewPageProps> = ({
           </h1>
           <p className="text-xs sm:text-sm text-[#cacacb] font-normal leading-relaxed pt-0.5 sm:whitespace-nowrap break-keep">
             이번 시즌 새롭게 입고된 최신 24SS 라인업을 가장 먼저 만나보세요.
+            <br />
+            단독 입점 브랜드의 뉴 시즌 컬렉션을 최신 발매일 순서로 확인하실 수 있습니다.
           </p>
         </div>
       </div>
@@ -142,7 +145,7 @@ export const NewPage: React.FC<NewPageProps> = ({
       </div>
 
       {/* Info Status */}
-      <div className="flex justify-between items-center mb-4 text-xs text-[#707072]">
+      <div className="flex justify-between items-center pt-1.5 mb-2.5 text-xs text-[#707072]">
         <div>
           <span>FILTER: </span>
           <span className="text-[#111111] font-semibold uppercase">
@@ -158,6 +161,7 @@ export const NewPage: React.FC<NewPageProps> = ({
       <div className="grid grid-cols-2 md:grid-cols-4 gap-x-4 sm:gap-x-6 gap-y-10 sm:gap-y-12">
         {newProducts.map((item) => {
           const isWished = isWishlisted(item.id);
+          const wishCount = getProductWishCount(item, isWished);
           const formattedPrice = item.price.toLocaleString();
           const originalPrice =
             item.discount > 0
@@ -184,20 +188,23 @@ export const NewPage: React.FC<NewPageProps> = ({
                   <span>24SS New</span>
                 </div>
 
-                {/* Wishlist Button (Nike button-icon-circular) */}
+                {/* Wishlist Button */}
                 <button
                   onClick={(e) => {
                     e.stopPropagation();
                     onToggleWishlist(item.id);
                   }}
-                  className="absolute top-2.5 right-2.5 w-9 h-9 rounded-full bg-white/90 hover:bg-white flex items-center justify-center text-[#111111] transition-all z-10 shadow-xs cursor-pointer"
+                  className="absolute top-2.5 right-2.5 flex items-center space-x-1 px-2.5 py-1 rounded-full bg-white/90 text-[#111111] hover:text-[#d30005] transition-all z-10 shadow-xs cursor-pointer"
                   aria-label="Wishlist"
                 >
                   <Heart
-                    className={`w-4 h-4 ${
+                    className={`w-3.5 h-3.5 transition-transform active:scale-125 ${
                       isWished ? 'text-[#d30005] fill-[#d30005]' : 'text-[#707072]'
                     }`}
                   />
+                  <span className="text-[10px] font-mono font-medium text-[#111111]">
+                    {formatWishCount(wishCount)}
+                  </span>
                 </button>
 
                 {/* ADMIN ONLY: Delete Button */}
@@ -261,11 +268,6 @@ export const NewPage: React.FC<NewPageProps> = ({
                 >
                   {item.name}
                 </h3>
-
-                {/* Available Sizes list */}
-                <div className="text-[11px] text-[#707072] truncate">
-                  SIZE: {item.sizes.join(', ')}
-                </div>
 
                 {/* Price */}
                 <div className="flex items-baseline space-x-2 pt-0.5">

@@ -210,6 +210,11 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
 
                 {/* Promo Badges (Nike badge-promo: white pill, hairline border) */}
                 <div className="absolute top-3 left-3 flex flex-col gap-1.5 z-10 pointer-events-none">
+                  {product.isTimeSale && (
+                    <span className="bg-[#111111] text-white text-[11px] font-semibold px-3 py-1 rounded-full">
+                      TIME SALE 특가
+                    </span>
+                  )}
                   {product.discount > 0 && (
                     <span className="bg-white border border-[#cacacb] text-[#d30005] text-xs font-medium px-3 py-1 rounded-full">
                       {product.discount}% off
@@ -280,21 +285,28 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
                 </div>
 
                 {/* Price (Nike sale styling) */}
-                <div className="flex items-baseline space-x-3 mt-4 border-t border-b border-[#e5e5e5] py-3.5">
-                  <span className="text-2xl sm:text-3xl font-medium text-[#111111] tabular-nums">
-                    ₩{formattedPrice}
-                  </span>
-                  {product.discount > 0 && (
-                    <>
-                      <span className="text-sm text-[#d30005] font-medium">
-                        {product.discount}% off
-                      </span>
-                      {originalPrice && (
-                        <span className="text-xs text-[#707072] line-through tabular-nums">
-                          ₩{originalPrice}
+                <div className="mt-4 border-t border-b border-[#e5e5e5] py-3.5 space-y-1">
+                  <div className="flex items-baseline space-x-3">
+                    <span className="text-2xl sm:text-3xl font-medium text-[#111111] tabular-nums">
+                      ₩{formattedPrice}
+                    </span>
+                    {product.discount > 0 && (
+                      <>
+                        <span className="text-sm text-[#d30005] font-medium">
+                          {product.discount}% off
                         </span>
-                      )}
-                    </>
+                        {originalPrice && (
+                          <span className="text-xs text-[#707072] line-through tabular-nums">
+                            ₩{originalPrice}
+                          </span>
+                        )}
+                      </>
+                    )}
+                  </div>
+                  {product.isTimeSale && (
+                    <p className="text-[11px] font-medium text-[#d30005]">
+                      타임세일 한정 특가 적용 중 ({product.regularDiscount && product.regularDiscount > 0 ? `평소 ${product.regularDiscount}% 할인 → ` : '정가 대비 '}{product.discount}% 할인)
+                    </p>
                   )}
                 </div>
 

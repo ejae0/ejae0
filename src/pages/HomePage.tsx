@@ -36,10 +36,7 @@ export const HomePage: React.FC<HomePageProps> = ({
       {/* 1. Hero Editorial Slider (Towering Display Typography & White Pill CTA) */}
       <HeroSlider
         onExploreShop={() => onNavigateTab('shop')}
-        onViewPT={() => {
-          const ptEl = document.getElementById('pt');
-          if (ptEl) ptEl.scrollIntoView({ behavior: 'smooth' });
-        }}
+        onViewPT={() => onNavigateTab('new')}
       />
 
       {/* 2. Today's Bento Editorial (Nike editorial bento tile layout) */}

@@ -559,10 +559,10 @@ export const MyPage: React.FC<MyPageProps> = ({
                       ? 'MONO:DAY 회원 로그인'
                       : 'MONO:DAY 간편 회원가입'}
                   </h3>
-                  <p className="text-xs text-[#707072] leading-relaxed">
+                  <p className="text-xs text-[#707072] leading-relaxed tracking-tight sm:whitespace-nowrap">
                     {authMode === 'login'
-                      ? '별도의 복잡한 인증 절차 없이 버튼 클릭 한 번으로 바로 로그인하여 주문내역, 쿠폰, 후기, 고객센터를 이용하세요.'
-                      : '간단한 기본 정보 확인 후 클릭 한 번으로 즉시 회원가입이 완료되며 웰컴 15% 쿠폰 2종이 자동 발급됩니다.'}
+                      ? '간편 로그인 후 주문내역, 쿠폰, 후기, 고객센터를 바로 이용하세요.'
+                      : '간편 가입 즉시 완료되며 웰컴 15% 쿠폰 2종이 자동 발급됩니다.'}
                   </p>
                 </div>
 
@@ -881,23 +881,15 @@ export const MyPage: React.FC<MyPageProps> = ({
       {/* Member Top Dashboard Banner */}
       <section className="bg-[#111111] text-white p-6 sm:p-10">
         <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-6">
-          <div className="flex items-center space-x-4">
-            <div className="w-14 h-14 rounded-full bg-white text-[#111111] flex items-center justify-center font-display text-2xl shrink-0">
-              {(profile?.name || user?.displayName || 'M').slice(0, 1).toUpperCase()}
+          <div>
+            <div className="flex items-center space-x-2">
+              <span className="bg-white/15 text-white text-[10px] font-mono px-2.5 py-0.5 rounded-full uppercase">
+                {profile?.membershipTier || 'WELCOME'} MEMBER
+              </span>
             </div>
-            <div>
-              <div className="flex items-center space-x-2">
-                <span className="bg-white/15 text-white text-[10px] font-mono px-2.5 py-0.5 rounded-full uppercase">
-                  {profile?.membershipTier || 'WELCOME'} MEMBER
-                </span>
-                <span className="text-[11px] text-[#9e9ea0] font-mono">
-                  {profile?.email || user?.email || 'member@monoday.kr'}
-                </span>
-              </div>
-              <h1 className="text-xl sm:text-2xl font-medium mt-1">
-                {profile?.name || user?.displayName || '이재영'}님의 MY PAGE
-              </h1>
-            </div>
+            <h1 className="text-xl sm:text-2xl font-medium mt-1">
+              {profile?.name || user?.displayName || '이재영'}님의 MY PAGE
+            </h1>
           </div>
 
           {/* Quick Stats */}
@@ -907,7 +899,7 @@ export const MyPage: React.FC<MyPageProps> = ({
               className="bg-[#1e1e20] hover:bg-[#2a2a2d] p-3.5 text-left transition-colors cursor-pointer"
             >
               <span className="text-[10px] text-[#9e9ea0] block">진행 주문</span>
-              <span className="text-lg font-mono font-semibold mt-0.5 block">
+              <span className="text-lg font-sans font-semibold mt-0.5 block tabular-nums">
                 {activeOrders.length}건
               </span>
             </button>
@@ -916,7 +908,7 @@ export const MyPage: React.FC<MyPageProps> = ({
               className="bg-[#1e1e20] hover:bg-[#2a2a2d] p-3.5 text-left transition-colors cursor-pointer"
             >
               <span className="text-[10px] text-[#9e9ea0] block">취소/반품</span>
-              <span className="text-lg font-mono font-semibold mt-0.5 block">
+              <span className="text-lg font-sans font-semibold mt-0.5 block tabular-nums">
                 {cancelReturnOrders.length}건
               </span>
             </button>
@@ -925,7 +917,7 @@ export const MyPage: React.FC<MyPageProps> = ({
               className="bg-[#1e1e20] hover:bg-[#2a2a2d] p-3.5 text-left transition-colors cursor-pointer"
             >
               <span className="text-[10px] text-[#9e9ea0] block">보유 쿠폰</span>
-              <span className="text-lg font-mono font-semibold mt-0.5 block">
+              <span className="text-lg font-sans font-semibold mt-0.5 block tabular-nums">
                 {availableCoupons.length}장
               </span>
             </button>
@@ -934,19 +926,19 @@ export const MyPage: React.FC<MyPageProps> = ({
               className="bg-[#1e1e20] hover:bg-[#2a2a2d] p-3.5 text-left transition-colors cursor-pointer"
             >
               <span className="text-[10px] text-[#9e9ea0] block">작성 후기</span>
-              <span className="text-lg font-mono font-semibold mt-0.5 block">
+              <span className="text-lg font-sans font-semibold mt-0.5 block tabular-nums">
                 {reviews.length}건
               </span>
             </button>
             <button
               onClick={handleLogout}
-              className="bg-[#1e1e20] hover:bg-[#2a2a2d] p-3.5 text-left transition-colors cursor-pointer flex flex-col justify-between col-span-2 sm:col-span-1"
+              className="bg-[#1e1e20] hover:bg-[#2a2a2d] p-3.5 text-left transition-colors cursor-pointer col-span-2 sm:col-span-1"
             >
               <span className="text-[10px] text-[#9e9ea0] flex items-center space-x-1">
                 <LogOut className="w-3 h-3" />
                 <span>계정</span>
               </span>
-              <span className="text-xs font-medium mt-1 underline underline-offset-4">
+              <span className="text-[15px] font-sans font-medium mt-0.5 -ml-0.5 block underline underline-offset-4 whitespace-nowrap">
                 로그아웃
               </span>
             </button>

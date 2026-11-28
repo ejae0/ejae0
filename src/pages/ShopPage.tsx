@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef, useEffect, useMemo } from 'react';
 import {
   ArrowUpDown,
   ChevronDown,
@@ -14,6 +14,7 @@ import {
   Trash2
 } from 'lucide-react';
 import { Product, SUBCATEGORIES } from '../data/products';
+import { getDailyTimeSaleProducts, getNoonCycleInfo } from '../utils/timeSale';
 
 interface ShopPageProps {
   products: Product[];
@@ -49,7 +50,7 @@ interface SortOptionItem {
   description: string;
 }
 
-const KREAM_SORT_OPTIONS: SortOptionItem[] = [
+export const KREAM_SORT_OPTIONS: SortOptionItem[] = [
   { id: 'popular', label: '인기순', description: '거래량 및 실시간 랭킹 기준' },
   { id: 'wish', label: '관심순', description: '관심 상품 찜 등록이 많은 순서' },
   { id: 'release', label: '발매일순', description: '최신 출시 및 발매일자 기준' },
@@ -58,6 +59,15 @@ const KREAM_SORT_OPTIONS: SortOptionItem[] = [
   { id: 'discount', label: '할인율순', description: '할인 혜택이 가장 큰 순서' },
   { id: 'reviews', label: '후기 많은 순', description: '구매 고객 리뷰가 많은 순서' }
 ];
+
+export const getProductWishCount = (product: Product, isWished: boolean): number => {
+  const hash = product.id.split('').reduce((acc, char) => acc + char.charCodeAt(0), 0);
+  const base = Math.floor(product.salesCount3Days * 1.5 + product.reviewCount * 14 + (hash % 600));
+  return isWished ? base + 1 : base;
+};
+
+export const formatWishCount = (wishCount: number): string | number =>
+  wishCount > 999 ? `${(wishCount / 1000).toFixed(1)}k` : wishCount;
 
 export const ShopPage: React.FC<ShopPageProps> = ({
   products,
@@ -81,8 +91,16 @@ export const ShopPage: React.FC<ShopPageProps> = ({
   const [isSortDropdownOpen, setIsSortDropdownOpen] = useState(false);
   const [onlyFastDelivery, setOnlyFastDelivery] = useState(false);
   const [onlySale, setOnlySale] = useState(false);
+  const [now, setNow] = useState<Date>(() => new Date());
 
   const sortDropdownRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setNow(new Date());
+    }, 1000);
+    return () => clearInterval(timer);
+  }, []);
 
   // Close sort dropdown when clicking outside
   useEffect(() => {
@@ -95,16 +113,24 @@ export const ShopPage: React.FC<ShopPageProps> = ({
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, []);
 
+  const cycleInfo = useMemo(() => getNoonCycleInfo(now), [now]);
+
+  const timeSaleMap = useMemo(() => {
+    const list = getDailyTimeSaleProducts(products, cycleInfo.cycleSeed);
+    return new Map(list.map((item) => [item.id, item]));
+  }, [products, cycleInfo.cycleSeed]);
+
+  const enrichedProducts = useMemo(
+    () => products.map((p) => timeSaleMap.get(p.id) || p),
+    [products, timeSaleMap]
+  );
+
   const subcategories = SUBCATEGORIES[currentGender] || SUBCATEGORIES.all;
 
-  const getWishCount = (product: Product, isWished: boolean) => {
-    const hash = product.id.split('').reduce((acc, char) => acc + char.charCodeAt(0), 0);
-    const base = Math.floor(product.salesCount3Days * 1.5 + product.reviewCount * 14 + (hash % 600));
-    return isWished ? base + 1 : base;
-  };
+  const getWishCount = getProductWishCount;
 
   // Filter logic
-  let filtered = products.filter((p) => {
+  let filtered = enrichedProducts.filter((p) => {
     const matchGender = currentGender === 'all' || p.gender === currentGender;
     const matchCategory = currentCategory === 'all' || p.category === currentCategory;
     const matchBrand = !selectedBrand || p.brand.toLowerCase() === selectedBrand.toLowerCase();
@@ -171,7 +197,7 @@ export const ShopPage: React.FC<ShopPageProps> = ({
   };
 
   return (
-    <div className="max-w-[1440px] mx-auto px-6 sm:px-8 pt-4 sm:pt-6 pb-10 sm:pb-12">
+    <div className="max-w-[1440px] mx-auto px-6 sm:px-8 pt-4 sm:pt-5 pb-10 sm:pb-12">
       {/* Admin Add Product Button (Admin Mode Only) */}
       {isAdmin && onOpenAddProductModal && (
         <div className="mb-3 flex justify-end">
@@ -187,7 +213,7 @@ export const ShopPage: React.FC<ShopPageProps> = ({
       )}
 
       {/* Filter Module (clean borderless strip) */}
-      <div className="py-1 mb-4 space-y-3">
+      <div className="py-2 mb-4 space-y-3">
         {/* 1. GENDER Filter */}
         <div className="flex flex-col sm:flex-row sm:items-center space-y-2 sm:space-y-0 border-b border-[#e5e5e5] pb-3">
           <span className="text-xs font-semibold uppercase tracking-wider text-[#707072] w-24 shrink-0">
@@ -254,7 +280,7 @@ export const ShopPage: React.FC<ShopPageProps> = ({
       </div>
 
       {/* Control Bar: Product Count + Fast Delivery + Sort Dropdown */}
-      <div className="flex flex-col sm:flex-row sm:items-center justify-between pb-3 mb-4 border-b border-[#e5e5e5] gap-4">
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between pb-2 mb-3 border-b border-[#e5e5e5] gap-3">
         {/* Left: Product Count & Quick Filter Chips */}
         <div className="flex items-center space-x-3 flex-wrap gap-y-2">
           <div className="text-sm font-semibold text-[#111111]">
@@ -415,19 +441,6 @@ export const ShopPage: React.FC<ShopPageProps> = ({
                     className="w-full h-full object-cover cursor-pointer"
                   />
 
-                  {/* Badges */}
-                  <div className="absolute top-2.5 left-2.5 flex flex-col gap-1 pointer-events-none">
-                    <span className="inline-flex items-center space-x-1 text-[10px] font-medium text-[#111111] bg-white border border-[#cacacb] px-2 py-0.5 rounded-full">
-                      <Zap className="w-2.5 h-2.5 fill-[#007d48] text-[#007d48]" />
-                      <span>빠른배송</span>
-                    </span>
-                    {index < 50 && (
-                      <span className="text-[10px] font-medium text-white bg-[#111111] px-2 py-0.5 rounded-full font-mono">
-                        BEST {index + 1}
-                      </span>
-                    )}
-                  </div>
-
                   {/* Wishlist Button (Nike button-icon-circular) */}
                   <button
                     onClick={(e) => {
@@ -451,7 +464,9 @@ export const ShopPage: React.FC<ShopPageProps> = ({
                   {isAdmin && (
                     <button
                       onClick={(e) => handleDeleteClick(e, item)}
-                      className="absolute bottom-2.5 left-2.5 w-8 h-8 rounded-full bg-[#d30005] hover:bg-[#780700] text-white flex items-center justify-center transition-all z-20 shadow-sm cursor-pointer"
+                      className={`absolute left-2.5 w-8 h-8 rounded-full bg-[#d30005] hover:bg-[#780700] text-white flex items-center justify-center transition-all z-20 shadow-sm cursor-pointer ${
+                        item.isTimeSale ? 'bottom-10' : 'bottom-2.5'
+                      }`}
                       title="관리자 권한: 상품 삭제"
                       aria-label="상품 삭제"
                     >
@@ -465,11 +480,26 @@ export const ShopPage: React.FC<ShopPageProps> = ({
                       e.stopPropagation();
                       onQuickAddToCart(item);
                     }}
-                    className="absolute bottom-0 inset-x-0 bg-[#111111] text-white text-[11px] py-2.5 text-center font-medium opacity-0 group-hover:opacity-100 transition-opacity cursor-pointer uppercase tracking-wider flex items-center justify-center space-x-1.5 z-10"
+                    className={`absolute inset-x-0 bg-[#111111]/95 text-white text-[11px] text-center font-medium opacity-0 group-hover:opacity-100 transition-opacity cursor-pointer uppercase tracking-wider flex items-center justify-center space-x-1.5 z-10 ${
+                      item.isTimeSale ? 'bottom-8 py-2 border-b border-white/15' : 'bottom-0 py-2.5'
+                    }`}
                   >
                     <ShoppingBag className="w-3.5 h-3.5 text-white" />
                     <span>+ Quick Add</span>
                   </div>
+
+                  {/* Time Sale Live Status & Remaining Time Bar at Bottom of Image */}
+                  {item.isTimeSale && (
+                    <div className="absolute bottom-0 inset-x-0 h-8 bg-[#111111]/90 text-white px-3 flex items-center justify-between text-[11px] z-10">
+                      <span className="inline-flex items-center space-x-1.5 font-semibold tracking-tight">
+                        <span className="w-1.5 h-1.5 rounded-full bg-[#ff3b30] animate-pulse" />
+                        <span>타임세일 중</span>
+                      </span>
+                      <span className="tabular-nums text-[#f5f5f5] font-medium">
+                        {cycleInfo.countdown}
+                      </span>
+                    </div>
+                  )}
                 </div>
 
                 {/* Details Section */}
@@ -509,11 +539,6 @@ export const ShopPage: React.FC<ShopPageProps> = ({
                   >
                     {item.name}
                   </h3>
-
-                  {/* Available Sizes Tag */}
-                  <div className="text-[11px] text-[#707072] truncate">
-                    SIZE: {item.sizes.join(', ')}
-                  </div>
 
                   {/* Price Section */}
                   <div className="pt-0.5">

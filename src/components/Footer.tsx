@@ -50,8 +50,10 @@ export const Footer: React.FC<FooterProps> = ({
               >
                 MONO:DAY
               </button>
-              <p className="text-xs text-[#707072] leading-relaxed font-normal max-w-sm">
-                MONO:DAY는 독보적인 라이프스타일 감각을 바탕으로, 브랜드의 취향과 이야기를 제안하는 에디토리얼 커머스 플랫폼입니다.
+              <p className="text-xs text-[#707072] leading-relaxed font-normal max-w-md break-keep">
+                MONO:DAY는 독보적인 라이프스타일 감각을 바탕으로, 브랜드의 취향과
+                <br />
+                이야기를 제안하는 에디토리얼 커머스 플랫폼입니다.
               </p>
               <div className="pt-2 text-[11px] text-[#9e9ea0] space-y-1 font-normal">
                 <p>주식회사 모노데이 | 대표이사: 이재영 | 사업자등록번호: 111-11-11111</p>

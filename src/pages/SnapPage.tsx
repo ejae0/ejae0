@@ -9,6 +9,8 @@ interface SnapPageProps {
   onAddToCart: (product: Product) => void;
   onToggleWishlist: (productId: string) => void;
   isWishlisted: (productId: string) => boolean;
+  onToggleSnapLike: (snapId: string) => void;
+  isSnapLiked: (snapId: string) => boolean;
 }
 
 export const SnapPage: React.FC<SnapPageProps> = ({
@@ -16,11 +18,12 @@ export const SnapPage: React.FC<SnapPageProps> = ({
   onSelectProduct,
   onAddToCart,
   onToggleWishlist,
-  isWishlisted
+  isWishlisted,
+  onToggleSnapLike,
+  isSnapLiked
 }) => {
   const [selectedStyle, setSelectedStyle] = useState<string>('all');
   const [activeHotspotId, setActiveHotspotId] = useState<string | null>(null);
-  const [likedSnaps, setLikedSnaps] = useState<Record<string, number>>({});
 
   const styles = [
     { id: 'all', label: '전체 스냅' },
@@ -34,23 +37,12 @@ export const SnapPage: React.FC<SnapPageProps> = ({
     (snap) => selectedStyle === 'all' || snap.style === selectedStyle
   );
 
-  const handleLikeSnap = (snapId: string, initialLikes: number) => {
-    setLikedSnaps((prev) => {
-      const current = prev[snapId] !== undefined ? prev[snapId] : initialLikes;
-      const isAlready = prev[snapId] !== undefined && prev[snapId] > initialLikes;
-      return {
-        ...prev,
-        [snapId]: isAlready ? initialLikes : current + 1
-      };
-    });
-  };
-
   return (
     <div className="max-w-[1440px] mx-auto px-6 sm:px-8 pt-4 sm:pt-5 pb-10 sm:pb-12">
       {/* Banner */}
       <div className="bg-[#111111] text-white px-6 py-5 sm:px-8 sm:py-6 mb-4 border border-[#39393b] rounded-none">
-        <div className="max-w-4xl space-y-1.5">
-          <div className="inline-flex items-center space-x-2 text-[#cacacb] text-xs font-semibold tracking-wider uppercase">
+        <div className="max-w-3xl space-y-1.5">
+          <div className="inline-flex items-center space-x-1.5 text-[#cacacb] text-xs font-semibold tracking-wider uppercase">
             <Camera className="w-3.5 h-3.5" />
             <span>INTERACTIVE STYLE SNAP &amp; LOOKBOOK</span>
           </div>
@@ -66,7 +58,7 @@ export const SnapPage: React.FC<SnapPageProps> = ({
       </div>
 
       {/* Style Filter Tabs (Nike filter-chip row) */}
-      <div className="flex items-center space-x-2 sm:space-x-3 pt-2 pb-4 border-b border-[#e5e5e5] mb-5 overflow-x-auto">
+      <div className="flex items-center space-x-2 sm:space-x-3 pt-2 pb-4 border-b border-[#e5e5e5] mb-10 overflow-x-auto">
         {styles.map((st) => (
           <button
             key={st.id}
@@ -85,10 +77,8 @@ export const SnapPage: React.FC<SnapPageProps> = ({
       {/* Snap Look Cards Grid */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10">
         {filteredSnaps.map((snap) => {
-          const currentLikes =
-            likedSnaps[snap.id] !== undefined ? likedSnaps[snap.id] : snap.likes;
-          const isLiked =
-            likedSnaps[snap.id] !== undefined && likedSnaps[snap.id] > snap.likes;
+          const isLiked = isSnapLiked(snap.id);
+          const currentLikes = isLiked ? snap.likes + 1 : snap.likes;
 
           return (
             <div
@@ -111,9 +101,9 @@ export const SnapPage: React.FC<SnapPageProps> = ({
                   </div>
                 </div>
 
-                {/* Like Button (Nike pill) */}
+                {/* Like Button (Nike pill, Login Required) */}
                 <button
-                  onClick={() => handleLikeSnap(snap.id, snap.likes)}
+                  onClick={() => onToggleSnapLike(snap.id)}
                   className={`flex items-center space-x-1.5 px-3.5 py-1.5 rounded-full text-xs font-medium transition-colors border cursor-pointer ${
                     isLiked
                       ? 'bg-[#111111] text-white border-[#111111]'

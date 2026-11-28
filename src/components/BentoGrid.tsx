@@ -34,7 +34,9 @@ export const BentoGrid: React.FC<BentoGridProps> = ({
           </h2>
         </div>
         <p className="text-xs sm:text-sm text-[#707072] max-w-md mt-4 md:mt-0 font-normal leading-relaxed break-keep">
-          에디터가 제안하는 다채로운 레이아웃 속 단 하나의 감성 큐레이션. 단순한 쇼핑을 넘어 브랜드를 경험하세요.
+          에디터가 제안하는 다채로운 레이아웃 속 단 하나의 감성 큐레이션.
+          <br />
+          단순한 쇼핑을 넘어 브랜드를 경험하세요.
         </p>
       </div>
 
@@ -157,19 +159,48 @@ export const BentoGrid: React.FC<BentoGridProps> = ({
           </div>
         </div>
 
-        {/* Bento Card 4: Editorial Quote */}
-        <div className="group relative md:col-span-1 md:row-span-1 bg-[#f5f5f5] border border-[#e5e5e5] p-6 flex flex-col justify-between rounded-none">
-          <span className="text-3xl font-display text-[#111111] leading-none select-none">
-            “
-          </span>
-          <p className="text-xs font-medium text-[#111111] leading-relaxed -mt-3 break-keep">
-            "취향은 매일 거치는 작은 선택들이 모여 비로소 나만의 색깔을 완성한다."
-          </p>
-          <div className="text-right border-t border-[#e5e5e5] pt-3">
-            <span className="text-[11px] tracking-widest text-[#707072] font-medium block uppercase">
-              — MONO:DAY ESSAY
-            </span>
-            <span className="text-[10px] text-[#9e9ea0] font-mono">ISSUE VOL. 29</span>
+        {/* Bento Card 4: 24SS Style Palette & Curation Edit */}
+        <div
+          onClick={() => onSelectCategory('women', 'outer')}
+          className="group relative md:col-span-1 md:row-span-1 bg-[#f5f5f5] border border-[#e5e5e5] hover:border-[#111111] transition-colors p-6 flex flex-col justify-between rounded-none cursor-pointer"
+        >
+          <div className="space-y-3">
+            <div className="flex items-center justify-between">
+              <span className="text-[11px] font-medium tracking-widest text-[#707072] uppercase">
+                24SS KEY PALETTE
+              </span>
+              <span className="text-[10px] font-mono text-[#707072]">EDIT 04</span>
+            </div>
+
+            <div className="grid grid-cols-3 gap-2 pt-1">
+              <div className="space-y-1">
+                <div className="h-9 bg-[#111111] border border-[#111111]" />
+                <span className="text-[10px] font-mono text-[#707072] block">CHARCOAL</span>
+              </div>
+              <div className="space-y-1">
+                <div className="h-9 bg-[#e6dfd3] border border-[#cacacb]" />
+                <span className="text-[10px] font-mono text-[#707072] block">ECRU</span>
+              </div>
+              <div className="space-y-1">
+                <div className="h-9 bg-[#4a5b43] border border-[#3d4c37]" />
+                <span className="text-[10px] font-mono text-[#707072] block">OLIVE</span>
+              </div>
+            </div>
+          </div>
+
+          <div className="space-y-2 border-t border-[#e5e5e5] pt-3">
+            <div>
+              <h4 className="text-sm font-semibold text-[#111111]">
+                Tonal Layering Edit
+              </h4>
+              <p className="text-[11px] text-[#707072] mt-0.5 leading-relaxed break-keep">
+                차분한 뉴트럴 컬러와 실루엣으로 완성하는 시즌 아우터 스타일링.
+              </p>
+            </div>
+            <div className="flex items-center justify-between text-xs font-medium text-[#111111]">
+              <span>아우터 셀렉션 보기</span>
+              <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
+            </div>
           </div>
         </div>
       </div>

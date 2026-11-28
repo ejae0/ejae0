@@ -21,6 +21,9 @@ export interface Product {
   releaseDate?: string;
   rating: number;
   reviewCount: number;
+  isTimeSale?: boolean;
+  regularPrice?: number;
+  regularDiscount?: number;
 }
 
 export interface SubCategory {

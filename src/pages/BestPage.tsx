@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Flame, Heart, ShoppingBag, Crown, Trash2 } from 'lucide-react';
 import { Product, SUBCATEGORIES } from '../data/products';
+import { getProductWishCount, formatWishCount } from './ShopPage';
 
 interface BestPageProps {
   products: Product[];
@@ -53,7 +54,7 @@ export const BestPage: React.FC<BestPageProps> = ({
   };
 
   return (
-    <div className="max-w-[1440px] mx-auto px-6 sm:px-8 pt-4 sm:pt-6 pb-10 sm:pb-12">
+    <div className="max-w-[1440px] mx-auto px-6 sm:px-8 pt-4 sm:pt-5 pb-10 sm:pb-12">
       {/* Top 3 Podium Showcase Card (Nike neutral dark container) */}
       {currentGender === 'all' && currentCategory === 'all' && (
         <div className="bg-[#111111] text-white p-5 sm:p-6 mb-10 border border-[#39393b] rounded-none">
@@ -80,7 +81,7 @@ export const BestPage: React.FC<BestPageProps> = ({
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                   <span
-                    className={`absolute top-3 left-3 text-xs font-mono font-bold px-3 py-1 shadow-sm ${
+                    className={`absolute top-3 left-3 inline-flex items-center justify-center min-w-[24px] h-6 px-1.5 text-xs font-bold leading-none rounded-[2px] shadow-sm tabular-nums ${
                       idx === 0
                         ? 'bg-white text-[#111111]'
                         : idx === 1
@@ -88,7 +89,7 @@ export const BestPage: React.FC<BestPageProps> = ({
                         : 'bg-[#707072] text-white'
                     }`}
                   >
-                    BEST {idx + 1}
+                    {idx + 1}
                   </span>
                 </div>
                 <div className="p-4 sm:p-5 space-y-1.5 flex-1 flex flex-col justify-between">
@@ -189,7 +190,7 @@ export const BestPage: React.FC<BestPageProps> = ({
       </div>
 
       {/* Count & Status */}
-      <div className="flex justify-between items-center pt-1 mb-6 text-xs text-[#707072]">
+      <div className="flex justify-between items-center pt-2 mb-3 text-xs text-[#707072]">
         <div>
           <span>RANKING: </span>
           <span className="text-[#111111] font-semibold uppercase">
@@ -205,6 +206,7 @@ export const BestPage: React.FC<BestPageProps> = ({
       <div className="grid grid-cols-2 md:grid-cols-4 gap-x-4 sm:gap-x-6 gap-y-10 sm:gap-y-12">
         {bestProducts.map((item, index) => {
           const isWished = isWishlisted(item.id);
+          const wishCount = getProductWishCount(item, isWished);
           const formattedPrice = item.price.toLocaleString();
           const originalPrice =
             item.discount > 0
@@ -229,26 +231,29 @@ export const BestPage: React.FC<BestPageProps> = ({
                 {/* Rank Badge */}
                 {index < 50 && (
                   <div className="absolute top-2.5 left-2.5 z-10">
-                    <span className="bg-[#111111] text-white px-2.5 py-1 text-xs font-mono font-medium">
-                      BEST {index + 1}
+                    <span className="inline-flex items-center justify-center min-w-[24px] h-6 px-1.5 bg-white text-[#111111] text-xs font-bold leading-none rounded-[2px] shadow-xs tabular-nums">
+                      {index + 1}
                     </span>
                   </div>
                 )}
 
-                {/* Wishlist Button (Nike button-icon-circular) */}
+                {/* Wishlist Button */}
                 <button
                   onClick={(e) => {
                     e.stopPropagation();
                     onToggleWishlist(item.id);
                   }}
-                  className="absolute top-2.5 right-2.5 w-9 h-9 rounded-full bg-white/90 hover:bg-white flex items-center justify-center text-[#111111] transition-all z-10 shadow-xs cursor-pointer"
+                  className="absolute top-2.5 right-2.5 flex items-center space-x-1 px-2.5 py-1 rounded-full bg-white/90 text-[#111111] hover:text-[#d30005] transition-all z-10 shadow-xs cursor-pointer"
                   aria-label="Wishlist"
                 >
                   <Heart
-                    className={`w-4 h-4 ${
+                    className={`w-3.5 h-3.5 transition-transform active:scale-125 ${
                       isWished ? 'text-[#d30005] fill-[#d30005]' : 'text-[#707072]'
                     }`}
                   />
+                  <span className="text-[10px] font-mono font-medium text-[#111111]">
+                    {formatWishCount(wishCount)}
+                  </span>
                 </button>
 
                 {/* ADMIN ONLY: Delete Button */}
@@ -312,11 +317,6 @@ export const BestPage: React.FC<BestPageProps> = ({
                 <div className="flex items-center space-x-1 text-xs text-[#707072]">
                   <Flame className="w-3 h-3 text-[#d30005]" />
                   <span>최근 3일 {item.salesCount3Days.toLocaleString()}개 판매</span>
-                </div>
-
-                {/* Available Sizes list */}
-                <div className="text-[11px] text-[#707072] truncate">
-                  SIZE: {item.sizes.join(', ')}
                 </div>
 
                 {/* Price */}

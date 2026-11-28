@@ -87,6 +87,21 @@ function AppContent() {
     } catch {}
   }, [wishlist]);
 
+  // Snap Likes State (requires login, persisted per browser)
+  const [likedSnaps, setLikedSnaps] = useState<string[]>(() => {
+    try {
+      const saved = localStorage.getItem('monoday_snap_likes');
+      if (saved) return JSON.parse(saved);
+    } catch {}
+    return [];
+  });
+
+  useEffect(() => {
+    try {
+      localStorage.setItem('monoday_snap_likes', JSON.stringify(likedSnaps));
+    } catch {}
+  }, [likedSnaps]);
+
   // Cart State (starts with 2 pre-seeded items from the catalog)
   const [cart, setCart] = useState<CartItem[]>(() => {
     const p1 = productsData[0] || PRODUCTS[0];
@@ -126,6 +141,8 @@ function AppContent() {
   const pendingAuthActionRef = React.useRef<(() => void) | null>(null);
   const wishlistRef = React.useRef(wishlist);
   wishlistRef.current = wishlist;
+  const likedSnapsRef = React.useRef(likedSnaps);
+  likedSnapsRef.current = likedSnaps;
 
   useEffect(() => {
     if (!isAuthenticated) {
@@ -229,6 +246,30 @@ function AppContent() {
 
   const isWishlisted = (productId: string) => isAuthenticated && wishlist.includes(productId);
 
+  // Snap Like Logic (Login Required, matches Wishlist behavior)
+  const performToggleSnapLike = (snapId: string) => {
+    const isLiked = likedSnapsRef.current.includes(snapId);
+    if (isLiked) {
+      setLikedSnaps((prev) => prev.filter((id) => id !== snapId));
+      addToast('스냅 좋아요가 취소되었습니다.');
+    } else {
+      setLikedSnaps((prev) => (prev.includes(snapId) ? prev : [...prev, snapId]));
+      addToast('스냅에 좋아요를 눌렀습니다.', 'heart');
+    }
+  };
+
+  const handleToggleSnapLike = (snapId: string) => {
+    if (!isAuthenticated) {
+      requireMemberLogin('좋아요 기능은 로그인 후 이용할 수 있습니다.', () =>
+        performToggleSnapLike(snapId)
+      );
+      return;
+    }
+    performToggleSnapLike(snapId);
+  };
+
+  const isSnapLiked = (snapId: string) => isAuthenticated && likedSnaps.includes(snapId);
+
   // Cart Logic
   const performAddToCart = (
     product: Product,
@@ -241,7 +282,11 @@ function AppContent() {
       if (existing) {
         return prev.map((item) =>
           item.product.id === product.id
-            ? { ...item, qty: item.qty + qty }
+            ? {
+                ...item,
+                product: product.isTimeSale ? product : item.product,
+                qty: item.qty + qty
+              }
             : item
         );
       }
@@ -531,6 +576,8 @@ function AppContent() {
             onAddToCart={(prod) => handleAddToCart(prod)}
             onToggleWishlist={handleToggleWishlist}
             isWishlisted={isWishlisted}
+            onToggleSnapLike={handleToggleSnapLike}
+            isSnapLiked={isSnapLiked}
           />
         )}
 
